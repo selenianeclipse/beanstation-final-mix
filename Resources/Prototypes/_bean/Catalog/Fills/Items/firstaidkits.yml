@@ -1,0 +1,39 @@
+- type: entity
+  id: OutlawMedkitIPCFilled
+  name: outlaw medical kit [IPC]
+  suffix: Filled
+  parent: MedkitOutlaw
+  components:
+  - type: StorageFill
+    contents:
+      - id: PowerCellHigh
+      - id: ClothingEyesGlassesMeson
+      - id: Welder
+      - id: CableApcStack
+
+- type: entity
+  id: OutlawMedkitFilled
+  suffix: Filled
+  parent: MedkitOutlaw
+  components:
+  - type: StorageFill
+    contents:
+      - id: StimpackMini
+      - id: Bloodpack
+      - id: SyringeSaline
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+
+- type: entity
+  id: OutlawMedkitEvilFilled
+  name: outlaw medical kit [Lethal]
+  suffix: Filled
+  parent: MedkitOutlaw
+  components:
+  - type: StorageFill
+    contents:
+      - id: RazoriumChemistryBottle
+      - id: LeadChemistryBottle
+      - id: Syringe
+      - id: Syringe
+      - id: AntiPoisonMedipen

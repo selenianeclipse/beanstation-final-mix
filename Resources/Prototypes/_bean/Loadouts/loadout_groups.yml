@@ -1,0 +1,90 @@
+- type: loadoutGroup
+  id: MaidHead
+  name: loadout-group-maid-head
+  minLimit: 0
+  loadouts:
+  - SecurityBeret
+
+- type: loadoutGroup
+  id: MaidJumpsuit
+  name: loadout-group-maid-jumpsuit
+  loadouts:
+  - MaidJumpsuit # temporary until butler outfit is finished
+  - MaidJumpskirt
+
+- type: loadoutGroup
+  id: MaidOuterClothing
+  name: loadout-group-maid-outerclothing
+  loadouts:
+  - ArmorVest
+  - SecurityOfficerWintercoat
+  - MaidApron
+  - MaidVest
+  
+- type: loadoutGroup
+  id: MaidShoes
+  name: loadout-group-maid-shoes
+  loadouts:
+  - MaidGaloshes
+  - MaidHeels
+  - JackBoots
+  - SecurityWinterBoots
+
+- type: loadoutGroup
+  id: MaidGloves
+  minLimit: 0
+  name: loadout-group-maid-gloves
+  loadouts:
+  - MaidCombatGloves
+  - MaidGlovesAlt
+
+- type: loadoutGroup
+  id: CouncilHead
+  name: loadout-group-council-head
+  minLimit: 0
+  loadouts:
+  - CouncilGasMask
+  - CouncilCap
+
+- type: loadoutGroup
+  id: CouncilNeck
+  name: loadout-group-council-neck
+  minLimit: 0
+  loadouts:
+  - CouncilCloak
+  - CouncilScarf
+
+- type: loadoutGroup
+  id: CouncilJumpsuit
+  name: loadout-group-council-jumpsuit
+  loadouts:
+  - CouncilJumpsuit
+  - CouncilJumpsuitAlt
+  - CouncilFormalSuit
+  - CouncilFormalSkirt
+
+- type: loadoutGroup
+  id: CouncilBackpack
+  name: loadout-group-council-backpack
+  loadouts:
+  - CouncilBackpack
+  - CouncilDuffel
+  
+- type: loadoutGroup
+  id: CouncilOuterClothing
+  name: loadout-group-council-outerclothing
+  minLimit: 0
+  loadouts:
+  - CouncilOuterClothingInvis
+  - CouncilWintercoat
+  - CouncilOuterCarapaceClothing
+  - CouncilArmoredWintercoat
+  
+- type: loadoutGroup
+  id: CouncilShoes
+  name: loadout-group-council-shoes
+  loadouts:
+  - CouncilLaceups
+  - CouncilCombatBoots
+  - CouncilHeels
+  

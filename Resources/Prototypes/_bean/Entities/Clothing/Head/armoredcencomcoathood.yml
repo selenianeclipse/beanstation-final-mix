@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatHoodArmorCentcom
+  categories: [ HideSpawnMenu ]
+  name: armored centcom winter coat hood
+  description: Keeps you warm. Hides your feathers. Convenient!
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Head/Hoods/Coat/armorhoodcentcom.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Head/Hoods/Coat/armorhoodcentcom.rsi

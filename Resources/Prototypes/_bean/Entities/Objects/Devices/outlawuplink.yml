@@ -1,0 +1,48 @@
+- type: entity
+  parent: [BaseItem, StorePresetOutlaw, BaseMajorContraband]
+  id: BaseOutlawRadio
+  name: outlaw uplink
+  description: A hijacked Syndicate uplink. Still uses Telecrystals!
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Devices/outlawradio.rsi
+    layers:
+    - state: radio
+  - type: Item
+    sprite: _bean/Objects/Devices/outlawradio.rsi
+    heldPrefix: radio
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Telecrystal: 95
+      Spesos: 15
+      
+- type: entity
+  parent: [BaseItem, StorePresetOutlaw, BaseMajorContraband]
+  id: BaseOutlawRadioDebug
+  name: outlaw uplink
+  suffix: Debug
+  description: A hijacked Syndicate uplink. Still uses Telecrystals!
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Devices/outlawradio.rsi
+    layers:
+    - state: radio
+  - type: Item
+    sprite: _bean/Objects/Devices/outlawradio.rsi
+    heldPrefix: radio
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Telecrystal: 999999
+      Spesos: 999999

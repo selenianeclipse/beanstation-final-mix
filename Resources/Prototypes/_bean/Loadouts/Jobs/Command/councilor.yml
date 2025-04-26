@@ -1,0 +1,90 @@
+# Jumpsuit
+- type: loadout
+  id: CouncilJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficer
+
+- type: loadout
+  id: CouncilJumpsuitAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficial
+
+- type: loadout
+  id: CouncilFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormal
+
+- type: loadout
+  id: CouncilFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
+
+# Head
+- type: loadout
+  id: CouncilCap
+  equipment:
+    head: ClothingHeadHatCentcomcap
+
+- type: loadout
+  id: CouncilGasMask
+  equipment:
+    mask: ClothingMaskGasCentcom
+
+# Neck
+- type: loadout
+  id: CouncilCloak
+  equipment:
+    neck: ClothingNeckCloakCentcom
+
+- type: loadout
+  id: CouncilScarf
+  equipment:
+    neck: ClothingNeckScarfStripedCentcom
+
+# Back
+- type: loadout
+  id: CouncilBackpack
+  equipment:
+    back: ClothingBackpackCentcom
+
+- type: loadout
+  id: CouncilDuffel
+  equipment:
+    back: ClothingBackpackMessengerCentcomm
+
+# Outer clothing
+- type: loadout
+  id: CouncilOuterCarapaceClothing
+  equipment:
+    outerClothing: ClothingOuterArmorCentcommCarapace
+    
+- type: loadout
+  id: CouncilOuterClothingInvis
+  equipment:
+    outerClothing: ClothingOuterArmourInvisible
+
+- type: loadout
+  id: CouncilWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterCentcom
+    
+- type: loadout
+  id: CouncilArmoredWintercoat
+  equipment:
+    outerClothing: ClothingOuterArmoredWinterCentcom
+
+# Shoes
+- type: loadout
+  id: CouncilHeels
+  equipment:
+    shoes: ClothingShoesHighheelBoots
+    
+- type: loadout
+  id: CouncilCombatBoots
+  equipment:
+    shoes: ClothingShoesBootsCombat
+
+- type: loadout
+  id: CouncilLaceups
+  equipment:
+    shoes: ClothingShoesBootsLaceup

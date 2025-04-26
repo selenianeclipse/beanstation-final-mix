@@ -108,39 +108,36 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - Outlaw
 
 - type: department
   id: Civilian
   name: department-Civilian
   description: department-Civilian-description
-  color: "#9FED58"
+  color: "#a3a3a3"
   weight: -10
   roles:
-  - Bartender
-  - Botanist
   - Boxer
   - Chaplain
-  - Chef
   - Clown
-  - HeadOfPersonnel
-  - Janitor
-  - Lawyer
-  - Librarian
   - Mime
   - Musician
-  - Passenger
   - Reporter
   - Visitor
   - Zookeeper
-  - ServiceWorker
 
 - type: department
   id: CentralCommand
   name: department-CentralCommand
   description: department-CentralCommand-description
-  color: "#0c344d"
+  color: "#007a0e"
   roles:
-  - CentralCommandOfficial
+  # - CentralCommandOfficial # replacing with councilor
+  - Councilor
+  - NanotrasenRepresentative  # Goobstation
+  - BlueshieldOfficer # Goobstation
+  - NanotrasenCareerTrainer # goobing
+  # these ones are disabled still -steve
   - CBURN
   - ERTLeader
   - ERTChaplain
@@ -150,16 +147,7 @@
   - ERTEngineer
   - DeathSquad
   - HecuOperative
-  - BlueshieldOfficer # Goobstation - Start
-  - NanotrasenRepresentative
-  - NanotrasenCareerTrainer
-  - NavyOfficer
-  - NavyCaptain
-  - NavyOfficerUndercover
-  - SpecialOperationsOfficer
-  - Diplomat
-  - GovernmentMan # Goobstation - End
-  editorHidden: true
+  editorHidden: false
   weight: 120
 
 - type: department
@@ -168,6 +156,7 @@
   description: department-Command-description
   color: "#334E6D"
   roles:
+#  - CentralCommandOfficial
   - Captain
   - ChiefEngineer
   - ChiefMedicalOfficer
@@ -175,10 +164,8 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
-  - BlueshieldOfficer # Goobstation
-  - NanotrasenRepresentative # Goobstation
-  - NanotrasenCareerTrainer # Goobstation
-  - CentralCommandOfficial
+#  - NanotrasenRepresentative # Goobstation
+  # still quite disabled -steve
   - CBURN
   - ERTLeader
   - ERTChaplain
@@ -213,7 +200,7 @@
   - MedicalDoctor
   - MedicalIntern
   - Psychologist
-  - Paramedic
+#  - Paramedic (entirely unneeded lmao)
 
 - type: department
   id: Security
@@ -227,6 +214,7 @@
   - SecurityOfficer
   - Detective
   - Warden
+  - Maid
 
 - type: department
   id: Science
@@ -246,16 +234,34 @@
   roles:
   - Borg
   - StationAi
-
+  
 - type: department
-  id: Specific
-  name: department-Specific
-  description: department-Specific-description
+  id: Service
+  name: department-Service
+  description: department-Service-description
   color: "#9FED58"
   weight: 10
   roles:
-  - Boxer
-  - Reporter
-  - Zookeeper
-  - Psychologist
-  primary: false
+  - HeadOfPersonnel
+  - Botanist
+  - Chef
+  - Bartender
+  - Janitor
+  - Librarian
+  - ServiceWorker
+  - Lawyer
+
+- type: department
+  id: Assistance
+  name: department-Assistance
+  description: department-Assistance-description
+  color: "#a18672"
+  weight: 9
+  roles:
+  - ServiceWorker
+  - SecurityCadet
+  - ResearchAssistant
+  - MedicalIntern
+  - TechnicalAssistant
+  - Passenger
+ 

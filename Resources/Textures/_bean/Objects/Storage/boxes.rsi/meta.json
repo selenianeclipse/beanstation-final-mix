@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "these nuts",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+            "name": "waterjug"
+        },
+        {
+            "name": "rations"
+        },
+        {
+            "name": "brownies"
+        },
+        {
+            "name": "outlawbox"
+        },
+        {
+            "name": "box_security"
+        },
+        {
+            "name": "empgrenade"
+        },
+        {
+            "name": "battery"
+        },
+        {
+            "name": "medipenburn"
+        },
+        {
+            "name": "medipenrad"
+        },
+        {
+            "name": "medipenbrute"
+        },
+        {
+            "name": "medipenpoison"
+        },
+        {
+            "name": "medipenairloss"
+        },
+        {
+            "name": "box_medical"
+        },
+        {
+            "name": "secrestraints"
+        },
+        {
+            "name": "glasses"
+        },
+        {
+            "name": "box"
+        },
+		{
+            "name": "spraybottle"
+        }
+    ]
+}

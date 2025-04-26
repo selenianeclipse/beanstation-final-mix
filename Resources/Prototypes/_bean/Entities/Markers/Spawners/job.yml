@@ -1,0 +1,38 @@
+- type: entity
+  id: SpawnPointOutlaw
+  parent: SpawnPointJobBase
+  name: outlaw
+  components:
+  - type: SpawnPoint
+    job_id: Outlaw
+  - type: Sprite
+    sprite: _bean\Markers\jobs.rsi
+    layers:
+      - state: green
+      - state: outlaw
+
+- type: entity
+  id: SpawnPointMaid
+  parent: SpawnPointJobBase
+  name: maid
+  components:
+  - type: SpawnPoint
+    job_id: Maid
+  - type: Sprite
+    sprite: _bean\Markers\jobs.rsi
+    layers:
+      - state: green
+      - state: maid
+
+- type: entity
+  id: SpawnPointCouncilor
+  parent: SpawnPointJobBase
+  name: councilor
+  components:
+  - type: SpawnPoint
+    job_id: Councilor
+  - type: Sprite
+    sprite: _bean\Markers\jobs.rsi
+    layers:
+      - state: green
+      - state: councilor

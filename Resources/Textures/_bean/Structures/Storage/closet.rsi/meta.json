@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "copyright": "googly booblgy",
+  "license": "CC-BY-SA-3.0",
+  "states": [
+    {
+      "name": "generic_open"
+    },
+    {
+      "name": "generic"
+    },
+    {
+      "name": "generic_door"
+    },
+    {
+      "name": "eng_plasma"
+    },
+    {
+      "name": "eng_plasma_door"
+    },
+    {
+      "name": "largebunker_door"
+    },
+    {
+      "name": "secure"
+    },
+    {
+      "name": "secure_open"
+    },
+    {
+      "name": "unlocked"
+    },
+    {
+      "name": "locked"
+    },
+    {
+      "name": "welded"
+    },
+    {
+      "name": "outlaw"
+    },
+    {
+      "name": "outlaw_door"
+    },
+	{
+      "name": "maid"
+    },
+    {
+      "name": "maid_door"
+    },
+    {
+      "name": "councilor"
+    },
+    {
+      "name": "councilor_door"
+    },
+	{
+      "name": "councilor_open"
+    }
+  ]
+}

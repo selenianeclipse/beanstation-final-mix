@@ -1,0 +1,67 @@
+# rations       
+- type: entity
+  name: nutribrick rations box
+  parent: BoxCardboard
+  id: BoxRations
+  description: A box filled with nutribrick rations.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box
+      - state: rations
+  - type: StorageFill
+    contents:
+      - id: FoodSnackNutribrick
+        amount: 4
+# water       
+- type: entity
+  name: water jug box
+  parent: BoxCardboard
+  id: BoxRationsWater
+  description: A box filled with water jugs.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box
+      - state: waterjug
+  - type: StorageFill
+    contents:
+      - id: DrinkWaterJug
+        amount: 4
+# brownies      
+- type: entity
+  name: brownie ration box
+  parent: BoxCardboard
+  id: BoxRationsBrownies
+  description: A box filled with wrapped brownies. For morale boost.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box
+      - state: brownies
+  - type: StorageFill
+    contents:
+      - id: FoodSnackMREBrownie
+        amount: 4
+# cleaner      
+- type: entity
+  name: space cleaner box
+  parent: BoxCardboard
+  id: BoxSpaceCleaner
+  description: A box of space cleaner bottles.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: StorageFill
+    contents:
+    - id: SprayBottleSpaceCleaner
+      amount: 4
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box
+      - state: spraybottle

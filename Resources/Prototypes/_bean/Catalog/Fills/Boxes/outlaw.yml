@@ -1,0 +1,18 @@
+- type: entity
+  name: emp grenade box
+  parent: [BoxCardboard, BaseMajorContraband]
+  id: BoxEmpGrenadeOutlaw
+  description: A box of two EMP Grenades. One to piss off an IPC, and one to piss off Security.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: outlawbox
+      - state: empgrenade
+  - type: Storage
+    grid:
+    - 0,0,1,1
+  - type: StorageFill
+    contents:
+      - id: EmpGrenade
+        amount: 2

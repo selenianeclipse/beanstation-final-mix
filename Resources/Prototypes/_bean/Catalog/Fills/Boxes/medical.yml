@@ -1,0 +1,179 @@
+# glasses
+- type: entity
+  name: prescription glasses box
+  parent: BoxCardboard
+  id: BoxGlasses
+  description: A box full of prescription glasses.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,2,2
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesPrescriptionGlasses
+        amount: 5
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box_medical
+      - state: glasses
+# airloss medipen  
+- type: entity
+  name: airloss medipen box
+  parent: BoxCardboard
+  id: BoxAirlossMediBox
+  description: A box filled with airloss medipens.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box_medical
+      - state: medipenairloss
+  - type: StorageFill
+    contents:
+      - id: AirlossAutoInjector
+        prob: 0.9
+      - id: AirlossAutoInjector
+        prob: 0.5
+      - id: AirlossAutoInjector
+        prob: 0.5
+      - id: AirlossAutoInjector
+        prob: 0.5
+      - id: AirlossAutoInjector
+        prob: 0.2
+      - id: AirlossAutoInjector
+        prob: 0.2
+      - id: AirlossAutoInjector
+        prob: 0.2
+      - id: AirlossAutoInjector
+        prob: 0.1
+      - id: AirlossAutoInjector
+        prob: 0.1
+# brute medipen        
+- type: entity
+  name: brute medipen box
+  parent: BoxCardboard
+  id: BoxBruteMediBox
+  description: A box filled with brute medipens.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box_medical
+      - state: medipenbrute
+  - type: StorageFill
+    contents:
+      - id: BruteAutoInjector
+        prob: 0.9
+      - id: BruteAutoInjector
+        prob: 0.5
+      - id: BruteAutoInjector
+        prob: 0.5
+      - id: BruteAutoInjector
+        prob: 0.5
+      - id: BruteAutoInjector
+        prob: 0.2
+      - id: BruteAutoInjector
+        prob: 0.2
+      - id: BruteAutoInjector
+        prob: 0.2
+      - id: BruteAutoInjector
+        prob: 0.1
+      - id: BruteAutoInjector
+        prob: 0.1
+# poison medipen
+- type: entity
+  name: poison medipen box
+  parent: BoxCardboard
+  id: BoxPoisonMediBox
+  description: A box filled with poison medipens.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box_medical
+      - state: medipenpoison
+  - type: StorageFill
+    contents:
+      - id: AntiPoisonMedipen
+        prob: 0.9
+      - id: AntiPoisonMedipen
+        prob: 0.5
+      - id: AntiPoisonMedipen
+        prob: 0.5
+      - id: AntiPoisonMedipen
+        prob: 0.5
+      - id: AntiPoisonMedipen
+        prob: 0.2
+      - id: AntiPoisonMedipen
+        prob: 0.2
+      - id: AntiPoisonMedipen
+        prob: 0.2
+      - id: AntiPoisonMedipen
+        prob: 0.1
+      - id: AntiPoisonMedipen
+        prob: 0.1
+# rad medipen
+- type: entity
+  name: rad medipen box
+  parent: BoxCardboard
+  id: BoxRadMediBox
+  description: A box filled with rad medipens.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box_medical
+      - state: medipenrad
+  - type: StorageFill
+    contents:
+      - id: RadAutoInjector
+        prob: 0.9
+      - id: RadAutoInjector
+        prob: 0.5
+      - id: RadAutoInjector
+        prob: 0.5
+      - id: RadAutoInjector
+        prob: 0.5
+      - id: RadAutoInjector
+        prob: 0.2
+      - id: RadAutoInjector
+        prob: 0.2
+      - id: RadAutoInjector
+        prob: 0.2
+      - id: RadAutoInjector
+        prob: 0.1
+      - id: RadAutoInjector
+        prob: 0.1
+# burn medipen
+- type: entity
+  name: burn medipen box
+  parent: BoxCardboard
+  id: BoxBurnMediBox
+  description: A box filled with burn medipens.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box_medical
+      - state: medipenburn
+  - type: StorageFill
+    contents:
+      - id: BurnAutoInjector
+        prob: 0.9
+      - id: BurnAutoInjector
+        prob: 0.5
+      - id: BurnAutoInjector
+        prob: 0.5
+      - id: BurnAutoInjector
+        prob: 0.5
+      - id: BurnAutoInjector
+        prob: 0.2
+      - id: BurnAutoInjector
+        prob: 0.2
+      - id: BurnAutoInjector
+        prob: 0.2
+      - id: BurnAutoInjector
+        prob: 0.1
+      - id: BurnAutoInjector
+        prob: 0.1

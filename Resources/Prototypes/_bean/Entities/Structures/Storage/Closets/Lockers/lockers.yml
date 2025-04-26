@@ -1,0 +1,87 @@
+# outlaw
+- type: entity
+  id: LockerOutlaw
+  parent: LockerBaseSecure
+  name: outlaw's locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _bean\Structures\Storage\closet.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: outlaw
+    stateDoorOpen: generic_open
+    stateDoorClosed: outlaw_door
+  - type: AccessReader
+    access: [["Cargo"]]
+# maid
+- type: entity
+  id: LockerMaid
+  parent: LockerBaseSecure
+  name: maid's locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _bean\Structures\Storage\closet.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: maid
+    stateDoorOpen: generic_open
+    stateDoorClosed: maid_door
+  - type: AccessReader
+    access: [["Security"]]
+# bunker
+- type: entity
+  id: LockerBunker
+  parent: LockerBaseSecure
+  name: bunker closet
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _bean\Structures\Storage\closet.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: secure
+    stateDoorOpen: secure_open
+    stateDoorClosed: largebunker_door
+# plasma tanks
+- type: entity
+  id: LockerEngineerPlasma
+  parent: LockerBase
+  name: plasma tank locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _bean\Structures\Storage\closet.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: eng_secure
+    stateDoorOpen: generic_open
+    stateDoorClosed: eng_plasma_door
+  - type: AccessReader
+    access: [ [ "Engineering" ] ]
+# councilor
+- type: entity
+  id: LockerCouncilor
+  name: councilor's locker
+  parent: LockerBaseSecure
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _bean\Structures\Storage\closet.rsi
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: councilor
+    stateDoorOpen: councilor_open
+    stateDoorClosed: councilor_door
+# wall bunker    
+- type: entity
+  id: ClosetWallBunker
+  parent: BaseWallCloset
+  name: bunker wall closet
+  description: "A storage unit packed with an assortment of survival items."
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _bean\Structures\Storage\wall_locker.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: generic
+    stateDoorOpen: generic_open
+    stateDoorClosed: bunker_door

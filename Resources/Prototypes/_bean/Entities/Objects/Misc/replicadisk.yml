@@ -1,0 +1,21 @@
+- type: entity
+  name: replica nuclear authentication disk
+  parent: [BaseItem, BaseGrandTheftContraband]
+  id: NukeDiskReplica
+  description: A very, very expensive, hard to obtain replica of a Nuclear Authentication Disk. Functions the exact same way as one. Why do you have this?!?
+  components:
+  - type: NukeDisk
+  - type: Sprite
+    sprite: _bean\Objects\Misc\replicanukedisk.rsi
+    state: icon
+  - type: StaticPrice
+    price: 5 # no bitchasses gonna hijack the system here
+  - type: CargoSellBlacklist
+  - type: ArrivalsBlacklist
+  - type: WarpPoint
+    follow: true
+    location: replica nuke disk
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: SupermatterImmune # Goobstation

@@ -1,0 +1,16 @@
+- type: reagent
+  id: HynesConcoction
+  name: reagent-name-badsubstance
+  group: Foods
+  desc: reagent-desc-badsubstance
+  physicalDesc: reagent-physical-desc-atrocious
+  flavor: horrid
+  color: gray
+  recognizable: false
+  metabolisms:
+    Poison:
+      effects:
+        - !type:HealthChange
+          damage:
+            types:
+              Poison: 1

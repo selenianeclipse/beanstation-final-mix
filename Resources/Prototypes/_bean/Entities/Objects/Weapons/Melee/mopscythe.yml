@@ -1,0 +1,126 @@
+- type: entity
+  name: mopscythe
+  parent: [BaseMeleeMopEnergy, BaseSecurityContraband]
+  id: MopScythe # i hope you know that seeing as this is the file to document all of my hatred, i had to redownload the repos 10 times. reconfigure VS multiple times. and it took me 4 days to fix my copy after the update that added a shitload of copyright info to every yml and its mom.
+  description: The signature weapon of Nanotrasen's maids. Functions as a mop when unactivated, and a scythe when activated.
+  components: # i bet you're wondering, 'so thats why you moved everything to its own directory' Yes. Yes it fucking is. Maybe Light Yagami was right.
+  - type: Sprite # ME WHEN I HAVE TO REFORMAT THE THING THREE TIMES!!!!!!!!!!!!!!!!!!
+    sprite: _bean\Objects\Weapons\Melee\mopscythe.rsi # if someone forks this + the maid role. i'm so sorry. i fucking hated making this yaml file i actually started kira laughing at the end of it
+    layers:
+    - state: mopscythe
+      map: [ "base" ]
+    - state: mopscythe_scythe
+      color: "#FFFFFF"
+      visible: false
+      shader: unshaded
+      map: [ "scythe" ]
+    - state: fill-2
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+      visible: false
+  - type: Item # little herobrine im coming in your mom # if there is a God he is not yet merciful # i feel like if i put the herobrine part of the slenderman vs herobrine rap here im gonna get shot
+    size: Normal
+    shape:
+    - 0, 0, 3, 1
+  - type: Wieldable
+  - type: Spillable
+    solution: absorbed
+  - type: MeleeRequiresWield # as of me writing this i am still fixing my files. however as of you reading this they are already fixed. don't worry. it never gets better
+  - type: Appearance # i had to come back to this file to fix the size. seeing as this is probably the final change to this file. let my plight be known. i fucking hate yaml
+  - type: SolutionContainerVisuals
+    maxFillLevels: 2
+    fillBaseName: fill-
+    inHandsFillBaseName: -fill-
+    inHandsMaxFillLevels: 2
+  - type: Absorbent
+    pickupAmount: 100
+  - type: UseDelay
+    delay: 1.0
+  - type: SolutionRegeneration
+    solution: absorbed
+    generated:
+     reagents:
+     - ReagentId: Water
+       Quantity: 5
+  - type: SolutionPurge
+    solution: absorbed
+    preserve:
+    - Water
+    quantity: 10
+  - type: SolutionContainerManager # why are we still here, just to suffer
+    solutions:
+     absorbed:
+      maxVol: 100
+  - type: ItemToggleMeleeWeapon
+    soundFailToActivate:
+     path: /Audio/Machines/button.ogg
+     params:
+      variation: 0.25
+    soundActivate:
+     path: /Audio/_Goobstation/Weapons/Effects/nanotrasenenergyon.ogg
+    soundDeactivate:
+     path: /Audio/_Goobstation/Weapons/Effects/nanotrasenenergyoff.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+     path: /Audio/_Goobstation/Weapons/Effects/nanotrasenenergyhum.ogg
+    activatedSoundOnHit:
+     path: /Audio/Weapons/eblade1.ogg
+     params:
+      variation: 0.25
+    activatedSoundOnHitNoDamage:
+     path: /Audio/Weapons/eblade1.ogg
+     params:
+      variation: 0.25
+      volume: -10
+    activatedSoundOnSwing:
+     path: /Audio/Weapons/eblademiss.ogg
+     params:
+      variation: 0.125
+    sprite: _bean\Objects\Weapons\Melee\mopscythe.rsi # i will become the new god of this world and when i do im killing the bastard who invented yaml
+  - type: Reflect
+    reflectProb: 1
+    otherTypeReflectProb: 0.4
+    reflects:
+    - Energy
+  - type: Tag
+    tags:
+    - Mop
+    - MopAdv
+    - EnergySword
+  - type: ItemTogglePointLight
+  - type: ComponentToggler
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    energy: 1.5
+    color: "#e73d51"
+  - type: ThrowableBlocker
+    activatedDamage: # Why Do You Not Work. Fuck you asshole # update it works # NEVERMIND IT FUCKING DOESNT # no it works now
+    types:
+    Slash: 15
+    Heat: 10
+    Structural: 5
+    blockSound:
+     path: /Audio/Weapons/eblade1.ogg
+     params:
+      variation: 0.25
+      volume: -2
+  - type: Sharp
+  - type: Execution
+    doAfterDuration: 4
+  - type: ToggleableLightVisuals
+    spriteLayer: mopscythe
+  - type: GenericVisualizer
+    visuals:
+     enum.WieldableVisuals.Wielded: # Go To hell and never come back
+      scythe:
+       True: { state: mopscythe_blade}
+       False: { state: mopscythe_mop }
+     enum.ToggleVisuals.Toggled:
+      scythe:
+       True: { visible: true }
+       False: { visible: false }
+      base:
+       True: { state: mopscythe_scythe }
+       False: { state: mopscythe }
+  - type: ToggleableLightWieldable
+# my suffering ends here

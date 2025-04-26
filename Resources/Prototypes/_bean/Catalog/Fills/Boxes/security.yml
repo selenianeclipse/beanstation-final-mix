@@ -1,0 +1,18 @@
+# muzzles / blindfold
+- type: entity
+  name: muzzle and blindfold box
+  parent: BoxCardboard
+  id: BoxMuzzleBlindfoldBox
+  description: A box filled with muzzles and blindfolds. Get your head out of the gutter!
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: box_security
+      - state: secrestraints
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesBlindfold
+        amount: 3
+      - id: ClothingMaskMuzzle
+        amount: 3

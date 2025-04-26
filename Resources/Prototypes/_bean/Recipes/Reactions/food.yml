@@ -1,0 +1,29 @@
+- type: reaction
+  id: CookingBadSubstance
+  reactants:
+    Ketchup:
+      amount: 1
+    Mayo:
+      amount: 1
+    Astrotame:
+      amount: 1
+    BbqSauce:
+      amount: 1
+    Coldsauce:
+      amount: 1
+    HorseradishSauce:
+      amount: 1
+    Hotsauce:
+      amount: 1
+    Mustard:
+      amount: 1
+    Soysauce:
+      amount: 1
+    TableSalt:
+      amount: 1
+    Sugar:
+      amount: 1
+    Cornoil:
+      amount: 1
+  products:
+    HynesConcoction: 10

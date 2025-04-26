@@ -1,0 +1,53 @@
+- type: reaction
+  id: SROS
+  reactants:
+    Tritium:
+      amount: 10
+    Aloxadone:
+      amount: 8
+    Atropine:
+      amount: 5
+    Opporozidone:
+      amount: 4
+    Lacerinol:
+      amount: 3
+    Probital:
+      amount: 3
+    Stimulants:
+      amount: 3
+    Synthcells:
+      amount: 2
+  products:
+    SROS: 25
+
+- type: reaction
+  id: NulliferToxin
+  reactants:
+    SROS:
+      amount: 1
+    Ichorubizine:
+      amount: 1
+  products:
+    NulliferToxin: 1
+
+- type: reaction
+  id: Ichorubizine
+  reactants:
+    Phalanximine:
+      amount: 10
+    Omnizine:
+      amount: 8
+    Doxarubixadone:
+      amount: 5
+    Inaprovaline:
+      amount: 4
+    Arithrazine:
+      amount: 3
+    DexalinPlus:
+      amount: 3
+    Iodine:
+      amount: 3
+    Ultravasculine:
+      amount: 2
+  products:
+    Ichorubizine: 25

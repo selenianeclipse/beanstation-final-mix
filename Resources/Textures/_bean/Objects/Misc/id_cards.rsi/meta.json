@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "im blue abeedee abadie",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "idmaid"
+    },
+    {
+      "name": "idoutlaw"
+    },
+    {
+      "name": "idcouncilor"
+    },
+    {
+      "name": "green"
+    },
+    {
+      "name": "default"
+    },
+    {
+      "name": "councilorcolor"
+    }
+  ]
+}

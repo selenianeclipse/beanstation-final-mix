@@ -1,0 +1,38 @@
+- type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSecurityContraband]
+  id: ClothingBeltWaistHolster
+  name: waist holster
+  description: For people who think security belts aren't fashionable.
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Belt/holster.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Belt/holster.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - CigPack
+        - Taser
+        - SecBeltEquip
+        - Radio
+        - Sidearm
+        - MagazinePistol
+        - MagazineMagnum
+        - CombatKnife
+        - Truncheon
+        - BolaEnergy # Goobstation
+        - EnergySpeedloader # Goobstation
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - SmokeOnTrigger
+        - Flash
+        - Handcuff
+        - BallisticAmmoProvider
+        - CartridgeAmmo
+        - DoorRemote
+        - Whistle
+        - BalloonPopper
+    maxItemSize: Huge
+  - type: ExplosionResistance # Goobstation
+    damageCoefficient: 0.5

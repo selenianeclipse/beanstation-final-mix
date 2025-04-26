@@ -1,0 +1,47 @@
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  id: ClothingEyesVisorSecurity
+  name: security visor
+  description: Visor with a security hud and flash protection. Just a little cooler than sunglasses, right?
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Eyes/Glasses/secvisor.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Eyes/Glasses/secvisor.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: GuideHelp
+    guides:
+    - Security
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityContraband]
+  id: ClothingEyesVisorMedSec
+  name: medical-security hybrid visor
+  description: Visor with a security hud and a medical hud. Looks like those 3D glasses from 230 years ago!
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Eyes/Glasses/medsecvisor.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Eyes/Glasses/medsecvisor.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - HudMedicalSecurity
+  - type: GuideHelp
+    guides:
+    - Security
+    - Medical
+  - type: IdentityBlocker
+    coverage: EYES

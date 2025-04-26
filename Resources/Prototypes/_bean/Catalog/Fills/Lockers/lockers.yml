@@ -1,0 +1,139 @@
+# maid
+- type: entity
+  id: LockerMaidFilled
+  suffix: Filled
+  parent: LockerMaid
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+      - id: ClothingUniformSecurityButler
+      - id: ClothingUniformSkirtMaidSec
+      - id: ClothingOuterSecurityApron
+      - id: Bucket
+        amount: 2
+      - id: BoxCleanerGrenades
+        amount: 2
+      - id: BoxSpaceCleaner
+        amount: 2
+      - id: TrashBagBlue
+        amount: 3
+      - id: WetFloorSign
+        amount: 3
+      - id: ClothingBeltWaistHolsterFilled
+      - id: Flash
+        prob: 0.5
+      - id: ClothingEyesVisorSecurity
+        prob: 0.3
+      - id: ClothingUniformSkirtLustMaid
+        prob: 0.1
+      - id: ClothingHeadsetAltSecurityRegular
+      - id: ClothingHandsGlovesColorBlack
+      - id: ClothingShoesSecurityGaloshes
+      - id: HoloprojectorSecurity
+      - id: Holoprojector
+        prob: 0.6
+      - id: SoapNT
+        prob: 0.3
+      - id: BookSpaceLaw
+        prob: 0.5
+# bunker
+- type: entity
+  id: LockerBunkerFilled
+  parent: LockerBunker
+  name: bunker supply closet
+  suffix: Filled
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: secure
+    stateDoorOpen: secure_open
+    stateDoorClosed: largebunker_door
+  - type: StorageFill
+    contents:
+    - id: MedkitAdvancedFilled
+      amount: 2
+    - id: MedkitIPC
+      amount: 2
+    - id: ToolboxBunkerFilled
+    - id: FlashlightLantern
+      amount: 4
+    - id: BoxLighttube
+      amount: 2
+    - id: Bucket
+      amount: 2
+    - id: NitrogenTankFilled
+      amount: 4
+    - id: OxygenTankFilled
+      amount: 4    
+# bunker wall
+- type: entity
+  id: ClosetWallBunkerFilled
+  parent: ClosetWallBunker
+  name: bunker wall closet
+  suffix: Filled
+  description: "A storage unit packed with an assortment of survival items."
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: generic
+    stateDoorOpen: generic_open
+    stateDoorClosed: bunker_door
+  - type: StorageFill
+    contents:
+    - id: BoxRationsBrownies
+    - id: BoxRations  
+    - id: BoxRationsWater
+    - id: ClothingUniformJumpsuitMilitaryColorGrey
+      amount: 2
+    - id: ClothingOuterHardsuitBasic
+    - id: ClothingMaskBreath
+    - id: PaperOffice
+      amount: 4
+    - id: Pen
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: DoubleEmergencyOxygenTankFilled
+# plasma tanks
+- type: entity
+  id: LockerEngineerPlasmaFilled
+  parent: LockerEngineerPlasma
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: PlasmaTankFilled
+        amount: 20
+# councilor
+- type: entity
+  id: LockerCouncilorFilled
+  parent: LockerCouncilor
+  suffix: Filled
+  components:
+  - type: AccessReader
+    access: [ [ "CentralCommand" ] ]
+  - type: StorageFill
+    contents:
+    - id: DoorRemoteAll
+    - id: SpaceCash10000
+    - id: MagazineMagnum
+      amount: 2
+    - id: MagazinePistolTranquil
+    - id: MedkitAdvancedFilled
+    - id: MedkitIPCFilled
+    - id: DrinkWineBottleFull
+    - id: DrinkSakeBottleFull
+    - id: ClothingOuterVestTank
+    - id: ClothingMaskBreath
+    - id: NitrogenTankFilled
+      amount: 3
+    - id: OxygenTankFilled
+      amount: 3
+# outlaw
+- type: entity
+  id: LockerOutlawFilled
+  suffix: Filled
+  parent: LockerOutlaw
+  components:
+  - type: StorageFill
+    contents:
+      - id: Flash # temp until outlaw is more finished

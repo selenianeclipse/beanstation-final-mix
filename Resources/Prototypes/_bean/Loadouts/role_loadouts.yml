@@ -1,0 +1,27 @@
+- type: roleLoadout
+  id: JobCouncilor
+  groups:
+  - CouncilHead
+  - CouncilNeck
+  - CouncilJumpsuit
+  - CouncilBackpack
+  - CouncilOuterClothing
+  - CouncilShoes
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobMaid
+  groups:
+  - MaidHead
+  - MaidJumpsuit
+  - SecurityBackpack
+  - MaidOuterClothing
+  - SecurityBelt
+  - MaidShoes
+  - SurvivalSecurity
+  - MaidGloves
+  - Trinkets
+  - SecurityStar
+  - GroupSpeciesBreathToolSecurity

@@ -1,0 +1,53 @@
+- type: entity
+  name: impure regret
+  parent: [ BaseItem, BaseShield ]
+  id: ImpureRegret
+  description: You feel like this is an obscure reference to something.. blocky.
+  components:
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: Sprite
+    sprite: _bean/Objects/Weapons/Melee/impureregret.rsi
+    state: impureregret
+  - type: MeleeWeapon
+    attackRate: 0.7
+    wideAnimationRotation: -135
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+      params:
+        volume: -3
+    damage:
+      types:
+        Heat: 5
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Structural: 40
+        Heat: 10
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,0
+    - 1,1,1,2
+    sprite: _bean/Objects/Weapons/Melee/impureregret.rsi
+    storedRotation: -45
+  - type: UseDelay
+  - type: EnchantFill
+    enchants:
+      EnchantUnbreaking: 2
+      EnchantFireAspect: 3
+  - type: Blocking
+    passiveBlockModifier:
+     coefficients:
+      Explosive: 2
+      Heat: 1.1
+    activeBlockModifier:
+     coefficients:
+      Explosive: 2
+      Heat: 1.1
+  - type: PhysicalComposition #Goobstation - Recycle update
+    materialComposition:
+      Steel: 250
+      Wood: 125

@@ -1,0 +1,23 @@
+- type: entity
+  name: outlaw medical kit
+  description: "For nefarious purposes. Like healing people! Or robots."
+  parent: Medkit
+  id: MedkitOutlaw
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Medical\firstaidkits.rsi
+    state: outlawkit
+  - type: Item
+    heldPrefix: outlawkit
+
+- type: entity
+  name: ipc repair kit
+  description: "Used to repair IPCs."
+  parent: Medkit
+  id: MedkitIPC
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Medical\firstaidkits.rsi
+    state: ipckit
+  - type: Item
+    heldPrefix: ipckit

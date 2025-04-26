@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSecurityButler
+  name: security butler uniform
+  description: For the guys who can't rock a dress.. or just don't like wearing them.
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Uniforms/Jumpsuit/securitybutler.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Uniforms/Jumpsuit/securitybutler.rsi

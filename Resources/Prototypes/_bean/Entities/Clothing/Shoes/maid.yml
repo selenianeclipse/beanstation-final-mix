@@ -1,0 +1,44 @@
+- type: entity
+  parent: [ ClothingShoesBase, BaseSecurityContraband ]
+  id: ClothingShoesSecurityGaloshes
+  name: security galoshes
+  description: Rubber boots, now in red! Just in case you didn't feel like dealing with heels..
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Shoes/Specific/securitygaloshes.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Shoes/Specific/securitygaloshes.rsi
+  - type: NoSlip
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
+  - type: ClothingModifyStunTime # Goobstation
+    modifier: 0.8
+  - type: ModifyStandingUpTime # Goobstation
+    multiplier: 0.5
+
+- type: entity
+  parent: [ ClothingShoesBase ]
+  id: ClothingShoesSecurityHeels
+  name: security heels and socks
+  description: Good thing they're specifically noslip heels, right? Don't ask how that works.
+  components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 6
+  - type: Sprite
+    sprite: _bean/Clothing/Shoes/Specific/securityheels.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Shoes/Specific/securityheels.rsi
+  - type: NoSlip
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
+  - type: ClothingModifyStunTime # Goobstation
+    modifier: 0.8
+  - type: ModifyStandingUpTime # Goobstation
+    multiplier: 0.5
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHighHeels
+      params:
+        variation: 0.09

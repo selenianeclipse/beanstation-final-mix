@@ -1,0 +1,94 @@
+- type: entity
+  id: BaseMeleeMopEnergy # literally the same as the energy sword but with weaker damage because ummmm i cant get it to work in the mopscythe file <3
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: ItemToggle
+    # Goobstation start
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+      params:
+        variation: 0.250
+    # Goobstation end
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+  - type: ComponentToggler
+    components:
+    - type: Sharp
+    - type: DisarmMalus
+      malus: 0.6
+    - type: Execution
+      doAfterDuration: 4.0
+    - type: Scalpel # Shitmed
+      speed: 0.75
+    - type: Cautery # Shitmed: you have to be very, very careful to cauterize with it
+      speed: 0.2
+    - type: SurgeryTool # Shitmed
+      startSound:
+        path: /Audio/Weapons/ebladehum.ogg
+      endSound:
+        path: /Audio/Weapons/eblade1.ogg
+        params:
+          variation: 0.250
+  - type: ItemToggleHot
+  - type: ItemToggleSize
+    activatedSize: Huge
+  - type: ItemTogglePointLight
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.125
+    activatedDamage:
+      types:
+        Slash: 15
+        Heat: 10
+        Structural: 5
+  - type: MeleeWeapon
+    heavyStaminaCost: 2.5 # goob edit
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 4.5
+    clickPartDamageMultiplier: 4 #goob content
+  - type: Item
+    size: Small
+  - type: UseDelay
+    delay: 1.0
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 2
+    netsync: false
+  - type: Appearance
+  - type: ToggleableLightVisuals # Add support for multiple layers
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: Reflect # Goob edit
+    reflectProb: .5
+    otherTypeReflectProb: .1
+    reflects:
+      - Energy
+  - type: IgnitionSource
+    temperature: 700

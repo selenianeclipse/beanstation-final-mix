@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "i feel a little insane.", 
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pda-maid"
+    },
+    {
+      "name": "id_overlay"
+    },
+    {
+      "name": "pda"
+    },
+    {
+      "name": "light_overlay"
+    },
+    {
+      "name": "pda-councilor",
+      "delays": [
+        [
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ]
+      ]
+    },
+    {
+      "name": "pda-centcom",
+      "delays": [
+        [
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ]
+      ]
+    },
+    {
+      "name": "pda-outlaw"
+    }
+  ]
+}

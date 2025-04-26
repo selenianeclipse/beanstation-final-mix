@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodAttacus
+  name: attacus fursuit mask
+  description: You're honestly just impressed.
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Head/Hoods/attacus.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Head/Hoods/attacus.rsi
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide

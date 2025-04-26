@@ -1,0 +1,59 @@
+- type: entity
+  id: SROSChemistryBottle
+  suffix: synthetic rapid omnisarcoma
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-sros
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+          - ReagentId: SROS
+            Quantity: 30
+
+- type: entity
+  id: IchorubizineChemistryBottle
+  suffix: ichorubizine
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-ichorubizine
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+          - ReagentId: Ichorubizine
+            Quantity: 30
+
+- type: entity
+  id: NullToxinChemistryBottle
+  suffix: nullifier toxin
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-nulltoxin
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+          - ReagentId: NulliferToxin
+            Quantity: 30
+
+- type: entity
+  id: RazoriumChemistryBottle
+  suffix: razorium
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-razorium
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+          - ReagentId: Razorium
+            Quantity: 30

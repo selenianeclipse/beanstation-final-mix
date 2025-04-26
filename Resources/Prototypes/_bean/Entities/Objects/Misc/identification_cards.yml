@@ -1,0 +1,38 @@
+- type: entity
+  parent: IDCardStandard
+  id: MaidIDCard
+  name: maid ID card
+  components:
+    - type: Sprite
+      sprite: _bean\Objects\Misc\id_cards.rsi
+      layers:
+        - state: default
+        - state: idmaid
+    - type: PresetIdCard
+      job: Maid
+
+- type: entity
+  parent: IDCardStandard
+  id: OutlawIDCard
+  name: outlaw ID card
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Misc\id_cards.rsi
+    layers:
+    - state: default
+    - state: idoutlaw
+  - type: PresetIdCard
+    job: Outlaw
+
+- type: entity
+  parent: IDCardStandard
+  id: CouncilorIDCard
+  name: councilor ID card
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Misc\id_cards.rsi
+    layers:
+    - state: councilorcolor
+    - state: idcouncilor
+  - type: PresetIdCard
+    job: Councilor

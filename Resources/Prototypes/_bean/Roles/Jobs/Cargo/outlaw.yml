@@ -1,0 +1,36 @@
+- type: job
+  id: Outlaw
+  name: job-name-outlaw
+  description: job-description-outlaw
+  playTimeTracker: JobOutlaw
+  requirements: # once again we dont really use roletimers cause its a private server but if anyone wants to fork this role for whatever reason...
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 #20 hours
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 72000 #20 hours
+    - !type:OverallPlaytimeRequirement
+      time: 144000 #40 hrs
+  startingGear: OutlawGear
+  icon: "JobIconOutlaw"
+  supervisors: job-supervisors-none
+  canBeAntag: false # basically already a less malicious antag? also syndi + outlaw = overpowered
+  goobcoins: 30 #Goob content
+  access:
+  - Cargo
+  - Maintenance
+  - Salvage
+  - External
+
+- type: startingGear
+  id: OutlawGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    id: OutlawPDA
+    gloves: ClothingHandsGlovesForensic
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    belt: ClothingBeltHolsterFilled
+  storage:
+    back:
+    - Flash

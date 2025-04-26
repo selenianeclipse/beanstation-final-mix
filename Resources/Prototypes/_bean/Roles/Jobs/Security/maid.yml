@@ -1,0 +1,41 @@
+- type: job
+  id: Maid
+  name: job-name-maid
+  description: job-description-maid
+  playTimeTracker: JobMaid
+  requirements:
+    - !type:RoleTimeRequirement # this could probably deal with being higher if you want to fork this considering how cracked it's weapon is lmao
+      role: JobSecurityOfficer
+      time: 18000 #5 hrs
+    - !type:RoleTimeRequirement
+      role: JobJanitor
+      time: 18000 #5 hrs
+  startingGear: MaidGear
+  icon: "JobIconMaid"
+  supervisors: job-supervisors-hos
+  goobcoins: 25 #Goob content
+  access:
+  - Service
+  - Janitor
+  - Maintenance
+#  - Detective # they do Not need det access what was i thinking
+  - Armory
+  - Security
+#  - Command # nor do they neeed command access?? especially now that theyre not command guarddogs
+      
+- type: startingGear
+  id: MaidGear
+  equipment:
+    id: MaidPDA
+    ears: ClothingHeadsetSecurity
+    eyes: ClothingEyesVisorSecurity
+    pocket1: CleanerGrenade
+    pocket2: SprayBottleSpaceCleaner
+  storage:
+    back:
+    - Flash
+    - SecHypo # Goobstation
+    - ClothingMaskGasSecurity # Goobstation
+  inhand:
+  - MopScythe
+  - Bucket

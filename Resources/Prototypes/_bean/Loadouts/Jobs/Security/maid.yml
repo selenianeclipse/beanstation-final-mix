@@ -1,0 +1,48 @@
+# Head
+- type: loadout
+  id: MaidHead
+  equipment:
+    head: ClothingHeadHatWarden
+
+# Jumpsuit
+- type: loadout
+  id: MaidJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformSecurityButler
+    
+- type: loadout
+  id: MaidJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformSkirtMaidSec
+
+# OuterClothing
+- type: loadout
+  id: MaidApron
+  equipment:
+    outerClothing: ClothingOuterSecurityApron
+
+- type: loadout
+  id: MaidVest
+  equipment:
+    outerClothing: ClothingOuterButlerSecVest
+    
+# Shoes
+- type: loadout
+  id: MaidHeels
+  equipment:
+    shoes: ClothingShoesSecurityHeels
+    
+- type: loadout
+  id: MaidGaloshes
+  equipment:
+    shoes: ClothingShoesSecurityGaloshes
+# Gloves
+- type: loadout
+  id: MaidCombatGloves
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+- type: loadout
+  id: MaidGlovesAlt
+  equipment:
+    gloves: ClothingHandsSecurityMaidGloves

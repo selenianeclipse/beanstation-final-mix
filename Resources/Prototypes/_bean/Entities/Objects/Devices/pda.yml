@@ -1,0 +1,73 @@
+- type: entity
+  parent: BaseSecurityPDA
+  id: MaidPDA
+  name: maid PDA
+  description: Smells like bleach, gunpowder and fanservice.
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Devices/pda.rsi
+  - type: Pda
+    id: MaidIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-maid
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#949137"
+  - type: Icon
+    sprite: _bean/Objects/Devices/pda.rsi
+    state: pda-maid
+
+- type: entity
+  parent: CentcomPDA
+  id: CouncilorPDA
+  name: councilor PDA
+  description: Go ahead, bury me. I will not stay dead! # funfact i'm not even a zelda fan
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _bean/Objects/Devices/pda.rsi
+  - type: Pda
+    id: ExecutiveIDCard # google how do i add an alternate pda loadout smiles
+  - type: HealthAnalyzer
+    scanDelay: 0
+    silent: true
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    notificationsEnabled: false
+    diskSpace: 10 # DeltaV
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NewsReaderCartridge
+    - LogProbeCartridge
+    - WantedListCartridge
+    - MedTekCartridge
+    - AstroNavCartridge
+    - NanoChatCartridge # DeltaV
+  - type: Icon
+    sprite: _bean/Objects/Devices/pda.rsi
+    state: pda-councilor
+
+- type: entity
+  parent: BasePDA
+  id: OutlawPDA
+  name: outlaw PDA
+  description: PDA for the guys that keep ordering bombs. All our food keeps blowing up!
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Devices/pda.rsi
+  - type: Pda
+    id: OutlawIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-outlaw
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+  - type: Icon
+    sprite: _bean/Objects/Devices/pda.rsi
+    state: pda-outlaw

@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformSkirtLustMaid
+  name: historically inaccurate maid uniform
+  description: Just another maid suit made by one really cool weeaboo.
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Uniforms/Jumpskirt/lustmaid.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Uniforms/Jumpskirt/lustmaid.rsi
+# forked from luststation
+
+- type: entity
+  parent: [ClothingUniformSkirtBase, BaseSecurityContraband]
+  id: ClothingUniformSkirtMaidSec
+  name: security maid uniform
+  description: Is this really safe for work...?
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Uniforms/Jumpskirt/securitymaid.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Uniforms/Jumpskirt/securitymaid.rsi
