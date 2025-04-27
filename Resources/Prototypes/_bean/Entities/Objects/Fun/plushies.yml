@@ -1,0 +1,36 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieHynes
+  name: hynes plushie
+  description: A cute stuffed toy that looks eerily like a certain immortal man. You kind of want to beat it up. Who even made this..?
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Fun\plushies.rsi
+    state: hynesplushie
+  - type: Item
+    sprite: _bean\Objects\Fun\plushies.rsi
+    heldPrefix: hynesplushie
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 0
+  - type: GibThisGuy # kill that bitch! he'll come back <3
+    requireBoth: false
+    icNames:
+    - Drew Hynes
+    ocNames:
+    - calamitycoalesce
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Uranium # yummy uranium
+        Quantity: 10
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Uranium
+          Quantity: 5

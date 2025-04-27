@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseFoodCondimentBottle
+  id: FoodCondimentBottleConcoction
+  name: hynes' concoction bottle
+  description: It's supposed to be filled with ketchup, but...
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: HynesConcoction
+          Quantity: 30
+  - type: Sprite
+    layers:
+    - state: bottle-empty
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: label-b
+    - state: bottle-alpha-6
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: true
+  # So there's no error.
+  - type: Icon
+    state: bottle-ketchup

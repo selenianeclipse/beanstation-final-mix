@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "rare instance of me actually spriting something by hand",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "hynesplushie"
+    },
+    {
+      "name": "hynesplushie_inhand_right"
+    },
+    {
+      "name": "hynesplushie_inhand_left"
+    }
+  ]
+}

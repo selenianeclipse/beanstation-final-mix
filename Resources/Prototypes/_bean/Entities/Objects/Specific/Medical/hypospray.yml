@@ -1,0 +1,66 @@
+- type: entity
+  name: hyper auto-injector
+  parent: ChemicalMedipen
+  id: HyperAutoInjector
+  description: A rapid dose of Omnizine and an unknown chemical specifically for high-ranking Central Command employees. The warning label says 'NO MORE THAN 4 INJECTIONS AN HOUR.'
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: hyperpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: hyperpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 30
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 25
+        - ReagentId: Stasizium
+          Quantity: 5
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: instant death auto-injector
+  parent: ChemicalMedipen
+  id: InstaDeathAutoInjector
+  suffix: debug
+  description: Loaded full of toxins for the sole purpose of killing the user as fast as possible... Um. Maybe this should be illegal..?
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: hyperpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: hyperpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 80
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 80
+        reagents:
+        - ReagentId: CarpoToxin
+          Quantity: 40
+        - ReagentId: Lexorin
+          Quantity: 20
+        - ReagentId: PolytrinicAcid
+          Quantity: 20
+  - type: Tag
+    tags: []
