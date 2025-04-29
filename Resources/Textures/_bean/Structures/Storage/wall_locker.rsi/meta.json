@@ -10,6 +10,21 @@
     {
       "name": "generic_open"
     },
+    {
+      "name": "generic"
+    },
+    {
+      "name": "generic_door"
+    },
+    {
+      "name": "welded"
+    },
+    {
+      "name": "unlocked"
+    },
+    {
+      "name": "locked"
+    },
 	{
       "name": "bunker_door"
     }

@@ -2,22 +2,22 @@
   parent: JobIcon
   id: JobIconOutlaw
   icon:
-    sprite: _bean/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
     state: Outlaw
   jobName: job-name-outlaw
-  
+
 - type: jobIcon
   parent: JobIcon
   id: JobIconMaid
   icon:
-    sprite: _bean/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
     state: Maid
   jobName: job-name-maid
-  
+
 - type: jobIcon
   parent: JobIcon
   id: JobIconCouncilor
   icon:
-    sprite: _bean/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
     state: Councilor
   jobName: job-name-councilor

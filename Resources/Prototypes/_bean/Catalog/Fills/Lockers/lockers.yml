@@ -37,6 +37,7 @@
         prob: 0.3
       - id: BookSpaceLaw
         prob: 0.5
+      - id: MopScythe
 # bunker
 - type: entity
   id: LockerBunkerFilled
@@ -53,7 +54,7 @@
     contents:
     - id: MedkitAdvancedFilled
       amount: 2
-    - id: MedkitIPC
+    - id: MedkitIPCFilled
       amount: 2
     - id: ToolboxBunkerFilled
     - id: FlashlightLantern
@@ -115,9 +116,7 @@
     contents:
     - id: DoorRemoteAll
     - id: SpaceCash10000
-    - id: MagazineMagnum
-      amount: 2
-    - id: MagazinePistolTranquil
+    - id: BoxCouncilAmmo
     - id: MedkitAdvancedFilled
     - id: MedkitIPCFilled
     - id: DrinkWineBottleFull

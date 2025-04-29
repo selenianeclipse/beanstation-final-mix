@@ -46,3 +46,9 @@
   id: MaidGlovesAlt
   equipment:
     gloves: ClothingHandsSecurityMaidGloves
+
+# misc
+- type: loadout
+  id: SecurityWaistHolster
+  equipment:
+    belt: ClothingBeltWaistHolsterFilled

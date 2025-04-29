@@ -1,0 +1,377 @@
+# magazines
+- type: entity
+  id: MagazinePistolCyanide
+  name: pistol magazine (.45 cyanide)
+  parent: [BaseMagazineMagnum, BaseCentcommContraband]
+  components:
+  - type: Tag
+    tags:
+    - MagazineMagnum
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumCyanide
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    layers:
+    - state: cyanide
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+  
+- type: entity
+  id: MagazinePistolTranquil
+  name: pistol magazine (.45 tranquilizer)
+  parent: [BaseMagazineMagnum, BaseCentcommContraband]
+  components:
+  - type: Tag
+    tags:
+    - MagazineMagnum
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumTranquil
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    layers:
+    - state: tranquil
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazinePistolPacify
+  name: pistol magazine (.45 pacify)
+  parent: [BaseMagazineMagnum, BaseCentcommContraband]
+  components:
+  - type: Tag
+    tags:
+    - MagazineMagnum
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumPacify
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    layers:
+    - state: pacify
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazinePistolHeal
+  name: pistol magazine (.45 heal)
+  parent: [BaseMagazineMagnum, BaseCentcommContraband]
+  components:
+  - type: Tag
+    tags:
+    - MagazineMagnum
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumHeal
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    layers:
+    - state: heal
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazinePistolPracticeAlt
+  name: pistol magazine (.45 practice)
+  parent: [BaseMagazineMagnum, BaseCentcommContraband]
+  components:
+  - type: Tag
+    tags:
+    - MagazineMagnum
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumPractice
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    layers:
+    - state: practice
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+# cartridges
+- type: entity
+  id: CartridgeMagnumCyanide
+  name: shell (.45 cyanide)
+  parent: BaseCartridgeMagnum
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#00FF00"
+  - type: CartridgeAmmo
+    proto: BulletMagnumCyanide
+  - type: ChemicalAmmo
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: Cyanide
+          Quantity: 8
+        - ReagentId: Toxin
+          Quantity: 1
+  - type: SolutionTransfer
+    maxTransferAmount: 9
+
+- type: entity
+  id: CartridgeMagnumTranquil
+  name: shell (.45 tranquilizer)
+  parent: BaseCartridgeMagnum
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#00FF00"
+  - type: CartridgeAmmo
+    proto: BulletMagnumTranquil
+  - type: ChemicalAmmo
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: Nocturine
+          Quantity: 5
+        - ReagentId: ChloralHydrate
+          Quantity: 5
+  - type: SolutionTransfer
+    maxTransferAmount: 10
+
+- type: entity
+  id: CartridgeMagnumPacify
+  name: shell (.45 pacify)
+  parent: BaseCartridgeMagnum
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#00FF00"
+  - type: CartridgeAmmo
+    proto: BulletMagnumPacify
+  - type: ChemicalAmmo
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: Pax
+          Quantity: 7
+        - ReagentId: Fresium
+          Quantity: 3
+  - type: SolutionTransfer
+    maxTransferAmount: 10
+
+- type: entity
+  id: CartridgeMagnumHeal
+  name: shell (.45 heal)
+  parent: BaseCartridgeMagnum
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#00FF00"
+  - type: CartridgeAmmo
+    proto: BulletMagnumHeal
+  - type: ChemicalAmmo
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 3
+        - ReagentId: Dermaline
+          Quantity: 3
+        - ReagentId: Dylovene
+          Quantity: 3
+  - type: SolutionTransfer
+    maxTransferAmount: 9
+
+# bullets
+- type: entity
+  id: BulletMagnumCyanide
+  name: bullet (.45 cyanide)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletPractice
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: ammo
+  - type: DrainableSolution
+    solution: ammo
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 15
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo
+
+- type: entity
+  id: BulletMagnumTranquil
+  name: bullet (.45 tranquil)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletPractice
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: ammo
+  - type: DrainableSolution
+    solution: ammo
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 15
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo
+
+- type: entity
+  id: BulletMagnumPacify
+  name: bullet (.45 pacify)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletPractice
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: ammo
+  - type: DrainableSolution
+    solution: ammo
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 15
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo
+
+- type: entity
+  id: BulletMagnumHeal
+  name: bullet (.45 cyanide)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletPractice
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: ammo
+  - type: DrainableSolution
+    solution: ammo
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 15
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo
+
+# ammobox because i hate making individual ymls for everything
+
+- type: entity
+  name: councilor's ammo box
+  parent: BoxCardboard
+  id: BoxCouncilAmmo
+  description: A set of bullets for the Council's members. Comes with 1 magnum each of Practice, Tranquilizer, Heal, Pacify and Cyanide type bullets.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: councilammobox
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolCyanide
+      - id: MagazinePistolHeal
+      - id: MagazinePistolPacify
+      - id: MagazinePistolPracticeAlt
+      - id: MagazinePistolTranquil
+        amount: 1
+  - type: Storage
+    grid:
+    - 0,0,4,1
+    whitelist:
+        tags:
+        - MagazineMagnum

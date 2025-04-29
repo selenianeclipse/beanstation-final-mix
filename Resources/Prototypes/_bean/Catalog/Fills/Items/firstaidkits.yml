@@ -37,3 +37,16 @@
       - id: Syringe
       - id: Syringe
       - id: AntiPoisonMedipen
+
+- type: entity
+  id: MedkitIPCFilled
+  name: ipc repair kit
+  suffix: Filled
+  parent: MedkitIPC
+  components:
+  - type: StorageFill
+    contents:
+      - id: PowerCellMedium
+      - id: ClothingHeadHatWelding
+      - id: Welder
+      - id: CableApcStack

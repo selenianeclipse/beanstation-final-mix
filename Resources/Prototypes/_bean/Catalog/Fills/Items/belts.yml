@@ -1,0 +1,28 @@
+- type: entity
+  parent: ClothingBeltWaistHolster
+  id: ClothingBeltWaistHolsterFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: Stunbaton
+        - id: Handcuffs
+        - id: Handcuffs
+        - id: HoloprojectorSecurity
+        - id: RadioHandheldSecurity
+        - id: WeaponDisabler
+
+- type: entity
+  parent: ClothingBeltWaistHolster
+  id: ClothingBeltWaistHolsterCouncilFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponPistolCouncilorGun
+        - id: WeaponDisabler
+        - id: Stunbaton
+        - id: Flash
+          amount: 2
+        - id: BoxAmnestizineCartridge
+# gonna be honest i dont know what else to put in here. thats why theres two flashes

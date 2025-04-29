@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMeleeMopEnergy # literally the same as the energy sword but with weaker damage because ummmm i cant get it to work in the mopscythe file <3
-  parent: BaseItem
+  parent: BaseItem #its a dogshit workaround i know
   abstract: true
   components:
   - type: ItemToggle
@@ -55,17 +55,17 @@
         variation: 0.125
     activatedDamage:
       types:
-        Slash: 15
+        Slash: 10 # slight nerf
         Heat: 10
         Structural: 5
   - type: MeleeWeapon
-    heavyStaminaCost: 2.5 # goob edit
+    heavyStaminaCost: 2.5
     wideAnimationRotation: -135
     attackRate: 1
     damage:
       types:
         Blunt: 4.5
-    clickPartDamageMultiplier: 4 #goob content
+    clickPartDamageMultiplier: 4 
   - type: Item
     size: Small
   - type: UseDelay
@@ -76,7 +76,7 @@
     energy: 2
     netsync: false
   - type: Appearance
-  - type: ToggleableLightVisuals # Add support for multiple layers
+  - type: ToggleableLightVisuals
     spriteLayer: blade
     inhandVisuals:
       left:
@@ -92,3 +92,8 @@
       - Energy
   - type: IgnitionSource
     temperature: 700
+  - type: Enchanter # Goobstation
+    minLevel: 2 # unique and generally hard to get
+    maxLevel: 5.25
+    enchants:
+    - EnchantSharpness

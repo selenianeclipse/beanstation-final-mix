@@ -20,6 +20,7 @@ loadout-group-maid-gloves = Maid gloves
 loadout-group-maid-outerclothing = Maid outer clothing
 loadout-group-maid-shoes = Maid shoes
 
+loadout-group-council-head = Councilor head
 loadout-group-council-jumpsuit = Councilor jumpsuit
 loadout-group-council-neck = Councilor neck
 loadout-group-council-outerclothing = Councilor outer clothing

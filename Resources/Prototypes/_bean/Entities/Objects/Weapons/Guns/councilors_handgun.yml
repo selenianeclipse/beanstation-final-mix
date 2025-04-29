@@ -1,0 +1,46 @@
+- type: entity
+  name: councilor's handgun
+  parent: [BaseWeaponPistol, BaseCentcommContraband]
+  id: WeaponPistolCouncilorGun
+  description: A pistol derivative of the Contract Terminator. Personal standard weapon of the Council's members. Preloaded with Tranquilizer type bullets.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Weapons\Guns\councilorhandgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _bean\Objects\Weapons\Guns\councilorhandgun.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 4
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -14
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolTranquil
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineMagnum
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeMagnumTranquil
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgeMagnum

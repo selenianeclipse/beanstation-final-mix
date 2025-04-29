@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "these nuts",
+  "copyright": "these nuts. i actually made the ammo box sprite tho",
   "size": {
     "x": 32,
     "y": 32
@@ -18,6 +18,9 @@
         },
         {
             "name": "outlawbox"
+        },
+        {
+            "name": "councilammobox"
         },
         {
             "name": "box_security"

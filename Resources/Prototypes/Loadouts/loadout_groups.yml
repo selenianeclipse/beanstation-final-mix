@@ -1253,6 +1253,7 @@
   - SecurityBelt
   - SecurityWebbing
   - SecurityJudoBelt # Goobstation - Martial Arts
+  - SecurityWaistHolster
 
 - type: loadoutGroup
   id: SecurityOuterClothing

@@ -1,0 +1,18 @@
+- type: entity
+  suffix: Interview with Garry Smosh
+  parent: CassetteTape
+  id: CassetteTapePlaceholder
+  components:
+  - type: Label
+    currentLabel: Placeholdername
+  - type: TapeCassette
+    recordedData:
+      - timestamp: 2
+        name: Mr Holder
+        message: "He's place."
+      - timestamp: 6
+        name: Mr Place
+        message: "He's holder."
+      - timestamp: 8
+        name: Mr Place & Holder
+        message: "The placeholder brothers."

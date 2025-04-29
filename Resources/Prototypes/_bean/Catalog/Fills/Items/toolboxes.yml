@@ -12,8 +12,9 @@
       - id: CableHVStack
       - id: PowerCellMedium
         amount: 2
+      - id: ClothingHandsGlovesColorYellow
       - id: PowerCellSmall
-        amount: 2
+        amount: 1
       - id: CrowbarRed
       - id: Multitool
       - id: ClothingHeadHatWelding
