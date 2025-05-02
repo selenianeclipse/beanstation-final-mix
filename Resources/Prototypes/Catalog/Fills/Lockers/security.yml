@@ -155,6 +155,7 @@
       - id: Flash
         prob: 0.5
       - id: ClothingEyesGlassesSecurity
+      - id: ClothingEyesVisorSecurity
       - id: ClothingHeadsetAltSecurityRegular # Goobstation
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack

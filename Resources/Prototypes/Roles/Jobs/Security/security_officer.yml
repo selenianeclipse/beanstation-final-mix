@@ -91,7 +91,7 @@
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos
-  canBeAntag: false
+  canBeAntag: true
   goobcoins: 30 #Goob content
   access:
   - Security

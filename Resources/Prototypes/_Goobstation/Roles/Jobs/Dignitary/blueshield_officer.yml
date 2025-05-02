@@ -47,9 +47,9 @@
   weight: 20
   startingGear: BlueshieldOfficerGear
   icon: "JobIconBlueshield"
-  joinNotifyCrew: true
+  joinNotifyCrew: false
   supervisors: job-supervisors-ntr-centcom
-  canBeAntag: false
+  canBeAntag: true
   access:
   - Security
   - Brig

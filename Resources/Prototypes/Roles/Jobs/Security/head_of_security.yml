@@ -150,7 +150,7 @@
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true
   goobcoins: 45 #Goob content
   access:
   - HeadOfSecurity

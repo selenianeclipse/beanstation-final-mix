@@ -76,7 +76,7 @@ humanoid-profile-editor-job-priority-high-button = High
 humanoid-profile-editor-job-priority-medium-button = Medium
 humanoid-profile-editor-job-priority-low-button = Low
 humanoid-profile-editor-job-priority-never-button = Never
-humanoid-profile-editor-naming-rules-warning = Funny joke pending. -Steven
+humanoid-profile-editor-naming-rules-warning = The only banned name is Elon Musk. Reblog if you agree.
 humanoid-profile-editor-markings-tab = Markings
 humanoid-profile-editor-flavortext-tab = Description
 

@@ -24,15 +24,16 @@
   - type: PresetIdCard
     job: Outlaw
 
-- type: entity
-  parent: IDCardStandard
-  id: CouncilorIDCard
-  name: councilor ID card
-  components:
-  - type: Sprite
-    sprite: _bean\Objects\Misc\id_cards.rsi
-    layers:
-    - state: councilorcolor
-    - state: idcouncilor
-  - type: PresetIdCard
-    job: Councilor
+#- type: entity
+#  parent: IDCardStandard
+#  id: CouncilorIDCard
+#  name: councilor ID card
+#  components:
+#  - type: Sprite
+#    sprite: _bean\Objects\Misc\id_cards.rsi
+#    layers:
+#    - state: councilorcolor
+#    - state: idcouncilor
+#  - type: PresetIdCard
+#    job: Councilor
+# councilor already uses exec id so unless that gets removed this is going unused

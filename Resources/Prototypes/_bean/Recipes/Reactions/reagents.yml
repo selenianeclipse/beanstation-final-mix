@@ -1,3 +1,4 @@
+# sros
 - type: reaction
   id: SROS
   reactants:
@@ -51,3 +52,38 @@
       amount: 2
   products:
     Ichorubizine: 25
+# cocaine
+- type: microwaveMealRecipe
+  id: RecipeDriedCoca
+  name: dried coca leaves recipe
+  result: LeavesErythroxylumCocaDried
+  time: 10
+  group: Medicinal
+  solids:
+    LeavesErythroxylumCoca: 3
+
+- type: reaction
+  id: CocaineBase
+  reactants:
+    WeldingFuel:
+      amount: 8
+    SodiumCarbonate:
+      amount: 8
+    PowderedCoca:
+      amount: 10
+    SulfuricAcid:
+      amount: 10
+  products:
+    CocaineBase: 10
+
+- type: reaction
+  id: Cocaine
+  reactants:
+    Acetone:
+      amount: 8
+    Ammonia:
+      amount: 8
+    CocaineBase:
+      amount: 10
+  products:
+    Cocaine: 8

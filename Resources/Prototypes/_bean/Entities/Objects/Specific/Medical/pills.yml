@@ -1,0 +1,369 @@
+# psicodine
+- type: entity
+  name: pill
+  suffix: Psicodine 10u
+  parent: Pill
+  id: PillPsicodine
+  components:
+  - type: Pill
+    pillType: 5
+  - type: Sprite
+    state: pill6
+  - type: Label
+    currentLabel: psicodine 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Psicodine
+          Quantity: 10
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterPsicodine
+  suffix: Psicodine 10u, 7
+  components:
+  - type: Label
+    currentLabel: psicodine 10u
+  - type: StorageFill
+    contents:
+    - id: PillPsicodine
+      amount: 7
+
+- type: entity
+  name: pill canister
+  parent: PillCanister # 3 pill variant
+  id: PillCanisterPsicodineOutlaw
+  suffix: Psicodine 10u, 3
+  components:
+  - type: Label
+    currentLabel: psicodine 10u
+  - type: StorageFill
+    contents:
+    - id: PillPsicodine
+      amount: 3
+# aranesp
+- type: entity
+  name: pill
+  suffix: Aranesp 10u
+  parent: Pill
+  id: PillAranesp
+  components:
+  - type: Pill
+    pillType: 8
+  - type: Sprite
+    state: pill9
+  - type: Label
+    currentLabel: aranesp 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Aranesp
+          Quantity: 10
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterAranesp
+  suffix: Aranesp 10u, 3
+  components:
+  - type: Label
+    currentLabel: aranesp 10u
+  - type: StorageFill
+    contents:
+    - id: PillAranesp
+      amount: 3
+# musiver
+- type: entity
+  name: pill
+  suffix: Musiver 10u
+  parent: Pill
+  id: PillMusiver
+  components:
+  - type: Pill
+    pillType: 10
+  - type: Sprite
+    state: pill11
+  - type: Label
+    currentLabel: musiver 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Musiver
+          Quantity: 10
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterMusiver
+  suffix: Musiver 10u, 3
+  components:
+  - type: Label
+    currentLabel: musiver 10u
+  - type: StorageFill
+    contents:
+    - id: PillMusiver
+      amount: 3
+# genecide
+- type: entity
+  name: pill
+  suffix: Genecide 10u
+  parent: Pill
+  id: PillGenecide
+  components:
+  - type: Pill
+    pillType: 11
+  - type: Sprite
+    state: pill12
+  - type: Label
+    currentLabel: genecide 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Genecide
+          Quantity: 10
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterGenecide
+  suffix: Genecide 10u, 3
+  components:
+  - type: Label
+    currentLabel: genecide 10u
+  - type: StorageFill
+    contents:
+    - id: PillGenecide
+      amount: 3
+# ambuzol
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterAmbuzolOutlaw
+  suffix: Ambuzol 10u, 3
+  components:
+  - type: Label
+    currentLabel: ambuzol 10u
+  - type: StorageFill
+    contents:
+    - id: PillAmbuzol
+      amount: 3
+# artifexium
+- type: entity
+  name: pill
+  suffix: Artifexium 10u
+  parent: Pill
+  id: PillArtifexium
+  components:
+  - type: Pill
+    pillType: 11
+  - type: Sprite
+    state: pill12
+  - type: Label
+    currentLabel: artifexium 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Artifexium
+          Quantity: 10
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterArtifexium
+  suffix: Artifexium 10u, 3
+  components:
+  - type: Label
+    currentLabel: artifexium 10u
+  - type: StorageFill
+    contents:
+    - id: PillArtifexium
+      amount: 3
+# cocaine
+- type: entity
+  name: pill
+  suffix: Cocaine 7u
+  parent: Pill
+  id: PillCocaine
+  components:
+  - type: Pill
+    pillType: 17
+  - type: Sprite
+    state: pill18
+  - type: Label
+    currentLabel: cocaine 7u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Cocaine
+          Quantity: 7
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterCocaine
+  suffix: Cocaine 7u, 3
+  components:
+  - type: Label
+    currentLabel: cocaine 7u
+  - type: StorageFill
+    contents:
+    - id: PillCocaine
+      amount: 3
+# tricordrazine
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterTricordrazineOutlaw
+  suffix: Tricordrazine 10u, 3
+  components:
+  - type: Label
+    currentLabel: tricordrazine 10u
+  - type: StorageFill
+    contents:
+    - id: PillTricordrazineOutlaw
+      amount: 3
+# focalin
+- type: entity
+  name: pill
+  suffix: Dexmethylphenidate 10u
+  parent: Pill
+  id: PillDexmethylphenidate
+  components:
+  - type: Pill
+    pillType: 1
+  - type: Sprite
+    state: pill2
+  - type: Label
+    currentLabel: dexmethylphenidate 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Dexmethylphenidate
+          Quantity: 10
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterDexmethylphenidateOutlaw
+  suffix: Dexmethylphenidate 10u, 3
+  components:
+  - type: Label
+    currentLabel: dexmethylphenidate 10u
+  - type: StorageFill
+    contents:
+    - id: PillDexmethylphenidate
+      amount: 3
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterDexmethylphenidate
+  suffix: Dexmethylphenidate 10u, 7
+  components:
+  - type: Label
+    currentLabel: dexmethylphenidate 10u
+  - type: StorageFill
+    contents:
+    - id: PillDexmethylphenidate
+      amount: 7
+# vials start here
+# vestine
+- type: entity
+  id: VestineChemistryVialOutlaw
+  parent: BaseChemistryEmptyVial
+  suffix: vestine, outlaw
+  components:
+  - type: Label
+    currentLabel: reagent-name-vestine
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 15
+        reagents:
+        - ReagentId: Vestine
+          Quantity: 15
+# napalm
+- type: entity
+  id: NapalmChemistryVial
+  parent: BaseChemistryEmptyVial
+  suffix: napalm
+  components:
+  - type: Label
+    currentLabel: reagent-name-napalm
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 15
+        reagents:
+        - ReagentId: Napalm
+          Quantity: 15
+# tear gas
+- type: entity
+  id: TearGasChemistryVial
+  parent: BaseChemistryEmptyVial
+  suffix: tear gas
+  components:
+  - type: Label
+    currentLabel: reagent-name-tear-gas
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 15
+        reagents:
+        - ReagentId: TearGas
+          Quantity: 15
+# fluorosurfactant
+- type: entity
+  id: FluorosurfactantChemistryVial
+  parent: BaseChemistryEmptyVial
+  suffix: fluorosurfactant
+  components:
+  - type: Label
+    currentLabel: reagent-name-fluorosurfactant
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 15
+        reagents:
+        - ReagentId: Fluorosurfactant
+          Quantity: 15
+# ammoniated mercury
+- type: entity
+  id: AmmoniatedMercuryChemistryVial
+  parent: BaseChemistryEmptyVial
+  suffix: ammoniated mercury
+  components:
+  - type: Label
+    currentLabel: reagent-name-ammoniated-mercury
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 15
+        reagents:
+        - ReagentId: AmmoniatedMercury
+          Quantity: 15
+# thrivia
+- type: entity
+  id: ThriviaChemistryVial
+  parent: BaseChemistryEmptyVial
+  suffix: thrivia
+  components:
+  - type: Label
+    currentLabel: reagent-name-thrivia
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 15
+        reagents:
+        - ReagentId: Thrivia
+          Quantity: 15

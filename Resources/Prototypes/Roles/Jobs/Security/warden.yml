@@ -142,7 +142,7 @@
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
-  canBeAntag: false
+  canBeAntag: true
   goobcoins: 35 #Goob content
   access:
   - Security

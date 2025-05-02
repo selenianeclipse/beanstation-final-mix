@@ -1,0 +1,65 @@
+#- type: entity
+#  parent: SeedBase
+#  name: packet of coca seeds
+#  description: "You probably got these illegally."
+#  id: CocaSeeds
+#  components:
+#    - type: Seed
+#      seedId: erythroxylumCoca
+#    - type: Sprite
+#      sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+# i cannot be bothered to fix this shit dawg. i have 1.5 weeks to finish this update at the time of writing and i cannot be wasting my time on buggy ass seeds
+#- type: seed
+#  id: erythroxylumCoca
+#  name: seeds-coca-name
+#  noun: seeds-noun-seeds
+#  displayName: seeds-coca-display-name
+#  plantRsi: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+#  packetPrototype: CocaSeeds
+#  productPrototypes:
+#    - LeavesErythroxylumCoca
+#  lifespan: 50
+#  maturation: 6
+#  production: 6
+#  yield: 2
+#  idealLight: 9
+#  waterConsumption: 0.60
+#  chemicals:
+#    Vitamin:
+#      Min: 1
+#      Max: 4
+#      PotencyDivisor: 25
+#    Nutriment:
+#      Min: 1
+#      Max: 2
+#      PotencyDivisor: 50
+
+- type: entity
+  name: coca leaves
+  parent: ProduceBase
+  id: LeavesErythroxylumCoca
+  description: "Be honest. You just want to make cocaine."
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+  - type: Produce
+    seedId: erythroxylumCoca
+    sprite:
+      sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+      state: produce
+
+- type: entity
+  name: dried coca leaves
+  parent: BaseItem
+  id: LeavesErythroxylumCocaDried
+  description: "Dried coca leaves."
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+    state: dried
+  - type: Extractable
+    grindableSolutionName: powder
+    juiceSolution:
+      reagents:
+      - ReagentId: PowderedCoca
+        Quantity: 3

@@ -13,16 +13,23 @@
   startingGear: MaidGear
   icon: "JobIconMaid"
   supervisors: job-supervisors-hos
+  canBeAntag: true
   goobcoins: 25 #Goob content
   access:
   - Service
   - Janitor
   - Maintenance
-#  - Detective # they do Not need det access what was i thinking
+  - Detective # they do Not need det access what was i thinking # actually maybe it might be useful to have that
   - Armory
   - Security
 #  - Command # nor do they neeed command access?? especially now that theyre not command guarddogs
-      
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial # goobstation
+    components:
+      - type: SecurityStaff
+
 - type: startingGear
   id: MaidGear
   equipment:
@@ -38,3 +45,4 @@
     - ClothingMaskGasSecurity # Goobstation
   inhand:
   - Bucket
+# - MopScythe # incase i ever change my mind abt it. I probably won't

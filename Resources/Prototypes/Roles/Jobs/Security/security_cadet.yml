@@ -106,7 +106,7 @@
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security
-  canBeAntag: false
+  canBeAntag: true
   goobcoins: 30 #Goob content
   access:
   - Security

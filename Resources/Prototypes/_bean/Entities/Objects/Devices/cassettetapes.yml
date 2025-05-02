@@ -1,5 +1,5 @@
 - type: entity
-  suffix: Interview with Garry Smosh
+  suffix: Mr Placeholder
   parent: CassetteTape
   id: CassetteTapePlaceholder
   components:
