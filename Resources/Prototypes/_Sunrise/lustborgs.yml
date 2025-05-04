@@ -1,0 +1,482 @@
+# "why is everything in one file instead of scattered like the rest of the job stuff?" because i didnt make any of this stuff except for the job icons and delrict/syndi borg designs
+# the least i can do is keep it all in one area as an apology lmao my friends really liked these guys
+# no russian translation of the above text because i dont know russian and i dont trust the translator to not fuck up, sorry
+# chassis
+- type: entity
+  id: BorgChassisSecurity
+  parent: BorgChassisSelectable
+  name: security cyborg
+  components:
+  - type: BorgSwitchableType
+    selectedBorgType: security
+
+# borgtype
+- type: borgType
+  id: security
+
+  # Description
+  dummyPrototype: BorgChassisSecurity
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleSecurity
+
+  defaultModules:
+  - BorgModuleFireExtinguisherAlt
+  - BorgModuleCombat
+  - BorgModuleStun
+
+  radioChannels:
+  - Science
+  - Security
+
+  addComponents:
+  - type: ShowCriminalRecordIcons
+  - type: SiliconLawProvider
+    laws: RobocopLawset
+  - type: FlashImmunity
+#  - type: FabricateCookie
+#    cookieList:
+#    - FoodBakedCookieOatmeal
+#    - FoodBakedCookieRaisin
+#    - FoodBakedCookie
+#    - FoodBakedCookieSugar
+#    - FoodSnackCookieFortune
+#  - type: BorgCuffed
+#  - type: InnateItem
+#    instantActions:
+#    - PortableSurveillanceCameraMonitor
+  - type: Access
+    tags:
+    - EmergencyShuttleRepealAll
+    - Command
+    - Lawyer
+    - Engineering
+    - Medical
+    - Salvage
+    - Cargo
+    - Research
+    - Service
+    - Maintenance
+    - Brig
+    - Security
+    - External
+    - Janitor
+    - Theatre
+    - Bar
+    - Chemistry
+    - Kitchen
+    - Chapel
+    - Hydroponics
+    - Atmospherics
+  - type: AccessReader
+    access: [ [ "Command" ], [ "Security" ] ]
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: sec
+  spriteHasMindState: sec_e
+  spriteNoMindState: sec_e_r
+  spriteToggleLightState: sec_l
+
+  # Pet
+  petSuccessString: petting-success-sec-cyborg
+  petFailureString: petting-failure-sec-cyborg
+
+# modules
+- type: entity
+  id: BaseBorgModuleSecurity
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSecurity
+    
+- type: entity
+  id: BorgModuleStun
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: stun cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-stuh
+  - type: ItemBorgModule
+    moduleId: CombatStun
+    items:
+    - WeaponDisablerBorg
+    - StunbatonBorg
+    - FlashBorg
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: taser-module }
+
+- type: entity
+  id: BorgModuleAdvancedCombat
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: advanced combat cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-combat
+  - type: ItemBorgModule
+    moduleId: CombatWeapons
+    items:
+    - Truncheon
+    - WeaponLaserBorg
+    - WeaponLaserBorg
+    - HoloprojectorSecurityBorg
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: laser-module }
+
+- type: entity
+  id: BorgModuleCombat
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: combat cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-combat
+  - type: ItemBorgModule
+    moduleId: CombatWeaponsAlt
+    items:
+    - CombatKnife
+    - WeaponLaserBorg
+    - HoloprojectorSecurityBorg
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: laser-module }
+
+- type: entity
+  id: BorgModuleFireExtinguisherAlt
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: fire extinguisher cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-fire-extinguisher
+  - type: ItemBorgModule
+    moduleId: CombatTools  
+    items:
+    - CrowbarBorg
+    - FireExtinguisherBorg
+    - HypoBorgStandard
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: extinguisher-module }
+# tools
+- type: entity
+  id: FireExtinguisherBorg
+  name: fire extinguisher borg
+  description: fire extinguisher borg
+  parent: FireExtinguisher
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SolutionRegeneration
+      solution: spray
+      generated:
+        reagents:
+        - ReagentId: Water
+          Quantity: 2
+
+- type: entity
+  parent: PowerCellMedium
+  id: PowerCellRobotTool
+  name: robot tool power cell
+  description: A small cell that self recharges. Used in robot tools.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 4
+
+- type: entity
+  name: robot disabler
+  parent: WeaponDisabler
+  id: WeaponDisablerBorg
+  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+
+- type: entity
+  name: robot stun baton
+  parent: Stunbaton
+  id: StunbatonBorg
+  description: A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+
+- type: entity
+  parent: HoloprojectorSecurity
+  id: HoloprojectorSecurityBorg
+  name: holobarrier robot projector
+  description: Creates a solid but fragile holographic barrier.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellRobotTool
+        locked: true
+
+- type: entity
+  name: robot laser gun
+  parent: BaseWeaponBatterySmall
+  id: WeaponLaserBorg
+  description: This laser for security robot.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _Sunrise/Objects/Tools/items_cyborg.rsi
+    layers:
+    - state: laser_cyborg
+      map: ["enum.GunVisualLayers.Base"]
+    - state: laser_cyborg-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: RedMediumLaser
+    fireCost: 100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 20
+  - type: MagazineVisuals
+    magState: laser_cyborg
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: flash robot
+  parent: Flash
+  id: FlashBorg
+  description: An ultrabright flashbulb with a trigger, which causes the victim to be dazed and lose their eyesight for a moment. Useless when burnt out.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/flash.rsi
+    layers:
+    - state: burnt
+      map: [ "enum.FlashVisuals.BaseLayer" ]
+    - state: flashing
+      map: [ "enum.FlashVisuals.LightLayer" ]
+      visible: false
+      shader: unshaded
+  - type: LimitedCharges
+    maxCharges: 10
+    charges: 10
+  - type: AutoRecharge
+    rechargeDuration: 30
+
+- type: entity
+  name: epinephrine robot hypospray
+  parent: BaseItem
+  description: A borg version of hypospray that automatically regenerates epinephrine.
+  id: HypoBorgStandard
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    state: borghypo
+  - type: Item
+    sprite: Objects/Specific/Medical/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 15
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: Epinephrine
+        Quantity: 0.1
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: true
+    injectOnly: true
+
+- type: entity
+  name: borg crowbar
+  parent: Crowbar
+  id: CrowbarBorg
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Objects/Tools/items_cyborg.rsi
+    state: crowbar_cyborg
+# player sec borg
+- type: entity
+  id: PlayerBorgSecurity
+  parent: BorgChassisSecurity
+  suffix: Battery, Module
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+# job listings.... maybe i should rename this to lustborgs or something
+# i did in fact do that (the old name was secborgs)
+- type: job
+  id: ServiceBorg
+  name: job-name-service-borg
+  description: job-description-service-borg
+  playTimeTracker: JobServiceBorg
+  icon: JobIconServiceBorg
+  supervisors: job-supervisors-human
+  canBeAntag: false
+  jobEntity: PlayerBorgService
+
+- type: job
+  id: SecurityBorg
+  name: job-name-security-borg
+  description: job-description-security-borg
+  playTimeTracker: JobSecurityBorg
+  icon: JobIconSecurityBorg
+  supervisors: job-supervisors-human
+  canBeAntag: false
+  jobEntity: PlayerBorgSecurity
+
+- type: job
+  id: JanitorBorg
+  name: job-name-janitor-borg
+  description: job-description-janitor-borg
+  playTimeTracker: JobJanitorBorg
+  icon: JobIconJanitorBorg
+  supervisors: job-supervisors-human
+  canBeAntag: false
+  jobEntity: PlayerBorgJanitor
+
+- type: job
+  id: EngineerBorg
+  name: job-name-engineer-borg
+  description: job-description-engineer-borg
+  playTimeTracker: JobEngineerBorg
+  icon: JobIconEngineerBorg
+  supervisors: job-supervisors-human
+  canBeAntag: false
+  jobEntity: PlayerBorgEngineer
+
+- type: job
+  id: MiningBorg
+  name: job-name-mining-borg
+  description: job-description-mining-borg
+  playTimeTracker: JobMiningBorg
+  icon: JobIconMiningBorg
+  supervisors: job-supervisors-human
+  canBeAntag: false
+  jobEntity: PlayerBorgMining
+
+- type: job
+  id: MedicalBorg
+  name: job-name-medical-borg
+  description: job-description-medical-borg
+  playTimeTracker: JobMedicalBorg
+  icon: JobIconMedicalBorg
+  supervisors: job-supervisors-human
+  canBeAntag: false
+  jobEntity: PlayerBorgMedical
+# trackers
+- type: playTimeTracker
+  id: JobServiceBorg
+
+- type: playTimeTracker
+  id: JobSecurityBorg
+
+- type: playTimeTracker
+  id: JobJanitorBorg
+
+- type: playTimeTracker
+  id: JobMedicalBorg
+
+- type: playTimeTracker
+  id: JobMiningBorg
+
+- type: playTimeTracker
+  id: JobEngineerBorg
+# job icons
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMedicalBorg
+  icon:
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
+    state: MedicalBorg
+  jobName: job-name-medical-borg
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMiningBorg
+  icon:
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
+    state: MiningBorg
+  jobName: job-name-mining-borg
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconJanitorBorg
+  icon:
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
+    state: JanitorBorg
+  jobName: job-name-janitor-borg
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSecurityBorg
+  icon:
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
+    state: SecurityBorg
+  jobName: job-name-security-borg
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconServiceBorg
+  icon:
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
+    state: ServiceBorg
+  jobName: job-name-service-borg
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconEngineerBorg
+  icon:
+    sprite: /Textures/_bean/Interface/Misc/job_icons.rsi
+    state: EngineerBorg
+  jobName: job-name-engineer-borg
+# i fucking hate lathes
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: BorgModuleAdvancedCombat
+  result: BorgModuleAdvancedCombat
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleCombat
+  result: BorgModuleCombat
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleFireExtinguisherAlt
+  result: BorgModuleFireExtinguisherAlt
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleStun
+  result: BorgModuleStun

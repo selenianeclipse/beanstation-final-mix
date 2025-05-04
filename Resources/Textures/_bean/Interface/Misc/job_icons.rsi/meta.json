@@ -15,6 +15,24 @@
         },
         {
             "name": "Outlaw"
+        },
+        {
+            "name": "MiningBorg"
+        },
+		{
+            "name": "EngineerBorg"
+        },
+        {
+            "name": "MedicalBorg"
+        },
+		{
+            "name": "ServiceBorg"
+        },
+        {
+            "name": "SecurityBorg"
+        },
+		{
+            "name": "JanitorBorg"
         }
     ]
 }

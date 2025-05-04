@@ -10252,4 +10252,11 @@ entities:
     - type: Transform
       pos: -0.11783123,4.753312
       parent: 2
+- proto: SpawnPointBorg
+  entities:
+  - uid: 9795
+    components:
+    - type: Transform
+      pos: -4.5,3.5
+      parent: 2
 ...

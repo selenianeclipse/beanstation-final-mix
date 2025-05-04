@@ -109,6 +109,8 @@
   - Quartermaster
   - SalvageSpecialist
   - Outlaw
+  - MiningBorg
+  weight: 45
 
 - type: department
   id: Civilian
@@ -165,7 +167,7 @@
   - ResearchDirector
   - Quartermaster
 #  - NanotrasenRepresentative # Goobstation
-  # still quite disabled -steve
+# still quite disabled -steve
   - CBURN
   - ERTLeader
   - ERTChaplain
@@ -188,6 +190,8 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  - EngineerBorg
+  weight: 60
 
 - type: department
   id: Medical
@@ -200,14 +204,16 @@
   - MedicalDoctor
   - MedicalIntern
   - Psychologist
+  - MedicalBorg
 #  - Paramedic (entirely unneeded lmao)
+  weight: 70
 
 - type: department
   id: Security
   name: department-Security
   description: department-Security-description
   color: "#DE3A3A"
-  weight: 20
+  weight: 80
   roles:
   - HeadOfSecurity
   - SecurityCadet
@@ -215,6 +221,7 @@
   - Detective
   - Warden
   - Maid
+  - SecurityBorg
 
 - type: department
   id: Science
@@ -225,14 +232,22 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
+  weight: 50
 
 - type: department
   id: Silicon
   name: department-Silicon
   description: department-Silicon-description
   color: "#D381C9"
+  weight: 10
   roles:
   - Borg
+  - ServiceBorg
+  - SecurityBorg
+  - JanitorBorg
+  - EngineerBorg
+  - MiningBorg
+  - MedicalBorg
   - StationAi
   
 - type: department
@@ -240,7 +255,7 @@
   name: department-Service
   description: department-Service-description
   color: "#9FED58"
-  weight: 10
+  weight: 30
   roles:
   - HeadOfPersonnel
   - Botanist
@@ -250,13 +265,14 @@
   - Librarian
   - ServiceWorker
   - Lawyer
+  - JanitorBorg
 
 - type: department
   id: Assistance
   name: department-Assistance
   description: department-Assistance-description
   color: "#a18672"
-  weight: 9
+  weight: 5
   roles:
   - ServiceWorker
   - SecurityCadet

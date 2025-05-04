@@ -197,6 +197,8 @@
   - WeaponDisablerSMG
   # Goobstation R&D Console rework start
   - Terminus
+  # beanbag
+  - BorgModuleAdvancedCombat
   position: 3,3
   technologyPrerequisites:
   - NonlethalAmmunition

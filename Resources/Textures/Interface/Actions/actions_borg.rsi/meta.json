@@ -23,6 +23,12 @@
             "name":"gps-module"
         },
         {
+            "name":"taser-module"
+        },
+        {
+            "name":"laser-module"
+        },
+        {
             "name":"extinguisher-module"
         },
         {

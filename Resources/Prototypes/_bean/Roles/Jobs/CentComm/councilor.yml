@@ -36,6 +36,7 @@
     belt: ClothingBeltWaistHolsterCouncilFilled # this is why they dont need it.
     ears: ClothingHeadsetAltCentCom
     pocket1: AmnestizineHypospray
+    pocket2: CentralCommandBusinessCard
   storage:
     back:
     - HyperAutoInjector
