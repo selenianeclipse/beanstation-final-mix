@@ -1,0 +1,62 @@
+- type: marking
+  id: frostingRosyCheeks
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Gingerbread]
+  sprites:
+  - sprite: _bean\Mobs\Customization\gingerbread_frosting.rsi
+    state: rosycheeks
+
+- type: marking
+  id: frostingLashes
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Gingerbread]
+  sprites:
+  - sprite: _bean\Mobs\Customization\gingerbread_frosting.rsi
+    state: lashes
+
+- type: marking
+  id: frostingGumdropEyes
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Gingerbread]
+  sprites:
+  - sprite: _bean\Mobs\Customization\gingerbread_frosting.rsi
+    state: gumdropeyes
+
+- type: marking
+  id: frostingRibboned
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Gingerbread]
+  sprites:
+  - sprite: _bean\Mobs\Customization\gingerbread_frosting.rsi
+    state: ribboned
+
+- type: marking
+  id: frostingRibcage
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Gingerbread]
+  sprites:
+  - sprite: _bean\Mobs\Customization\gingerbread_frosting.rsi
+    state: ribcage
+
+- type: marking
+  id: frostingSplattered
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Gingerbread]
+  sprites:
+  - sprite: _bean\Mobs\Customization\gingerbread_frosting.rsi
+    state: splatter
+
+- type: marking
+  id: frostingHorns
+  bodyPart: Head
+  markingCategory: HeadTop
+  speciesRestriction: [Gingerbread]
+  sprites:
+  - sprite: _bean\Mobs\Customization\gingerbread_frosting.rsi
+    state: horns

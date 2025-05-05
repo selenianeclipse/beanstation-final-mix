@@ -1,0 +1,39 @@
+{
+  "version":1,
+  "size": {
+    "x":32,
+    "y":32
+  },
+  "copyright":"Copied by CalamityCoalesce",
+  "license":"CC-BY-SA-3.0",
+  "states": [
+    {
+      "name":"rosycheeks",
+      "directions":4
+    },
+    {
+      "name":"lashes",
+      "directions":4
+    },
+    {
+      "name":"ribboned",
+      "directions":4
+    },
+    {
+      "name":"ribcage",
+      "directions":4
+    },
+    {
+      "name":"splatter",
+      "directions":4
+    },
+    {
+      "name":"horns",
+      "directions":4
+    },
+    {
+      "name":"gumdropeyes",
+      "directions":4
+    }
+  ]
+}

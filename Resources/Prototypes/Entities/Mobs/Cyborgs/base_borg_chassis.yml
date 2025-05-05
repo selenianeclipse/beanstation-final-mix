@@ -175,8 +175,8 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 150
+          radius: 0.45
+        density: 120
         mask:
         - MobMask
         layer:

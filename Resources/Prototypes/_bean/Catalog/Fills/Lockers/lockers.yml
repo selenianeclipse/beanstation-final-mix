@@ -114,6 +114,8 @@
     access: [ [ "CentralCommand" ] ]
   - type: StorageFill
     contents:
+    - id: CassetteTapeCouncilIV
+      prob: 0.5
     - id: DoorRemoteAll
     - id: SpaceCash10000
     - id: BoxCouncilAmmo

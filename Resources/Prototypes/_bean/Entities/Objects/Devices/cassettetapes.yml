@@ -1,18 +1,60 @@
 - type: entity
-  suffix: Mr Placeholder
+  suffix: Final Task
   parent: CassetteTape
-  id: CassetteTapePlaceholder
+  id: CassetteTapeCouncilIV
   components:
   - type: Label
-    currentLabel: Placeholdername
+    currentLabel: Final Task
   - type: TapeCassette
     recordedData:
-      - timestamp: 2
-        name: Mr Holder
-        message: "He's place."
+      - timestamp: 1
+        name: Samuel Marlow
+        message: "I have brought you here for a reason, IV."
+      - timestamp: 4
+        name: Myles North
+        message: "And what is that reason?"
       - timestamp: 6
-        name: Mr Place
-        message: "He's holder."
-      - timestamp: 8
-        name: Mr Place & Holder
-        message: "The placeholder brothers."
+        name: Samuel Marlow
+        message: "I have brought you here to tell you something important. You are the only council member I trust to fulfill this."
+      - timestamp: 10
+        name: Samuel Marlow
+        message: "If.. I am not to return from today's shift.. You will take my place as CEO."
+      - timestamp: 13
+        name: Samuel Marlow
+        message: "Your new job will not be an easy one, however, it will not be permanent, either."
+      - timestamp: 17
+        name: Myles North
+        message: "Explain."
+      - timestamp: 22
+        name: Samuel Marlow
+        message: "In this folder.. I have provided the contact details of a more.. 'fringe' group of wizards and mystics."
+      - timestamp: 26
+        name: Samuel Marlow
+        message: "I have a reason to dislike them. But they will be useful to us here. Your task is to revive me, if I am to die."        
+      - timestamp: 32
+        name: Myles North
+        message: "You won't die. I won't allow it! I will die a thousand times to protect you, if I must..!"   
+      - timestamp: 37
+        name: Samuel Marlow
+        message: "Now that my immortality is gone, and Marlett is dead- we can no longer create instances of SROS."
+      - timestamp: 38
+        name: Samuel Marlow
+        message: "My death is unfortunately, inevitable."
+      - timestamp: 45
+        name: Myles North
+        message: "..I.. I guess that is true."
+      - timestamp: 49
+        name: Samuel Marlow
+        message: "There.. is one more thing I must ask of you. It is a large request, but.. one I must make, regardless."
+      - timestamp: 54
+        name: Myles North
+        message: "Say it."
+      - timestamp: 58
+        name: Samuel Marlow
+        message: "If you are unable to revive me for whatever reason.."
+      - timestamp: 63
+        name: Samuel Marlow
+        message: "Finish the job. Fulfill our destiny."
+      - timestamp: 67
+        name: Samuel Marlow
+        message: "Kill them all."

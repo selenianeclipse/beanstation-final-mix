@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: NamesGingerbreadLast
+  values:
+    prefix: names-cookielast-dataset-
+    count: 1
