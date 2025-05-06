@@ -42,7 +42,7 @@
   id: MobGingerbreadEyes
   baseSprite:
     sprite: Mobs/Customization/eyes.rsi
-    state: no_eyes
+    state: higheyes
 
 - type: humanoidBaseSprite
   id: MobGingerbreadHead

@@ -1,0 +1,29 @@
+- type: storeCategory
+  id: OutlawLethal
+  name: store-category-outlaw-lethal
+  priority: 0
+
+- type: storeCategory
+  id: OutlawDisruption
+  name: store-category-outlaw-disruption
+  priority: 1
+
+- type: storeCategory
+  id: OutlawSupport
+  name: store-category-outlaw-support
+  priority: 2
+
+- type: storeCategory
+  id: OutlawWearables
+  name: store-category-outlaw-wearables
+  priority: 3
+  
+- type: storeCategory
+  id: OutlawConversion
+  name: store-category-outlaw-conversion
+  priority: 4
+
+- type: storeCategory
+  id: OutlawPointless
+  name: store-category-outlaw-pointless
+  priority: 5

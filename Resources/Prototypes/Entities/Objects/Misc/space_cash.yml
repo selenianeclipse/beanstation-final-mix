@@ -107,7 +107,9 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 1
-  # </Goobstation>
+  - type: Currency
+    price:
+      Spesos: 1
 
 - type: material
   id: Credit

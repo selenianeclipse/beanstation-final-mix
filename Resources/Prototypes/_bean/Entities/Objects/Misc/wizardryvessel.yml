@@ -1,0 +1,35 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: ClothingMultiOuterHatBase
+  components:
+  - type: Clothing
+    slots:
+    - outerClothing
+    - HEAD
+  - type: Sprite
+    state: icon
+
+- type: entity
+  abstract: true
+  parent: [ClothingMultiOuterHatBase, BaseMagicContraband]
+  id: ClothingOuterWizardryVessel
+  suffix: Wizard Clothes # Goobstation
+  components:
+  - type: WizardClothes
+  - type: Tag # Goobstation
+    tags:
+    - WizardHat
+    - ClothMade
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingOuterWizardryVessel]
+  id: ClothingWizardRobeInvisible # KOBOLDS CANT WIN
+  name: covert wizardry vessel
+  description: A glowing bluespace pin that magically acts as either a wizard robe or hat, turning invisible when worn. Nifty!
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Misc\covert_wizardry_vessel.rsi
+  - type: Clothing
+    sprite: _bean\Objects\Misc\covert_wizardry_vessel.rsi

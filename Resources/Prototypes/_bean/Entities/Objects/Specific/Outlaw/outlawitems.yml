@@ -1,0 +1,199 @@
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesOutlaw
+  name: outlaw gloves
+  description: Like normal gloves, but they're black and green. Cool, right?
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Outlaw\outlawgloves.rsi
+  - type: Clothing
+    sprite: _bean\Objects\Specific\Outlaw\outlawgloves.rsi
+  - type: Fiber
+    fiberColor: fibers-green
+    
+- type: entity
+  parent: ClothingHandsGlovesOutlaw
+  id: ClothingHandsGlovesOutlawInsulated
+  name: insulated outlaw gloves
+  components:
+  - type: Enchanter
+    enchants:
+    - EnchantInsulated
+    - EnchantProtFire
+  - type: Insulated
+
+- type: entity
+  name: outlaw's toolbox
+  parent: ToolboxBase
+  id: ToolboxOutlaw
+  description: A toolbox with tools. What? Did you expect Santa Claus?
+  components:
+  - type: Storage
+    grid:
+    - 0,0,4,3
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Outlaw\outlawtoolbox.rsi
+    state: icon
+  - type: Item
+    sprite: _bean\Objects\Specific\Outlaw\outlawtoolbox.rsi
+
+- type: entity
+  id: ToolboxOutlawFilled
+  name: outlaw's toolbox
+  suffix: Filled
+  parent: ToolboxOutlaw
+  components:
+  - type: StorageFill
+    contents:
+    - id: CrowbarYellow
+    - id: Wrench
+    - id: Wirecutter
+    - id: Screwdriver
+    - id: GasAnalyzer
+    - id: trayScanner
+    - id: FlashlightLantern
+    - id: CableHVStack10
+    - id: CableApcStack10
+    - id: CableMVStack10
+
+- type: entity
+  parent: [BaseItem, BaseMagicContraband]
+  id: BaseHandheldMagicMirror
+  name: handheld magic mirror
+  description: A magical mirror capable of altering your appearance! Retrieved from the castle of an ancient wizardry cult.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Outlaw\outlawmirror.rsi
+    state: icon
+  - type: WizardMirror
+    allowedSpecies:
+    - Human
+    - Reptilian
+    - SlimePerson
+    - Diona
+    - Vulpkanin
+    - Harpy
+    - Rodentia
+    - Oni
+    - Arachnid
+    - Moth
+    - Gingerbread
+    - Vox
+    - Resomi
+    - IPC
+    - BananaMen
+    - Kobold
+    - Monkey
+    - Tajaran
+  - type: ActivatableUI
+    key: enum.WizardMirrorUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.WizardMirrorUiKey.Key:
+        type: WizardMirrorBoundUserInterface
+  - type: Reflect
+    reflectProb: .5 # not crazy
+
+- type: entity
+  parent: [JawsOfLife, BaseMinorContraband]
+  id: JawsOfLifeBad
+  name: discount jaws of life
+  description: A cheap copy of the classic. Slow to the point of being borderline useless.
+  components:
+  - type: Prying
+    speedModifier: 0.1
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 2
+    damage:
+      types:
+        Blunt: 5
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: BaseImplantOnlyOutlawImplanter
+  parent: [ BaseImplantOnlyImplanter, BaseMajorContraband ]
+  name: outlaw implanter
+  description: A disposable syringe for all of your illegal implantation needs. No, you don't get anesthetic.
+  abstract: true
+  components:
+  - type: Item
+    sprite: _bean\Objects\Specific\Outlaw\outlawimplanter.rsi
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Outlaw\outlawimplanter.rsi
+    state: implanter1
+    layers:
+      - state: implanter0
+        map: [ "implantFull" ]
+        visible: true
+      - state: implanter1
+        map: [ "implantOnly" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ImplanterVisuals.Full:
+        implantFull:
+          True: {visible: true}
+          False: {visible: false}
+      enum.ImplanterImplantOnlyVisuals.ImplantOnly:
+        implantOnly:
+          True: {state: broken}
+          False: {state: implanter1}
+  - type: Tag
+    tags: []
+
+- type: entity
+  id: OutlawNutrimentImplant
+  suffix: nutriment pump implanter
+  parent: BaseImplantOnlyOutlawImplanter
+  components:
+  - type: Implanter
+    implant: NutrimentPumpImplant
+
+- type: entity
+  id: OutlawStorageImplant
+  suffix: storage implanter
+  parent: BaseImplantOnlyOutlawImplanter
+  components:
+  - type: Implanter
+    implant: StorageImplant
+
+- type: entity
+  id: OutlawSpaceProofImplant
+  suffix: spaceproof implanter
+  parent: BaseImplantOnlyOutlawImplanter
+  components:
+  - type: Implanter
+    implant: SpaceProofImplant
+
+- type: entity
+  id: OutlawMindControlImplant
+  suffix: mind control implanter
+  parent: BaseImplantOnlyOutlawImplanter
+  components:
+  - type: Implanter
+    implant: MindcontrolImplant

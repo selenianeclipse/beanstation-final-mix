@@ -280,7 +280,7 @@
 # vestine
 - type: entity
   id: VestineChemistryVialOutlaw
-  parent: BaseChemistryEmptyVial
+  parent: [BaseChemistryEmptyVial, BaseMinorContraband]
   suffix: vestine, outlaw
   components:
   - type: Label
@@ -295,7 +295,7 @@
 # napalm
 - type: entity
   id: NapalmChemistryVial
-  parent: BaseChemistryEmptyVial
+  parent: [BaseChemistryEmptyVial, BaseMinorContraband]
   suffix: napalm
   components:
   - type: Label
@@ -355,7 +355,7 @@
 # thrivia
 - type: entity
   id: ThriviaChemistryVial
-  parent: BaseChemistryEmptyVial
+  parent: [BaseChemistryEmptyVial, BaseMinorContraband]
   suffix: thrivia
   components:
   - type: Label

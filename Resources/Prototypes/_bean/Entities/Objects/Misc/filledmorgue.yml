@@ -1,0 +1,11 @@
+- type: entity
+  parent: Morgue
+  id: MorgueFilled
+  name: morgue
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: SalvageHumanCorpse
+        amount: 1
+        prob: 0.3
