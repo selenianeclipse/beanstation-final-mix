@@ -87,3 +87,18 @@
       amount: 10
   products:
     Cocaine: 8
+
+- type: reaction
+  id: SkibidiBomb
+  reactants:
+    SigmaJuice:
+      amount: 1
+    Omnispoke:
+      amount: 1
+  effects:
+    - !type:ExplosionReactionEffect
+      explosionType: Default
+      maxIntensity: 100
+      intensityPerUnit: 1
+      intensitySlope: 4
+      maxTotalIntensity: 100

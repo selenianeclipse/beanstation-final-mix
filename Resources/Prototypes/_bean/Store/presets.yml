@@ -5,9 +5,12 @@
   - type: Store
     name: store-preset-name-outlaw
     categories:
-    - OutlawLethal
+    - OutlawWeapons
+    - OutlawExplosives
     - OutlawDisruption
+    - OutlawChemicals
     - OutlawSupport
+    - OutlawResources
     - OutlawWearables
     - OutlawConversion
     - OutlawPointless

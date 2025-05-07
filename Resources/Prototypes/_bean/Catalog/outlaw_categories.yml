@@ -1,29 +1,44 @@
 - type: storeCategory
-  id: OutlawLethal
-  name: store-category-outlaw-lethal
+  id: OutlawWeapons
+  name: store-category-outlaw-weapon
   priority: 0
+
+- type: storeCategory
+  id: OutlawExplosives
+  name: store-category-outlaw-explosives
+  priority: 1
 
 - type: storeCategory
   id: OutlawDisruption
   name: store-category-outlaw-disruption
-  priority: 1
+  priority: 2
+
+- type: storeCategory
+  id: OutlawChemicals
+  name: store-category-outlaw-chemicals
+  priority: 3
 
 - type: storeCategory
   id: OutlawSupport
   name: store-category-outlaw-support
-  priority: 2
+  priority: 4
+
+- type: storeCategory
+  id: OutlawResources
+  name: store-category-outlaw-resources
+  priority: 4
 
 - type: storeCategory
   id: OutlawWearables
   name: store-category-outlaw-wearables
-  priority: 3
+  priority: 5
   
 - type: storeCategory
   id: OutlawConversion
   name: store-category-outlaw-conversion
-  priority: 4
+  priority: 6
 
 - type: storeCategory
   id: OutlawPointless
   name: store-category-outlaw-pointless
-  priority: 5
+  priority: 7

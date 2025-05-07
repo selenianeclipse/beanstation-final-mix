@@ -496,6 +496,8 @@
     - id: HoloprojectorSecurity
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
+    - id: PlushieHynes
+      prob: 0.3
     #- id: WeaponDisabler #Goobstation (Disablers in belts)
     - id: WantedListCartridge
     - id: DrinkHosFlask

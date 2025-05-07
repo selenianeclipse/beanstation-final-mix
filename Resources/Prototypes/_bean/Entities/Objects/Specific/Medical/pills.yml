@@ -276,6 +276,38 @@
     contents:
     - id: PillDexmethylphenidate
       amount: 7
+# 'enhancement' pills
+- type: entity
+  name: pill
+  suffix: Enhancement 10u
+  parent: Pill
+  id: PillEnhancement
+  components:
+  - type: Pill
+    pillType: 1
+  - type: Sprite
+    state: pill2
+  - type: Label
+    currentLabel: enhancement 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 10
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterEnhancementOutlaw
+  suffix: Enhancement 10u, 3
+  components:
+  - type: Label
+    currentLabel: enhancement 10u
+  - type: StorageFill
+    contents:
+    - id: PillEnhancement
+      amount: 3
 # vials start here
 # vestine
 - type: entity

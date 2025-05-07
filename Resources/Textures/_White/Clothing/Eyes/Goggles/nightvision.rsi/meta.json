@@ -37,6 +37,9 @@
       "name": "icon"
     },
     {
+      "name": "primed"
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },

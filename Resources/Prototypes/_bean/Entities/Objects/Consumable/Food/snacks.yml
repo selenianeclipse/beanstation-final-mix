@@ -1,0 +1,30 @@
+- type: entity
+  name: deluxe centauri birdseed
+  parent: FoodSnackBase
+  id: FoodSnackBirdseed
+  description: Directly from the planet of Proxima Centauri C, this is some.. Pretty good birdseed, honestly. A vox favorite!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - salty
+      - nutty
+  - type: Sprite
+    sprite: _bean\Objects\Consumable\Food\birdseed.rsi
+    state: icon
+  - type: Item
+  - type: Food
+    trash: 
+    - FoodPacketBirdseedTrash
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: FoodPacketTrash
+  id: FoodPacketBirdseedTrash
+  name: birdseed packet
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Consumable\Food\birdseed.rsi
+    state: trash

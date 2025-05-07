@@ -4,7 +4,7 @@
   description: outlaw-doorjack-desc
   productEntity: DoorJack
   cost:
-    Telecrystal: 65
+    Telecrystal: 45
   categories:
   - OutlawDisruption
   
@@ -14,7 +14,7 @@
   description: outlaw-empgrenade-desc
   productEntity: BoxEmpGrenadeOutlaw
   cost:
-    Telecrystal: 40
+    Telecrystal: 15
   categories:
   - OutlawDisruption
   
@@ -24,7 +24,7 @@
   description: outlaw-medkit-desc
   productEntity: OutlawMedkitFilled
   cost:
-    Telecrystal: 65
+    Telecrystal: 15
   categories:
   - OutlawSupport
   
@@ -34,7 +34,7 @@
   description: outlaw-medkitipc-desc
   productEntity: OutlawMedkitIPCFilled
   cost:
-    Telecrystal: 65
+    Telecrystal: 15
   categories:
   - OutlawSupport
   
@@ -44,9 +44,9 @@
   description: outlaw-medkitevil-desc
   productEntity: OutlawMedkitEvilFilled
   cost:
-    Telecrystal: 95
+    Telecrystal: 50
   categories:
-  - OutlawLethal
+  - OutlawChemicals
 
 - type: listing
   id: OutlawGloves
@@ -64,7 +64,7 @@
   description: outlaw-glovesinsul-desc
   productEntity: ClothingHandsGlovesOutlawInsulated
   cost:
-    Telecrystal: 45
+    Telecrystal: 35
   categories:
   - OutlawWearables
 
@@ -74,9 +74,9 @@
   description: outlaw-toolkit-desc
   productEntity: ToolboxOutlawFilled
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
-  - OutlawDisruption
+  - OutlawResources
 
 - type: listing
   id: OutlawPsicodine
@@ -84,9 +84,9 @@
   description: outlaw-psicodine-desc
   productEntity: PillCanisterPsicodineOutlaw
   cost:
-    Telecrystal: 25
+    Telecrystal: 15
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawNapalm
@@ -94,9 +94,9 @@
   description: outlaw-napalm-desc
   productEntity: NapalmChemistryVial
   cost:
-    Telecrystal: 45
+    Telecrystal: 30
   categories:
-  - OutlawLethal
+  - OutlawChemicals
 
 - type: listing
   id: OutlawAranesp
@@ -104,9 +104,9 @@
   description: outlaw-aranesp-desc
   productEntity: PillCanisterAranesp
   cost:
-    Telecrystal: 45
+    Telecrystal: 35
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawFluorosurfactant
@@ -116,7 +116,7 @@
   cost:
     Telecrystal: 15
   categories:
-  - OutlawPointless
+  - OutlawChemicals
 
 - type: listing
   id: OutlawMusiver
@@ -124,9 +124,9 @@
   description: outlaw-musiver-desc
   productEntity: PillCanisterMusiver
   cost:
-    Telecrystal: 85
+    Telecrystal: 45
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawAmbuzol
@@ -134,9 +134,9 @@
   description: outlaw-ambuzol-desc
   productEntity: PillCanisterAmbuzolOutlaw
   cost:
-    Telecrystal: 150
+    Telecrystal: 110
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawGenecide
@@ -144,9 +144,9 @@
   description: outlaw-genecide-desc
   productEntity: PillCanisterGenecide
   cost:
-    Telecrystal: 85
+    Telecrystal: 55
   categories:
-  - OutlawLethal
+  - OutlawChemicals
 
 - type: listing
   id: OutlawArtifexium
@@ -154,9 +154,9 @@
   description: outlaw-artifexium-desc
   productEntity: PillCanisterArtifexium
   cost:
-    Telecrystal: 35
+    Telecrystal: 15
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawDexmethylphenidate
@@ -164,9 +164,9 @@
   description: outlaw-dexmethylphenidate-desc
   productEntity: PillCanisterDexmethylphenidateOutlaw
   cost:
-    Telecrystal: 25
+    Telecrystal: 15
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawAmmoniatedMercury
@@ -174,9 +174,9 @@
   description: outlaw-ammoniatedmercury-desc
   productEntity: AmmoniatedMercuryChemistryVial
   cost:
-    Telecrystal: 50
+    Telecrystal: 35
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawThrivia
@@ -184,9 +184,9 @@
   description: outlaw-thrivia-desc
   productEntity: ThriviaChemistryVial
   cost:
-    Telecrystal: 85
+    Telecrystal: 40
   categories:
-  - OutlawSupport
+  - OutlawChemicals
 
 - type: listing
   id: OutlawCocaPlant
@@ -194,9 +194,19 @@
   description: outlaw-cocaineplant-desc
   productEntity: LeavesErythroxylumCoca
   cost:
-    Telecrystal: 85
+    Telecrystal: 25
   categories:
-  - OutlawPointless
+  - OutlawResources
+
+- type: listing
+  id: OutlawOhioWeed
+  name: outlaw-ohioweed-name
+  description: outlaw-ohioweed-desc
+  productEntity: LeavesOhioWeed
+  cost:
+    Telecrystal: 15
+  categories:
+  - OutlawResources
 
 - type: listing
   id: OutlawNukeDisk
@@ -214,9 +224,9 @@
   description: outlaw-spareparts-desc
   productEntity: SalvageHumanCorpse
   cost:
-    Telecrystal: 45
+    Telecrystal: 15
   categories:
-  - OutlawPointless
+  - OutlawResources
 
 - type: listing
   id: OutlawMagicMirror
@@ -224,7 +234,7 @@
   description: outlaw-magicmirror-desc
   productEntity: BaseHandheldMagicMirror
   cost:
-    Telecrystal: 65
+    Telecrystal: 30
   categories:
   - OutlawDisruption
 
@@ -234,9 +244,9 @@
   description: outlaw-jawsbad-desc
   productEntity: JawsOfLifeBad
   cost:
-    Telecrystal: 5
+    Telecrystal: 1
   categories:
-  - OutlawDisruption
+  - OutlawPointless
 
 - type: listing
   id: OutlawJawsGood
@@ -244,7 +254,7 @@
   description: outlaw-jawsgood-desc
   productEntity: JawsOfLife
   cost:
-    Telecrystal: 45
+    Telecrystal: 25
   categories:
   - OutlawDisruption
 
@@ -254,11 +264,350 @@
   description: outlaw-mindcontrol-desc
   productEntity: OutlawMindControlImplant
   cost:
-    Telecrystal: 95
+    Telecrystal: 75
   categories:
   - OutlawDisruption
-# remember to add the rest of the implants + the improvised weapons
-# also try to figure out the funny new plant with omniaccent
+
+- type: listing
+  id: OutlawImplanterSpaceProof
+  name: outlaw-spaceproof-name
+  description: outlaw-spaceproof-desc
+  productEntity: OutlawSpaceProofImplant
+  cost:
+    Telecrystal: 70
+  categories:
+  - OutlawSupport
+
+- type: listing
+  id: OutlawStorageImplantPump
+  name: outlaw-storageimplant-name
+  description: outlaw-storageimplant-desc
+  productEntity: OutlawStorageImplant
+  cost:
+    Telecrystal: 35
+  categories:
+  - OutlawSupport
+
+- type: listing
+  id: OutlawImplanterNutrimentPump
+  name: outlaw-nutriimplant-name
+  description: outlaw-nutriimplant-desc
+  productEntity: OutlawNutrimentImplant
+  cost:
+    Telecrystal: 25
+  categories:
+  - OutlawSupport
+
+- type: listing
+  id: OutlawEnhancementPills
+  name: outlaw-enhancement-name
+  description: outlaw-enhancement-desc
+  productEntity: PillCanisterEnhancementOutlaw
+  cost:
+    Telecrystal: 1
+  categories:
+  - OutlawPointless
+
+- type: listing
+  id: OutlawImpureRegret
+  name: outlaw-impureregret-name
+  description: outlaw-impureregret-desc
+  productEntity: ImpureRegret
+  cost:
+    Telecrystal: 55
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawMaidUniform
+  name: outlaw-maiduniform-name
+  description: outlaw-maiduniform-desc
+  productEntity: ClothingUniformSkirtLustMaid
+  cost:
+    Telecrystal: 5
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawRestraints
+  name: outlaw-restraints-name
+  description: outlaw-restraints-desc
+  productEntity: BoxRestraintsOutlaw
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawWeldingMask
+  name: outlaw-weldmask1-name
+  description: outlaw-weldmask1-desc
+  productEntity: ClothingHeadHatWeldingMaskFlame
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawWeldingMaskAlt
+  name: outlaw-weldmask2-name
+  description: outlaw-weldmask2-desc
+  productEntity: ClothingHeadHatWeldingMaskFlameBlue
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawModularGrenade
+  name: outlaw-modulargrenade-name
+  description: outlaw-modulargrenade-desc
+  productEntity: ToolboxModularGrenadeFilled
+  cost:
+    Telecrystal: 30
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawShotgunBad
+  name: outlaw-shotgunbad-name
+  description: outlaw-shotgunbad-desc
+  productEntity: CrateOutlawShotgunImprovised
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawCannon
+  name: outlaw-cannon-name
+  description: outlaw-cannon-desc
+  productEntity: CrateOutlawCannon
+  cost:
+    Telecrystal: 5
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawBow
+  name: outlaw-bow-name
+  description: outlaw-bow-desc
+  productEntity: CrateOutlawBow
+  cost:
+    Telecrystal: 15
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawNVBomb
+  name: outlaw-nvbomb-name
+  description: outlaw-nvbomb-desc
+  productEntity: ClothingEyesNightVisionGogglesFake
+  cost:
+    Telecrystal: 45
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawScissors
+  name: outlaw-scissors-name
+  description: outlaw-scissors-desc
+  productEntity: BarberScissors
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawPointless
+
+- type: listing
+  id: OutlawFakeID
+  name: outlaw-fakeid-name
+  description: outlaw-fakeid-desc
+  productEntity: AgentIDCard
+  cost:
+    Telecrystal: 50
+  categories:
+  - OutlawDisruption
+
+- type: listing
+  id: OutlawC4
+  name: outlaw-c4-name
+  description: outlaw-c4-desc
+  productEntity: C4
+  cost:
+    Telecrystal: 60
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawFireBomb
+  name: outlaw-firebomb-name
+  description: outlaw-firebomb-desc
+  productEntity: FireBomb
+  cost:
+    Telecrystal: 30
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawNoslipShoes
+  name: outlaw-noslip-name
+  description: outlaw-noslip-desc
+  productEntity: ClothingShoesChameleonNoSlips
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawFlashbang
+  name: outlaw-flashbang-name
+  description: outlaw-flashbang-desc
+  productEntity: BoxFlashbangOutlaw
+  cost:
+    Telecrystal: 20
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawMaterials
+  name: outlaw-materials-name
+  description: outlaw-materials-desc
+  productEntity: CrateOutlawMaterials
+  cost:
+    Telecrystal: 30
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawMaterialsExotic
+  name: outlaw-materialsexotic-name
+  description: outlaw-materialsexotic-desc
+  productEntity: CrateOutlawMaterialsExotic
+  cost:
+    Telecrystal: 65
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawMaterialsRare
+  name: outlaw-materialsrare-name
+  description: outlaw-materialsrare-desc
+  productEntity: CrateOutlawMaterialsRare
+  cost:
+    Telecrystal: 100
+  categories:
+  - OutlawResources
+  
+- type: listing
+  id: OutlawCassette
+  name: outlaw-cassette-name
+  description: outlaw-cassette-desc
+  productEntity: CassetteTape
+  cost:
+    Telecrystal: 5
+  categories:
+  - OutlawResources
+  
+- type: listing
+  id: OutlawTapeRecorder
+  name: outlaw-taperecorder-name
+  description: outlaw-taperecorder-desc
+  productEntity: TapeRecorder
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawDisruption
+  
+- type: listing
+  id: OutlawEmag
+  name: outlaw-emag-name
+  description: outlaw-emag-desc
+  productEntity: Emag
+  cost:
+    Telecrystal: 70
+  categories:
+  - OutlawDisruption
+
+- type: listing
+  id: OutlawPipeBomb
+  name: outlaw-pipebomb-name
+  description: outlaw-pipebomb-desc
+  productEntity: PipeBomb
+  cost:
+    Telecrystal: 40
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawTrickGrenade
+  name: outlaw-trickbomb-name
+  description: outlaw-trickbomb-desc
+  productEntity: GrenadeDummy
+  cost:
+    Telecrystal: 5
+  categories:
+  - OutlawPointless
+
+- type: listing
+  id: OutlawShrapnelGrenade
+  name: outlaw-shrapnel-name
+  description: outlaw-shrapnel-desc
+  productEntity: GrenadeShrapnel
+  cost:
+    Telecrystal: 35
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawLubeGlue
+  name: outlaw-lubeglue-name
+  description: outlaw-lubeglue-desc
+  productEntity: BoxReagentGrenades
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawExplosives
+
+- type: listing
+  id: OutlawMetalFoam
+  name: outlaw-metalfoam-name
+  description: outlaw-metalfoam-desc
+  productEntity: MetalFoamGrenade
+  cost:
+    Telecrystal: 20
+  categories:
+  - OutlawSupport
+
+- type: listing
+  id: OutlawThiefGloves
+  name: outlaw-thiefgloves-name
+  description: outlaw-thiefgloves-desc
+  productEntity: ThievingGloves
+  cost:
+    Telecrystal: 35
+  categories:
+  - OutlawWearables
+  
+- type: listing
+  id: OutlawContortSuit
+  name: outlaw-contortsuit-name
+  description: outlaw-contortsuit-desc
+  productEntity: ClothingUniformJumpsuitAtmosSyndie
+  cost:
+    Telecrystal: 50
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawContortSuitAdvanced
+  name: outlaw-contortsuitadvanced-name
+  description: outlaw-contortsuitadvanced-desc
+  productEntity: ClothingUniformJumpsuitAtmosSyndieAdvanced
+  cost:
+    Telecrystal: 110
+  categories:
+  - OutlawWearables
+
 # conversions
 - type: listing
   id: SpesosTeleTransaction1

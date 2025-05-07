@@ -1,3 +1,4 @@
+# most of this will be redistributed to it's own files... eventually.
 - type: entity
   parent: ClothingHandsGlovesColorBlack
   id: ClothingHandsGlovesOutlaw
@@ -197,3 +198,277 @@
   components:
   - type: Implanter
     implant: MindcontrolImplant
+
+- type: entity
+  name: ohio weed
+  parent: ProduceBase
+  id: LeavesOhioWeed
+  description: A variant of Cannabis from the ancient state of Ohio.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Specific\Hydroponics\ohioweed.rsi
+  - type: Produce
+    seedId: ohioWeed
+    sprite:
+      sprite: _bean\Objects\Specific\Hydroponics\ohioweed.rsi
+      state: produce
+  - type: Extractable
+    grindableSolutionName: powder
+    juiceSolution:
+      reagents:
+      - ReagentId: Omnispoke
+        Quantity: 15
+      - ReagentId: THC
+        Quantity: 10
+
+- type: reagent
+  id: Omnispoke
+  name: reagent-name-omnispoke
+  group: Botanical
+  desc: reagent-desc-omnispoke
+  flavor: spicy
+  color: "#00fffb"
+  physicalDesc: reagent-physical-desc-powdered
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+           Blunt: 0.1
+           Asphyxiation: 0.2
+      - !type:GenericStatusEffect
+        key: Brainrotted
+        component: OhioAccent
+      - !type:GenericStatusEffect
+        key: GermanSpeech
+        component: GermanAccent
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: StutteringAccent
+      - !type:GenericStatusEffect
+        key: MobsterSpeech
+        component: MobsterAccent
+      - !type:GenericStatusEffect
+        key: OWOSpeech
+        component: OwOAccent
+      - !type:GenericStatusEffect
+        key: PirateSpeech
+        component: PirateAccent
+      - !type:GenericStatusEffect
+        key: LizardSpeech
+        component: LizardAccent
+      - !type:GenericStatusEffect
+        key: FrenchSpeech
+        component: FrenchAccent
+      - !type:GenericStatusEffect
+        key: MothSpeech
+        component: MothAccent
+      - !type:GenericStatusEffect
+        key: SkeletonSpeech
+        component: SkeletonAccent
+      - !type:GenericStatusEffect
+        key: SouthernSpeech
+        component: SouthernAccent
+      - !type:GenericStatusEffect
+        key: SlurredSpeech
+        component: SlurredAccent
+      - !type:GenericStatusEffect
+        key: SpanishSpeech
+        component: SpanishAccent
+
+- type: entity
+  name: restraints box
+  parent: [BoxCardboard, BaseMajorContraband]
+  id: BoxRestraintsOutlaw
+  description: A box containing a muzzle, a blindfold, handcuffs, and an energy bola.
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: outlawbox
+      - state: secrestraints
+  - type: Storage
+    grid:
+    - 0,0,3,1
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: BolaEnergy
+      - id: ClothingEyesBlindfold
+      - id: ClothingMaskMuzzle
+      - id: FoodSnackLollypopWrappedMystery
+
+- type: entity
+  id: ToolboxModularGrenadeFilled
+  name: outlaw's toolbox
+  suffix: Filled, Modular Grenade
+  parent: ToolboxOutlaw
+  components:
+  - type: Storage
+    grid:
+    - 0,0,2,7
+  - type: StorageFill
+    contents:
+    - id: ModularGrenade
+      amount: 3
+    - id: TimerTrigger
+      amount: 3
+    - id: ExplosivePayload
+    - id: ExplosivePayload
+    - id: ChemicalPayload
+    - id: Beaker
+      amount: 2
+    - id: CableApcStack10
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateOutlaw
+  name: outlaw's crate
+  description: A white crate with green bands and a letter O embossed on the front.
+  components:
+  - type: Icon
+    sprite: _bean\Structures\Storage\outlawcrate.rsi
+  - type: Sprite
+    sprite: _bean\Structures\Storage\outlawcrate.rsi
+    
+- type: entity
+  parent: CrateOutlaw
+  id: CrateOutlawShotgunImprovised
+  name: improvised shotgun case
+  suffix: Improvised Shotgun
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponShotgunImprovised
+    - id: ShellShotgunImprovised
+      amount: 3
+
+- type: entity
+  parent: CrateOutlaw
+  id: CrateOutlawCannon
+  name: pneumatic cannon case
+  suffix: Pneumatic Cannon
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponImprovisedPneumaticCannon
+    - id: EmergencyOxygenTankFilled
+      amount: 2
+
+- type: entity
+  parent: CrateOutlaw
+  id: CrateOutlawBow
+  name: bow case
+  suffix: Bow
+  components:
+  - type: StorageFill
+    contents:
+    - id: BowImprovised
+    - id: ArrowImprovised
+      amount: 3
+    - id: ArrowImprovisedPlasma
+      amount: 2
+    - id: ArrowImprovisedUranium
+
+- type: entity
+  parent: ClothingEyesNightVisionGoggles
+  id: ClothingEyesNightVisionGogglesFake
+  suffix: Fake
+  name: night vision goggles
+  description: Now you can see in the dark!
+  components:
+  - type: Sprite
+    sprite: _White/Clothing/Eyes/Goggles/nightvision.rsi
+  - type: Clothing
+    sprite: _White/Clothing/Eyes/Goggles/nightvision.rsi
+  - type: IdentityBlocker
+  - type: OnUseTimerTrigger
+    delay: 10
+    delayOptions: [10, 30, 60, 120, 300]
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 20.0
+    intensitySlope: 5
+    maxIntensity: 4
+
+- type: entity
+  name: flashbang box
+  parent: BoxCardboard
+  id: BoxFlashbangOutlaw
+  description: 'WARNING: These devices are extremely safe and should be thrown at everyone in your vicinity!!'
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: outlawbox
+      - state: flashbang
+  - type: Storage
+    grid:
+    - 0,0,2,3
+  - type: StorageFill
+    contents:
+      - id: GrenadeFlashBang
+        amount: 3
+
+- type: entity
+  parent: CrateOutlaw
+  id: CrateOutlawMaterials
+  name: base materials case
+  suffix: Materials, Base
+  components:
+  - type: StorageFill
+    contents:
+    - id: SheetSteel
+    - id: SheetPlastic
+    - id: SheetGlass
+    - id: MaterialCloth
+
+- type: entity
+  parent: CrateOutlaw
+  id: CrateOutlawMaterialsExotic
+  name: exotic materials case
+  suffix: Materials, Exotic
+  components:
+  - type: StorageFill
+    contents:
+    - id: SheetPlasma
+    - id: SheetPlasteel
+    - id: SheetUranium
+
+- type: entity
+  parent: CrateOutlaw
+  id: CrateOutlawMaterialsRare
+  name: rare materials case
+  suffix: Materials, Rare
+  components:
+  - type: StorageFill
+    contents:
+    - id: IngotGold
+    - id: IngotSilver
+    - id: MaterialDiamond
+
+# accents
+- type: statusEffect
+  id: GermanSpeech
+- type: statusEffect
+  id: MobsterSpeech
+- type: statusEffect
+  id: LizardSpeech
+- type: statusEffect
+  id: FrenchSpeech
+- type: statusEffect
+  id: MothSpeech
+- type: statusEffect
+  id: OWOSpeech
+- type: statusEffect
+  id: PirateSpeech
+- type: statusEffect
+  id: SpanishSpeech
+- type: statusEffect
+  id: RussianSpeech
+- type: statusEffect
+  id: SkeletonSpeech
+- type: statusEffect
+  id: SouthernSpeech

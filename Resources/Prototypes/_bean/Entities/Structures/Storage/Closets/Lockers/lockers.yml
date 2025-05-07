@@ -51,7 +51,7 @@
   - type: Sprite
     sprite: _bean\Structures\Storage\closet.rsi
   - type: EntityStorageVisuals
-    stateBaseClosed: eng_secure
+    stateBaseClosed: eng_plasma
     stateDoorOpen: generic_open
     stateDoorClosed: eng_plasma_door
   - type: AccessReader
