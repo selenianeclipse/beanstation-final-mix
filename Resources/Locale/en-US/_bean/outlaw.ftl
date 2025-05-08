@@ -62,7 +62,7 @@ outlaw-firebomb-name = Fire Bomb
 outlaw-firebomb-desc = A single fire bomb. Blows up things with fire. Cheaper than C4!
 
 outlaw-noslip-name = No-slip Shoes
-outlaw-noslip-desc = Classic black shoes with anti-slipping technology.
+outlaw-noslip-desc = Classic black shoes with anti-slipping and chameleon technology.
 
 outlaw-flashbang-name = Flashbang Box
 outlaw-flashbang-desc = A set of 3 flashbangs.
@@ -75,6 +75,69 @@ outlaw-emag-desc = Another little bit of 'borrowed' Syndicate tech. Hacks anythi
 
 outlaw-contortsuit-name = Contortionist's Suit
 outlaw-contortsuit-desc = A refurbished Atmospheric Technician jumpsuit, allowing you to climb through vents seamlessly via the power of bluespace! No items or backpacks, though.
+
+outlaw-outlawhat-name = Outlaw's Hat
+outlaw-outlawhat-desc = Shh! Ignore the fact the Syndicate's got the same hat. Ours is cooler because it's got a cheaper price tag.
+
+outlaw-dimensionpot-name = Dimension Pot
+outlaw-dimensionpot-desc = A cute little flowerpot with an incredible secret; a portal to your very own, personal mini-dimension! We are not responsible for death, injury, or spacial displacement.
+
+outlaw-projector-name = Chameleon Projector
+outlaw-projector-desc = An item that lets you disguise as anything on the ship. A note reads: Please use this to play prop hunt.
+
+outlaw-snappop-name = Snap Pop Box
+outlaw-snappop-desc = A box of snap pops! They harmlessly explode when thrown. For fun!
+
+outlaw-miningsuit-name = Mining Hardsuit
+outlaw-miningsuit-desc = I'm sure you forgot Outlaw was an officially-endorsed Cargo position, too.
+
+outlaw-l6saw-name = L6 SAW
+outlaw-l6saw-desc = A comfortable, traditionally crafted LMG favored by those who love big guns.
+outlaw-l6sawammo-name = L6 SAW Magazine Box
+outlaw-l6sawammo-desc = Ammo for the L6 SAW.
+
+outlaw-wspr-name = WSPR
+outlaw-wspr-desc = A big, heavyweight rifle. Potential to be unwieldy, but reliable and versatile.
+outlaw-wsprammo-name = 9.5mm HP Magazine Caseless
+outlaw-wsprammo-desc = Ammo for the WSPR.
+
+outlaw-python-name = Python
+outlaw-python-desc = Typically seen used by Syndicate agents. A decent, effective revolver.
+outlaw-pythonammo-name = .45 Magnum AP Speed Loader
+outlaw-pythonammo-desc = Ammo for the Python.
+
+outlaw-bulldog-name = Bulldog
+outlaw-bulldog-desc = A shotgun for usage in close combat. Little ammo, but packs a huge punch.
+outlaw-bulldogammo-name = 12 Gauge Pellet Drum
+outlaw-bulldogammo-desc = Ammo for the Bulldog.
+
+outlaw-viper-name = Viper
+outlaw-viper-desc = Somewhat underpowered, but a solid, concealable pick.
+outlaw-viperammo-name = .35 Auto Magazine
+outlaw-viperammo-desc = Ammo for the Viper.
+
+outlaw-cobra-name = Cobra
+outlaw-cobra-desc = A sleek, if basic; handgun with a built in silencer.
+outlaw-cobraammo-name = 9.5mm HP Magazine
+outlaw-cobraammo-desc = Ammo for the Cobra.
+
+outlaw-c20r-name = C20r
+outlaw-c20r-desc = For when you need a REALLY big gun.
+outlaw-c20rammo-name = .35 Auto SMG Magazine
+outlaw-c20rammo-desc = Ammo for the C20r.
+
+outlaw-scarf-name = Green Outlaw Scarf
+outlaw-scarf-desc = You're pretty sure this is just a rebranded Syndicate scarf.
+
+outlaw-anaconda-name = Anaconda
+outlaw-anaconda-desc = A classic, basic pistol with high-class fabrication technology giving it the ability to regenerate bullets.
+
+
+outlaw-hypopen-name = Hypopen
+outlaw-hypopen-desc = A pen with a reservoir. It can hold a little bit of some chemicals! You can inject it into someone.
+
+outlaw-fakeglasses-name = Outlaw's Glasses
+outlaw-fakeglasses-desc = They'll never see it coming.
 
 outlaw-contortsuitadvanced-name = Contortionist's Suit Deluxe
 outlaw-contortsuitadvanced-desc = Just like the original, but with even greater bluespace technology, allowing you to use backpacks and items!

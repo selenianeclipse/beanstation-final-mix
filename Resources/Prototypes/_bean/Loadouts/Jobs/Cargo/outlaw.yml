@@ -1,0 +1,59 @@
+# Head
+- type: loadout
+  id: OutlawHat
+  equipment:
+    head: ClothingHeadHatOutlawHat
+
+# Jumpsuit
+- type: loadout
+  id: OutlawJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOutlaw
+    
+- type: loadout
+  id: OutlawJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOutlaw
+
+# OuterClothing
+- type: loadout
+  id: OutlawTrenchcoat
+  equipment:
+    outerClothing: ClothingOuterCoatTrenchOutlaw
+
+- type: loadout
+  id: OutlawJacket
+  equipment:
+    outerClothing: ClothingOuterCoatJacketOutlaw
+
+# Shoes
+- type: loadout
+  id: OutlawBoots
+  equipment:
+    shoes: ClothingShoesBootsCombatFilled
+
+- type: loadout
+  id: OutlawLaceups
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+# Gloves
+- type: loadout
+  id: OutlawCombatGloves
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+- type: loadout
+  id: OutlawGreenGloves
+  equipment:
+    gloves: ClothingHandsGlovesOutlaw
+
+# Neck
+- type: loadout
+  id: OutlawTie
+  equipment:
+    neck: ClothingNeckTieOutlaw
+
+- type: loadout
+  id: OutlawScarf
+  equipment:
+    neck: ClothingNeckScarfStripedOutlaw

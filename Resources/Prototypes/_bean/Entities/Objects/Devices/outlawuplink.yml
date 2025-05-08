@@ -21,6 +21,9 @@
     balance:
       Telecrystal: 95
       Spesos: 15
+  - type: Tag
+    tags:
+    - OutlawUplink
       
 - type: entity
   parent: [BaseItem, StorePresetOutlaw, BaseMajorContraband]
@@ -46,3 +49,6 @@
     balance:
       Telecrystal: 999999
       Spesos: 999999
+  - type: Tag
+    tags:
+    - OutlawUplink

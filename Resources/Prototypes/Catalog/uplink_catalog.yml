@@ -692,6 +692,25 @@
   categories:
   - UplinkChemicals
 
+- type: listing
+  id: UplinkSROS
+  name: uplink-sros-name
+  description: uplink-sros-desc
+  productEntity: SyringeSROS
+  cost:
+    Telecrystal: 90
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkIchorubizine
+  name: uplink-ichor-name
+  description: uplink-ichor-desc
+  productEntity: SyringeIchorubizine
+  cost:
+    Telecrystal: 90
+  categories:
+  - UplinkChemicals
 
 - type: listing
   id: UplinkChemistryKitBundle

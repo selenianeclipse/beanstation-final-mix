@@ -137,4 +137,33 @@
   components:
   - type: StorageFill
     contents:
-      - id: Flash # temp until outlaw is more finished
+      - id: PaperWrittenCalamityDevMessage # I dont know what to put in here dude.
+      - id: ClothingNeckScarfStripedOutlaw
+        prob: 0.3
+      - id: ClothingNeckTieOutlaw
+        prob: 0.3
+      - id: ClothingHandsGlovesOutlaw
+        prob: 0.3
+      - id: ClothingHandsGlovesCombat
+        prob: 0.3
+      - id: ClothingShoesBootsLaceup
+        prob: 0.3
+      - id: ClothingShoesBootsCombatFilled
+        prob: 0.2
+      - id: ClothingOuterCoatJacketOutlaw
+        prob: 0.3
+      - id: ClothingOuterCoatTrenchOutlaw
+        prob: 0.3
+      - id: ClothingUniformJumpskirtOutlaw
+        prob: 0.3
+      - id: ClothingUniformJumpsuitOutlaw
+        prob: 0.3
+      - id: ClothingHeadHatOutlawHat
+
+- type: entity
+  id: PaperWrittenCalamityDevMessage
+  suffix: "note from steven"
+  parent: Paper
+  components:
+  - type: Paper
+    content: calamitydev-message

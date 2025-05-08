@@ -562,7 +562,7 @@
   id: OutlawLubeGlue
   name: outlaw-lubeglue-name
   description: outlaw-lubeglue-desc
-  productEntity: BoxReagentGrenades
+  productEntity: OutlawGlueLubeBox
   cost:
     Telecrystal: 10
   categories:
@@ -605,6 +605,236 @@
   productEntity: ClothingUniformJumpsuitAtmosSyndieAdvanced
   cost:
     Telecrystal: 110
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawHatCool
+  name: outlaw-outlawhat-name
+  description: outlaw-outlawhat-desc
+  productEntity: ClothingHeadHatOutlawHat
+  cost:
+    Telecrystal: 5
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawGlassesFake
+  name: outlaw-fakeglasses-name
+  description: outlaw-fakeglasses-desc
+  productEntity: ClothingEyesGlassesOutlawGlasses
+  cost:
+    Telecrystal: 1
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawDimensionPot
+  name: outlaw-dimensionpot-name
+  description: outlaw-dimensionpot-desc
+  productEntity: DimensionPot
+  cost:
+    Telecrystal: 85
+  categories:
+  - OutlawSupport
+
+- type: listing
+  id: OutlawChameleonProjector
+  name: outlaw-projector-name
+  description: outlaw-projector-desc
+  productEntity: ChameleonProjector
+  cost:
+    Telecrystal: 40
+  categories:
+  - OutlawDisruption
+
+- type: listing
+  id: OutlawSnapPop
+  name: outlaw-snappop-name
+  description: outlaw-snappop-desc
+  productEntity: OutlawSnapPopBox
+  cost:
+    Telecrystal: 5
+  categories:
+  - OutlawDisruption
+
+- type: listing
+  id: OutlawMiningSuit
+  name: outlaw-miningsuit-name
+  description: outlaw-miningsuit-desc
+  productEntity: ClothingOuterHardsuitSalvage
+  cost:
+    Telecrystal: 15
+  categories:
+  - OutlawWearables
+
+- type: listing
+  id: OutlawHypopen
+  name: outlaw-hypopen-name
+  description: outlaw-hypopen-desc
+  productEntity: Hypopen
+  cost:
+    Telecrystal: 25
+  categories:
+  - OutlawChemicals
+
+- type: listing
+  id: OutlawL6Saw
+  name: outlaw-l6saw-name
+  description: outlaw-l6saw-desc
+  productEntity: WeaponLightMachineGunL6
+  cost:
+    Telecrystal: 85
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawL6SawAmmo
+  name: outlaw-l6sawammo-name
+  description: outlaw-l6sawammo-desc
+  productEntity: MagazineLightRifleBox
+  cost:
+    Telecrystal: 25
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawWSPR
+  name: outlaw-wspr-name
+  description: outlaw-wspr-desc
+  productEntity: WeaponRifleWSPR
+  cost:
+    Telecrystal: 75
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawWSPRAmmo
+  name: outlaw-wsprammo-name
+  description: outlaw-wsprammo-desc
+  productEntity: MagazineCaselessRifle
+  cost:
+    Telecrystal: 20
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawPython
+  name: outlaw-python-name
+  description: outlaw-python-desc
+  productEntity: WeaponRevolverPythonAP
+  cost:
+    Telecrystal: 60
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawPythonAmmo
+  name: outlaw-pythonammo-name
+  description: outlaw-pythonammo-desc
+  productEntity: SpeedLoaderMagnumAP
+  cost:
+    Telecrystal: 10
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawBulldog
+  name: outlaw-bulldog-name
+  description: outlaw-bulldog-desc
+  productEntity: WeaponShotgunBulldog
+  cost:
+    Telecrystal: 80
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawBulldogAmmo
+  name: outlaw-bulldogammo-name
+  description: outlaw-bulldogammo-desc
+  productEntity: MagazineShotgun
+  cost:
+    Telecrystal: 20
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawViper
+  name: outlaw-viper-name
+  description: outlaw-viper-desc
+  productEntity: WeaponPistolViper
+  cost:
+    Telecrystal: 45
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawViperAmmo
+  name: outlaw-viperammo-name
+  description: outlaw-viperammo-desc
+  productEntity: MagazinePistol
+  cost:
+    Telecrystal: 20
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawCobra
+  name: outlaw-cobra-name
+  description: outlaw-cobra-desc
+  productEntity: WeaponPistolCobra
+  cost:
+    Telecrystal: 45
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawCobraAmmo
+  name: outlaw-cobraammo-name
+  description: outlaw-cobraammo-desc
+  productEntity: MagazinePistolCaselessRifle
+  cost:
+    Telecrystal: 20
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawC20R
+  name: outlaw-c20r-name
+  description: outlaw-c20r-desc
+  productEntity: WeaponSubMachineGunC20r
+  cost:
+    Telecrystal: 110
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawC20RAmmo
+  name: outlaw-c20rammo-name
+  description: outlaw-c20rammo-desc
+  productEntity: MagazinePistolSubMachineGun
+  cost:
+    Telecrystal: 40
+  categories:
+  - OutlawResources
+
+- type: listing
+  id: OutlawAnaconda
+  name: outlaw-anaconda-name
+  description: outlaw-anaconda-desc
+  productEntity: WeaponPistolAnaconda
+  cost:
+    Telecrystal: 65
+  categories:
+  - OutlawWeapons
+
+- type: listing
+  id: OutlawScarf
+  name: outlaw-scarf-name
+  description: outlaw-scarf-desc
+  productEntity: ClothingNeckScarfStripedOutlaw
+  cost:
+    Telecrystal: 10
   categories:
   - OutlawWearables
 

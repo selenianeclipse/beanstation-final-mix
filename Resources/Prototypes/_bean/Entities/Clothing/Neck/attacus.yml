@@ -8,7 +8,7 @@
     sprite: _bean/Clothing/Neck/Cloaks/attacus.rsi
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes: 
-      head: _bean/ClothingHeadHatHoodAttacus
+      head: ClothingHeadHatHoodAttacus
     requiredSlot:
     - neck
   - type: UserInterface

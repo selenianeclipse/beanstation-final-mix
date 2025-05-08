@@ -25,3 +25,17 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
+  id: JobOutlaw
+  groups:
+  - OutlawHead
+  - OutlawNeck
+  - OutlawJumpsuit
+  - OutlawBackpack
+  - OutlawOuterClothing
+  - OutlawShoes
+  - OutlawGloves
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool

@@ -14,10 +14,11 @@
       time: 144000 #40 hrs
   startingGear: OutlawGear
   icon: "JobIconOutlaw"
-  supervisors: job-supervisors-none
+  supervisors: job-supervisors-cencomonly
   canBeAntag: false # basically already a less malicious antag? also syndi + outlaw = overpowered
   goobcoins: 30 #Goob content
   access:
+  - Hydroponics # so they can grow illegal substances
   - Cargo
   - Maintenance
   - Salvage
@@ -26,11 +27,11 @@
 - type: startingGear
   id: OutlawGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
     id: OutlawPDA
-    gloves: ClothingHandsGlovesForensic
-    ears: ClothingHeadsetAltSecurityRegular # Goobstation
-    belt: ClothingBeltHolsterFilled
+    ears: ClothingHeadsetCargo
+    belt: ClothingBeltAssaultOutlawFilled
   storage:
     back:
     - Flash
+  inhand:
+  - BaseOutlawRadio

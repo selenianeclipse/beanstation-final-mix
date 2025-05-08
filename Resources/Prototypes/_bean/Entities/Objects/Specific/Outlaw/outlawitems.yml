@@ -201,7 +201,7 @@
 
 - type: entity
   name: ohio weed
-  parent: ProduceBase
+  parent: [ ProduceBase, BaseMinorContraband ]
   id: LeavesOhioWeed
   description: A variant of Cannabis from the ancient state of Ohio.
   components:
@@ -279,7 +279,7 @@
 
 - type: entity
   name: restraints box
-  parent: [BoxCardboard, BaseMajorContraband]
+  parent: [BoxCardboard, BaseMinorContraband]
   id: BoxRestraintsOutlaw
   description: A box containing a muzzle, a blindfold, handcuffs, and an energy bola.
   components:
@@ -413,6 +413,17 @@
         amount: 3
 
 - type: entity
+  name: lube and glue grenades box
+  parent: BoxReagentGrenades
+  id: OutlawGlueLubeBox
+  components:
+  - type: Sprite
+    sprite: _bean\Objects\Storage\boxes.rsi
+    layers:
+      - state: outlawbox
+      - state: flashbang
+
+- type: entity
   parent: CrateOutlaw
   id: CrateOutlawMaterials
   name: base materials case
@@ -449,6 +460,215 @@
     - id: IngotSilver
     - id: MaterialDiamond
 
+- type: entity
+  parent: SnapPopBox
+  id: OutlawSnapPopBox
+  name: snap pop box
+  suffix: Outlaw
+  components:
+  - type: Storage
+    grid:
+    - 0,0,4,1
+  - type: StorageFill
+    contents:
+    - id: SnapPop
+      amount: 10
+      
+- type: entity
+  parent: [ ClothingScarfBase, BaseMinorContraband ]
+  id: ClothingNeckScarfStripedOutlaw
+  name: striped outlaw green scarf
+  description: A stylish striped green scarf... wait a minute. You feel like you've already seen this before.
+  components:
+    - type: Sprite
+      sprite: Clothing/Neck/Scarfs/syndiegreen.rsi
+    - type: Clothing
+      sprite: Clothing/Neck/Scarfs/syndiegreen.rsi
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingNeckTieOutlaw
+  name: outlaw's tie
+  description: Fancy.
+  components:
+  - type: Sprite
+    sprite: _bean\Clothing\Neck\outlawtie.rsi
+  - type: Clothing
+    sprite: _bean\Clothing\Neck\outlawtie.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatTrenchOutlaw
+  name: outlaw's trench coat
+  description: A comfy trench coat.
+  components:
+  - type: Sprite
+    sprite: _bean\Clothing\OuterClothing\WinterCoats\trenchcoat.rsi
+  - type: Clothing
+    sprite: _bean\Clothing\OuterClothing\WinterCoats\trenchcoat.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 20
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatJacketOutlaw
+  name: outlaw's jacket
+  description: A thick jacket made of a xeno-leather. Has a cool ribcage design on the back.
+  components:
+  - type: Sprite
+    sprite: _bean\Clothing\OuterClothing\WinterCoats\outlawcoat.rsi
+  - type: Clothing
+    sprite: _bean\Clothing\OuterClothing\WinterCoats\outlawcoat.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 2
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 20
+
+- type: entity
+  name: mattress
+  id: MattressOutlaw
+  parent: BaseStructure
+  description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+  components:
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Anchorable
+  - type: Pullable
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.1
+        Blunt: -0.1
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.05"
+        density: 190
+        mask:
+        - TableMask
+  - type: Sprite
+    sprite: _bean\Structures\Furniture\furniture.rsi
+    state: mattress
+    noRot: true
+  - type: Strap
+    position: Down
+    rotation: -90
+  - type: PlaceableSurface
+    placeCentered: true
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtOutlaw
+  name: outlaw jumpsuit
+  description: A fancy skirt-suit combo for illegal deals. Tie not included.
+  components:
+  - type: Sprite
+    sprite: _bean\Clothing\Uniforms\Jumpskirt\outlawskirt.rsi
+  - type: Clothing
+    sprite: _bean\Clothing\Uniforms\Jumpskirt\outlawskirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitOutlaw
+  name: outlaw jumpsuit
+  description: A fancy suit for illegal deals. Tie not included.
+  components:
+  - type: Sprite
+    sprite: _bean\Clothing\Uniforms\Jumpsuit\outlawsuit.rsi
+  - type: Clothing
+    sprite: _bean\Clothing\Uniforms\Jumpsuit\outlawsuit.rsi
+
+- type: entity
+  id: ClothingBeltAssaultOutlawFilled
+  parent: ClothingBeltAssault
+  suffix: Filled, Outlaw
+  components:
+  - type: Storage
+    whitelist:
+      tags:
+        - OutlawUplink
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - Taser
+        - SecBeltEquip # Goobstation
+        - HandheldCrewMonitor # Goobstation
+        - EnergySpeedloader # Goobstation
+        - Sidearm # Goobstation
+      components:
+        - FlashOnTrigger
+        - SmokeOnTrigger
+        - Flash
+        - Handcuff
+        - BallisticAmmoProvider
+        - Ammo # mmm i love copypasted code
+  - type: StorageFill
+    contents:
+    - id: Brutepack
+    - id: Gauze
+    - id: WeaponPistolViper
+    - id: MagazinePistol
+    - id: CigPackBlack
+
+# this is oh so blatantly just my 'catchall' outlaw file now. i dont care about organization i hate doing it these files are a labyrinth
+
 # accents
 - type: statusEffect
   id: GermanSpeech
@@ -472,3 +692,6 @@
   id: SkeletonSpeech
 - type: statusEffect
   id: SouthernSpeech
+# tag
+- type: Tag
+  id: OutlawUplink

@@ -64,3 +64,33 @@
           Quantity: 20
   - type: Tag
     tags: []
+
+- type: entity
+  suffix: sros
+  parent: PrefilledSyringe
+  id: SyringeSROS
+  components:
+  - type: Label
+    currentLabel: reagent-name-sros
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+          - ReagentId: SROS
+            Quantity: 15
+
+- type: entity
+  suffix: ichorubizine
+  parent: PrefilledSyringe
+  id: SyringeIchorubizine
+  components:
+  - type: Label
+    currentLabel: reagent-name-ichorubizine
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+          - ReagentId: Ichorubizine
+            Quantity: 15

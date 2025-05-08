@@ -1,3 +1,4 @@
+# maid
 - type: loadoutGroup
   id: MaidHead
   name: loadout-group-maid-head
@@ -9,7 +10,7 @@
   id: MaidJumpsuit
   name: loadout-group-maid-jumpsuit
   loadouts:
-  - MaidJumpsuit # temporary until butler outfit is finished
+  - MaidJumpsuit
   - MaidJumpskirt
 
 - type: loadoutGroup
@@ -37,7 +38,7 @@
   loadouts:
   - MaidCombatGloves
   - MaidGlovesAlt
-
+# councilor
 - type: loadoutGroup
   id: CouncilHead
   name: loadout-group-council-head
@@ -87,4 +88,58 @@
   - CouncilLaceups
   - CouncilCombatBoots
   - CouncilHeels
-  
+
+# outlaw
+- type: loadoutGroup
+  id: OutlawHead
+  name: loadout-group-outlaw-head
+  minLimit: 0
+  loadouts:
+  - OutlawHat
+
+- type: loadoutGroup
+  id: OutlawNeck
+  name: loadout-group-outlaw-neck
+  minLimit: 0
+  loadouts:
+  - OutlawTie
+  - OutlawScarf
+
+- type: loadoutGroup
+  id: OutlawJumpsuit
+  name: loadout-group-outlaw-jumpsuit
+  loadouts:
+  - OutlawJumpsuit
+  - OutlawJumpskirt
+
+- type: loadoutGroup
+  id: OutlawOuterClothing
+  name: loadout-group-outlaw-outerclothing
+  minLimit: 0
+  loadouts:
+  - OutlawTrenchcoat
+  - OutlawJacket
+
+- type: loadoutGroup
+  id: OutlawGloves
+  name: loadout-group-outlaw-gloves
+  minLimit: 0
+  loadouts:
+  - OutlawGreenGloves
+  - OutlawCombatGloves
+
+- type: loadoutGroup
+  id: OutlawShoes
+  name: loadout-group-outlaw-shoes
+  loadouts:
+  - OutlawBoots
+  - OutlawLaceups
+
+- type: loadoutGroup
+  id: OutlawBackpack
+  name: loadout-group-outlaw-backpack
+  loadouts:
+  - CargoTechnicianBackpack
+  - CargoTechnicianSatchel
+  - CargoTechnicianDuffel
+  - CargoTechnicianMessenger # Frontier

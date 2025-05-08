@@ -1,6 +1,6 @@
 - type: entity
   name: impure regret
-  parent: [ BaseItem, BaseShield ]
+  parent: [ BaseItem, BaseShield, BaseMagicContraband ]
   id: ImpureRegret
   description: You feel like this is an obscure reference to something.. blocky.
   components:
