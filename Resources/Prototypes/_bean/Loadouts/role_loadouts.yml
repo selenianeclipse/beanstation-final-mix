@@ -10,6 +10,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - MoneyRoundstart
 
 - type: roleLoadout
   id: JobMaid
@@ -25,6 +26,7 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - MoneyRoundstart
 
 - type: roleLoadout
   id: JobOutlaw
@@ -39,3 +41,4 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - MoneyRoundstart

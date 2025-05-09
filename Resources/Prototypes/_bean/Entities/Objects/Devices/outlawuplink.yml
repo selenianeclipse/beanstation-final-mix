@@ -19,8 +19,8 @@
     key: enum.StoreUiKey.Key
   - type: Store
     balance:
-      Telecrystal: 95
-      Spesos: 15
+      Telecrystal: 45
+      Spesos: 0
   - type: Tag
     tags:
     - OutlawUplink

@@ -44,3 +44,5 @@ loadout-group-outlaw-outerclothing = Outlaw outer clothing
 loadout-group-outlaw-shoes = Outlaw shoes
 loadout-group-outlaw-head = Outlaw head
 loadout-group-outlaw-backpack = Outlaw backpack
+
+loadout-group-cash = Cash

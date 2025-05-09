@@ -143,3 +143,16 @@
   - CargoTechnicianSatchel
   - CargoTechnicianDuffel
   - CargoTechnicianMessenger # Frontier
+# money
+
+- type: loadout
+  id: Money
+  storage:
+    back: 
+    - SpaceCash5000
+
+- type: loadoutGroup
+  id: MoneyRoundstart
+  name: loadout-group-cash
+  loadouts:
+  - Money

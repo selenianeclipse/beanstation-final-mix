@@ -1,7 +1,7 @@
 - type: gameMap
   id: PintoBean
   mapName: 'Pinto'
-  mapPath: /Maps/pintobean.yml # Goobstation
+  mapPath: Maps\_bean\pintobean.yml # Goobstation
   minPlayers: 0 # Goobstation return minPlayers requirement for maps
   maxPlayers: 12 # Goobstation - Limit mappool to highpop versions of maps only
   stations:
@@ -33,7 +33,13 @@
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 1, 1 ]
             ResearchAssistant: [ 1, 2 ]
-            Borg: [ 1, 2 ]
+            Borg: [ 1, 5 ]
+            SecurityBorg: [ 1, 1 ]
+            ServiceBorg: [ 1, 1 ]
+            MedicalBorg: [ 1, 1 ]
+            JanitorBorg: [ 1, 1 ]
+            SalvageBorg: [ 1, 1 ]
+            EngineerBorg: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
             Detective: [ 1, 1 ]
             SecurityOfficer: [ 1, 1 ]

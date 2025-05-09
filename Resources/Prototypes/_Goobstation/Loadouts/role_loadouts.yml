@@ -100,6 +100,7 @@
   - Trinkets
   - GroupSpeciesBreathTool
   - Survival
+  - MoneyRoundstart
 
 - type: roleLoadout
   id: JobBlueshieldOfficer
@@ -114,6 +115,7 @@
   - Trinkets
   - GroupSpeciesBreathTool
   - SurvivalSecurity
+  - MoneyRoundstart
 
 - type: roleLoadout
   id: JobNanotrasenCareerTrainer
@@ -129,6 +131,7 @@
   - Trinkets
   - GroupSpeciesBreathTool
   - Survival
+  - MoneyRoundstart
 
 - type: roleLoadout
   id: RoleSurvivalNukieHonkops
