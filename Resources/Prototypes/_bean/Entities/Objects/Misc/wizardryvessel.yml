@@ -30,6 +30,6 @@
   description: A glowing bluespace pin that magically acts as either a wizard robe or hat, turning invisible when worn. Nifty!
   components:
   - type: Sprite
-    sprite: _bean\Objects\Misc\covert_wizardry_vessel.rsi
+    sprite: _bean/Objects/Misc/covert_wizardry_vessel.rsi
   - type: Clothing
-    sprite: _bean\Objects\Misc\covert_wizardry_vessel.rsi
+    sprite: _bean/Objects/Misc/covert_wizardry_vessel.rsi

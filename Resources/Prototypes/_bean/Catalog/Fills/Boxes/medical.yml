@@ -13,7 +13,7 @@
       - id: ClothingEyesPrescriptionGlasses
         amount: 5
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box_medical
       - state: glasses
@@ -25,7 +25,7 @@
   description: A box filled with airloss medipens.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box_medical
       - state: medipenairloss
@@ -57,7 +57,7 @@
   description: A box filled with brute medipens.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box_medical
       - state: medipenbrute
@@ -89,7 +89,7 @@
   description: A box filled with poison medipens.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box_medical
       - state: medipenpoison
@@ -121,7 +121,7 @@
   description: A box filled with rad medipens.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box_medical
       - state: medipenrad
@@ -153,7 +153,7 @@
   description: A box filled with burn medipens.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box_medical
       - state: medipenburn

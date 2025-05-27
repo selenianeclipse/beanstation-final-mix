@@ -5,10 +5,10 @@
   description: A cute stuffed toy that looks eerily like a certain immortal man. You kind of want to beat it up. Who even made this..?
   components:
   - type: Sprite
-    sprite: _bean\Objects\Fun\plushies.rsi
+    sprite: _bean/Objects/Fun/plushies.rsi
     state: hynesplushie
   - type: Item
-    sprite: _bean\Objects\Fun\plushies.rsi
+    sprite: _bean/Objects/Fun/plushies.rsi
     heldPrefix: hynesplushie
   - type: MeleeWeapon
     damage:

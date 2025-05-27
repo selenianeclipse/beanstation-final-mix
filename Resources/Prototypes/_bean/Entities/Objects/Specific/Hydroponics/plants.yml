@@ -7,14 +7,14 @@
 #    - type: Seed
 #      seedId: erythroxylumCoca
 #    - type: Sprite
-#      sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+#      sprite: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
 # i cannot be bothered to fix this shit dawg. i have 1.5 weeks to finish this update at the time of writing and i cannot be wasting my time on buggy ass seeds
 #- type: seed
 #  id: erythroxylumCoca
 #  name: seeds-coca-name
 #  noun: seeds-noun-seeds
 #  displayName: seeds-coca-display-name
-#  plantRsi: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+#  plantRsi: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
 #  packetPrototype: CocaSeeds
 #  productPrototypes:
 #    - LeavesErythroxylumCoca
@@ -41,11 +41,11 @@
   description: "Be honest. You just want to make cocaine."
   components:
   - type: Sprite
-    sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+    sprite: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
   - type: Produce
     seedId: erythroxylumCoca
     sprite:
-      sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+      sprite: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
       state: produce
 
 - type: entity
@@ -55,7 +55,7 @@
   description: "Dried coca leaves."
   components:
   - type: Sprite
-    sprite: _bean\Objects\Specific\Hydroponics\erythroxylumcoca.rsi
+    sprite: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
     state: dried
   - type: Extractable
     grindableSolutionName: powder

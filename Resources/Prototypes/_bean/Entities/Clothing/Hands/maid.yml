@@ -5,9 +5,9 @@
   description: Gloves so you don't dirty your hands with blood and viscera. That'd be unhygenic.
   components:
   - type: Sprite
-    sprite: _bean\Clothing\Hands\Gloves\securitymaidgloves.rsi
+    sprite: _bean/Clothing/Hands/Gloves/securitymaidgloves.rsi
   - type: Clothing
-    sprite: _bean\Clothing\Hands\Gloves\securitymaidgloves.rsi
+    sprite: _bean/Clothing/Hands/Gloves/securitymaidgloves.rsi
   - type: Insulated
   - type: Fiber
     fiberColor: fibers-black

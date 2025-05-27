@@ -9,7 +9,7 @@
       - salty
       - nutty
   - type: Sprite
-    sprite: _bean\Objects\Consumable\Food\birdseed.rsi
+    sprite: _bean/Objects/Consumable/Food/birdseed.rsi
     state: icon
   - type: Item
   - type: Food
@@ -26,5 +26,5 @@
   name: birdseed packet
   components:
   - type: Sprite
-    sprite: _bean\Objects\Consumable\Food\birdseed.rsi
+    sprite: _bean/Objects/Consumable/Food/birdseed.rsi
     state: trash

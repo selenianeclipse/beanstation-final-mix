@@ -4,7 +4,7 @@
   description: outlaw-doorjack-desc
   productEntity: DoorJack
   cost:
-    Telecrystal: 45
+    Telecrystal: 40
   categories:
   - OutlawDisruption
   
@@ -14,7 +14,7 @@
   description: outlaw-empgrenade-desc
   productEntity: BoxEmpGrenadeOutlaw
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawDisruption
   
@@ -24,7 +24,7 @@
   description: outlaw-medkit-desc
   productEntity: OutlawMedkitFilled
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawSupport
   
@@ -34,7 +34,7 @@
   description: outlaw-medkitipc-desc
   productEntity: OutlawMedkitIPCFilled
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawSupport
   
@@ -44,7 +44,7 @@
   description: outlaw-medkitevil-desc
   productEntity: OutlawMedkitEvilFilled
   cost:
-    Telecrystal: 50
+    Telecrystal: 40
   categories:
   - OutlawChemicals
 
@@ -64,7 +64,7 @@
   description: outlaw-glovesinsul-desc
   productEntity: ClothingHandsGlovesOutlawInsulated
   cost:
-    Telecrystal: 35
+    Telecrystal: 30
   categories:
   - OutlawWearables
 
@@ -84,7 +84,7 @@
   description: outlaw-psicodine-desc
   productEntity: PillCanisterPsicodineOutlaw
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawChemicals
 
@@ -94,7 +94,7 @@
   description: outlaw-napalm-desc
   productEntity: NapalmChemistryVial
   cost:
-    Telecrystal: 30
+    Telecrystal: 20
   categories:
   - OutlawChemicals
 
@@ -104,7 +104,7 @@
   description: outlaw-aranesp-desc
   productEntity: PillCanisterAranesp
   cost:
-    Telecrystal: 35
+    Telecrystal: 30
   categories:
   - OutlawChemicals
 
@@ -114,7 +114,7 @@
   description: outlaw-fluorosurfactant-desc
   productEntity: FluorosurfactantChemistryVial
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawChemicals
 
@@ -124,7 +124,7 @@
   description: outlaw-musiver-desc
   productEntity: PillCanisterMusiver
   cost:
-    Telecrystal: 45
+    Telecrystal: 40
   categories:
   - OutlawChemicals
 
@@ -134,7 +134,7 @@
   description: outlaw-ambuzol-desc
   productEntity: PillCanisterAmbuzolOutlaw
   cost:
-    Telecrystal: 110
+    Telecrystal: 100
   categories:
   - OutlawChemicals
 
@@ -144,7 +144,7 @@
   description: outlaw-genecide-desc
   productEntity: PillCanisterGenecide
   cost:
-    Telecrystal: 55
+    Telecrystal: 45
   categories:
   - OutlawChemicals
 
@@ -154,7 +154,7 @@
   description: outlaw-artifexium-desc
   productEntity: PillCanisterArtifexium
   cost:
-    Telecrystal: 15
+    Telecrystal: 20
   categories:
   - OutlawChemicals
 
@@ -164,7 +164,7 @@
   description: outlaw-dexmethylphenidate-desc
   productEntity: PillCanisterDexmethylphenidateOutlaw
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawChemicals
 
@@ -174,7 +174,7 @@
   description: outlaw-ammoniatedmercury-desc
   productEntity: AmmoniatedMercuryChemistryVial
   cost:
-    Telecrystal: 35
+    Telecrystal: 30
   categories:
   - OutlawChemicals
 
@@ -184,7 +184,7 @@
   description: outlaw-thrivia-desc
   productEntity: ThriviaChemistryVial
   cost:
-    Telecrystal: 40
+    Telecrystal: 30
   categories:
   - OutlawChemicals
 
@@ -194,7 +194,7 @@
   description: outlaw-cocaineplant-desc
   productEntity: LeavesErythroxylumCoca
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
   - OutlawResources
 
@@ -204,7 +204,7 @@
   description: outlaw-ohioweed-desc
   productEntity: LeavesOhioWeed
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawResources
 
@@ -224,7 +224,7 @@
   description: outlaw-spareparts-desc
   productEntity: SalvageHumanCorpse
   cost:
-    Telecrystal: 15
+    Telecrystal: 20
   categories:
   - OutlawResources
 
@@ -254,7 +254,7 @@
   description: outlaw-jawsgood-desc
   productEntity: JawsOfLife
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
   - OutlawDisruption
 
@@ -264,7 +264,7 @@
   description: outlaw-mindcontrol-desc
   productEntity: OutlawMindControlImplant
   cost:
-    Telecrystal: 75
+    Telecrystal: 65
   categories:
   - OutlawDisruption
 
@@ -274,7 +274,7 @@
   description: outlaw-spaceproof-desc
   productEntity: OutlawSpaceProofImplant
   cost:
-    Telecrystal: 70
+    Telecrystal: 60
   categories:
   - OutlawSupport
 
@@ -284,7 +284,7 @@
   description: outlaw-storageimplant-desc
   productEntity: OutlawStorageImplant
   cost:
-    Telecrystal: 35
+    Telecrystal: 30
   categories:
   - OutlawSupport
 
@@ -294,7 +294,7 @@
   description: outlaw-nutriimplant-desc
   productEntity: OutlawNutrimentImplant
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
   - OutlawSupport
 
@@ -314,7 +314,7 @@
   description: outlaw-impureregret-desc
   productEntity: ImpureRegret
   cost:
-    Telecrystal: 55
+    Telecrystal: 40
   categories:
   - OutlawWeapons
 
@@ -404,7 +404,7 @@
   description: outlaw-nvbomb-desc
   productEntity: ClothingEyesNightVisionGogglesFake
   cost:
-    Telecrystal: 45
+    Telecrystal: 40
   categories:
   - OutlawExplosives
 
@@ -424,7 +424,7 @@
   description: outlaw-fakeid-desc
   productEntity: AgentIDCard
   cost:
-    Telecrystal: 50
+    Telecrystal: 40
   categories:
   - OutlawDisruption
 
@@ -434,7 +434,7 @@
   description: outlaw-c4-desc
   productEntity: C4
   cost:
-    Telecrystal: 60
+    Telecrystal: 50
   categories:
   - OutlawExplosives
 
@@ -444,7 +444,7 @@
   description: outlaw-firebomb-desc
   productEntity: FireBomb
   cost:
-    Telecrystal: 30
+    Telecrystal: 25
   categories:
   - OutlawExplosives
 
@@ -454,7 +454,7 @@
   description: outlaw-noslip-desc
   productEntity: ClothingShoesChameleonNoSlips
   cost:
-    Telecrystal: 10
+    Telecrystal: 15
   categories:
   - OutlawWearables
 
@@ -464,7 +464,7 @@
   description: outlaw-flashbang-desc
   productEntity: BoxFlashbangOutlaw
   cost:
-    Telecrystal: 20
+    Telecrystal: 15
   categories:
   - OutlawExplosives
 
@@ -484,7 +484,7 @@
   description: outlaw-materialsexotic-desc
   productEntity: CrateOutlawMaterialsExotic
   cost:
-    Telecrystal: 65
+    Telecrystal: 60
   categories:
   - OutlawResources
 
@@ -494,7 +494,7 @@
   description: outlaw-materialsrare-desc
   productEntity: CrateOutlawMaterialsRare
   cost:
-    Telecrystal: 100
+    Telecrystal: 90
   categories:
   - OutlawResources
   
@@ -504,7 +504,7 @@
   description: outlaw-cassette-desc
   productEntity: CassetteTape
   cost:
-    Telecrystal: 5
+    Telecrystal: 1
   categories:
   - OutlawResources
   
@@ -514,7 +514,7 @@
   description: outlaw-taperecorder-desc
   productEntity: TapeRecorder
   cost:
-    Telecrystal: 10
+    Telecrystal: 5
   categories:
   - OutlawDisruption
   
@@ -524,7 +524,7 @@
   description: outlaw-emag-desc
   productEntity: Emag
   cost:
-    Telecrystal: 70
+    Telecrystal: 40
   categories:
   - OutlawDisruption
 
@@ -534,7 +534,7 @@
   description: outlaw-pipebomb-desc
   productEntity: PipeBomb
   cost:
-    Telecrystal: 40
+    Telecrystal: 35
   categories:
   - OutlawExplosives
 
@@ -554,7 +554,7 @@
   description: outlaw-shrapnel-desc
   productEntity: GrenadeShrapnel
   cost:
-    Telecrystal: 35
+    Telecrystal: 30
   categories:
   - OutlawExplosives
 
@@ -564,7 +564,7 @@
   description: outlaw-lubeglue-desc
   productEntity: OutlawGlueLubeBox
   cost:
-    Telecrystal: 10
+    Telecrystal: 5
   categories:
   - OutlawExplosives
 
@@ -574,7 +574,7 @@
   description: outlaw-metalfoam-desc
   productEntity: MetalFoamGrenade
   cost:
-    Telecrystal: 20
+    Telecrystal: 15
   categories:
   - OutlawSupport
 
@@ -584,7 +584,7 @@
   description: outlaw-thiefgloves-desc
   productEntity: ThievingGloves
   cost:
-    Telecrystal: 35
+    Telecrystal: 40
   categories:
   - OutlawWearables
   
@@ -604,7 +604,7 @@
   description: outlaw-contortsuitadvanced-desc
   productEntity: ClothingUniformJumpsuitAtmosSyndieAdvanced
   cost:
-    Telecrystal: 110
+    Telecrystal: 100
   categories:
   - OutlawWearables
 
@@ -634,7 +634,7 @@
   description: outlaw-dimensionpot-desc
   productEntity: DimensionPot
   cost:
-    Telecrystal: 85
+    Telecrystal: 70
   categories:
   - OutlawSupport
 
@@ -644,7 +644,7 @@
   description: outlaw-projector-desc
   productEntity: ChameleonProjector
   cost:
-    Telecrystal: 40
+    Telecrystal: 30
   categories:
   - OutlawDisruption
 
@@ -664,7 +664,7 @@
   description: outlaw-miningsuit-desc
   productEntity: ClothingOuterHardsuitSalvage
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - OutlawWearables
 
@@ -674,7 +674,7 @@
   description: outlaw-hypopen-desc
   productEntity: Hypopen
   cost:
-    Telecrystal: 25
+    Telecrystal: 10
   categories:
   - OutlawChemicals
 
@@ -684,7 +684,7 @@
   description: outlaw-l6saw-desc
   productEntity: WeaponLightMachineGunL6
   cost:
-    Telecrystal: 85
+    Telecrystal: 80
   categories:
   - OutlawWeapons
 
@@ -694,7 +694,7 @@
   description: outlaw-l6sawammo-desc
   productEntity: MagazineLightRifleBox
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
   - OutlawResources
 
@@ -784,7 +784,7 @@
   description: outlaw-cobra-desc
   productEntity: WeaponPistolCobra
   cost:
-    Telecrystal: 45
+    Telecrystal: 40
   categories:
   - OutlawWeapons
 

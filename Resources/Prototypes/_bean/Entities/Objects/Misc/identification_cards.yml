@@ -4,7 +4,7 @@
   name: maid ID card
   components:
     - type: Sprite
-      sprite: _bean\Objects\Misc\id_cards.rsi
+      sprite: _bean/Objects/Misc/id_cards.rsi
       layers:
         - state: default
         - state: idmaid
@@ -17,7 +17,7 @@
   name: outlaw ID card
   components:
   - type: Sprite
-    sprite: _bean\Objects\Misc\id_cards.rsi
+    sprite: _bean/Objects/Misc/id_cards.rsi
     layers:
     - state: default
     - state: idoutlaw
@@ -30,7 +30,7 @@
 #  name: councilor ID card
 #  components:
 #  - type: Sprite
-#    sprite: _bean\Objects\Misc\id_cards.rsi
+#    sprite: _bean/Objects/Misc/id_cards.rsi
 #    layers:
 #    - state: councilorcolor
 #    - state: idcouncilor

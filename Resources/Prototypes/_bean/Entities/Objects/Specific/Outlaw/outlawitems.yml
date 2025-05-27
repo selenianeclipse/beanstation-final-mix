@@ -6,9 +6,9 @@
   description: Like normal gloves, but they're black and green. Cool, right?
   components:
   - type: Sprite
-    sprite: _bean\Objects\Specific\Outlaw\outlawgloves.rsi
+    sprite: _bean/Objects/Specific/Outlaw/outlawgloves.rsi
   - type: Clothing
-    sprite: _bean\Objects\Specific\Outlaw\outlawgloves.rsi
+    sprite: _bean/Objects/Specific/Outlaw/outlawgloves.rsi
   - type: Fiber
     fiberColor: fibers-green
     
@@ -33,10 +33,10 @@
     grid:
     - 0,0,4,3
   - type: Sprite
-    sprite: _bean\Objects\Specific\Outlaw\outlawtoolbox.rsi
+    sprite: _bean/Objects/Specific/Outlaw/outlawtoolbox.rsi
     state: icon
   - type: Item
-    sprite: _bean\Objects\Specific\Outlaw\outlawtoolbox.rsi
+    sprite: _bean/Objects/Specific/Outlaw/outlawtoolbox.rsi
 
 - type: entity
   id: ToolboxOutlawFilled
@@ -64,7 +64,7 @@
   description: A magical mirror capable of altering your appearance! Retrieved from the castle of an ancient wizardry cult.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Specific\Outlaw\outlawmirror.rsi
+    sprite: _bean/Objects/Specific/Outlaw/outlawmirror.rsi
     state: icon
   - type: WizardMirror
     allowedSpecies:
@@ -144,9 +144,9 @@
   abstract: true
   components:
   - type: Item
-    sprite: _bean\Objects\Specific\Outlaw\outlawimplanter.rsi
+    sprite: _bean/Objects/Specific/Outlaw/outlawimplanter.rsi
   - type: Sprite
-    sprite: _bean\Objects\Specific\Outlaw\outlawimplanter.rsi
+    sprite: _bean/Objects/Specific/Outlaw/outlawimplanter.rsi
     state: implanter1
     layers:
       - state: implanter0
@@ -206,11 +206,11 @@
   description: A variant of Cannabis from the ancient state of Ohio.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Specific\Hydroponics\ohioweed.rsi
+    sprite: _bean/Objects/Specific/Hydroponics/ohioweed.rsi
   - type: Produce
     seedId: ohioWeed
     sprite:
-      sprite: _bean\Objects\Specific\Hydroponics\ohioweed.rsi
+      sprite: _bean/Objects/Specific/Hydroponics/ohioweed.rsi
       state: produce
   - type: Extractable
     grindableSolutionName: powder
@@ -284,7 +284,7 @@
   description: A box containing a muzzle, a blindfold, handcuffs, and an energy bola.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: outlawbox
       - state: secrestraints
@@ -328,9 +328,9 @@
   description: A white crate with green bands and a letter O embossed on the front.
   components:
   - type: Icon
-    sprite: _bean\Structures\Storage\outlawcrate.rsi
+    sprite: _bean/Structures/Storage/outlawcrate.rsi
   - type: Sprite
-    sprite: _bean\Structures\Storage\outlawcrate.rsi
+    sprite: _bean/Structures/Storage/outlawcrate.rsi
     
 - type: entity
   parent: CrateOutlaw
@@ -400,7 +400,7 @@
   description: 'WARNING: These devices are extremely safe and should be thrown at everyone in your vicinity!!'
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: outlawbox
       - state: flashbang
@@ -418,7 +418,7 @@
   id: OutlawGlueLubeBox
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: outlawbox
       - state: flashbang
@@ -492,9 +492,9 @@
   description: Fancy.
   components:
   - type: Sprite
-    sprite: _bean\Clothing\Neck\outlawtie.rsi
+    sprite: _bean/Clothing/Neck/outlawtie.rsi
   - type: Clothing
-    sprite: _bean\Clothing\Neck\outlawtie.rsi
+    sprite: _bean/Clothing/Neck/outlawtie.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -508,9 +508,9 @@
   description: A comfy trench coat.
   components:
   - type: Sprite
-    sprite: _bean\Clothing\OuterClothing\WinterCoats\trenchcoat.rsi
+    sprite: _bean/Clothing/OuterClothing/WinterCoats/trenchcoat.rsi
   - type: Clothing
-    sprite: _bean\Clothing\OuterClothing\WinterCoats\trenchcoat.rsi
+    sprite: _bean/Clothing/OuterClothing/WinterCoats/trenchcoat.rsi
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
@@ -535,9 +535,9 @@
   description: A thick jacket made of a xeno-leather. Has a cool ribcage design on the back.
   components:
   - type: Sprite
-    sprite: _bean\Clothing\OuterClothing\WinterCoats\outlawcoat.rsi
+    sprite: _bean/Clothing/OuterClothing/WinterCoats/outlawcoat.rsi
   - type: Clothing
-    sprite: _bean\Clothing\OuterClothing\WinterCoats\outlawcoat.rsi
+    sprite: _bean/Clothing/OuterClothing/WinterCoats/outlawcoat.rsi
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
@@ -583,7 +583,7 @@
         mask:
         - TableMask
   - type: Sprite
-    sprite: _bean\Structures\Furniture\furniture.rsi
+    sprite: _bean/Structures/Furniture/furniture.rsi
     state: mattress
     noRot: true
   - type: Strap
@@ -615,9 +615,9 @@
   description: A fancy skirt-suit combo for illegal deals. Tie not included.
   components:
   - type: Sprite
-    sprite: _bean\Clothing\Uniforms\Jumpskirt\outlawskirt.rsi
+    sprite: _bean/Clothing/Uniforms/Jumpskirt/outlawskirt.rsi
   - type: Clothing
-    sprite: _bean\Clothing\Uniforms\Jumpskirt\outlawskirt.rsi
+    sprite: _bean/Clothing/Uniforms/Jumpskirt/outlawskirt.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -626,9 +626,9 @@
   description: A fancy suit for illegal deals. Tie not included.
   components:
   - type: Sprite
-    sprite: _bean\Clothing\Uniforms\Jumpsuit\outlawsuit.rsi
+    sprite: _bean/Clothing/Uniforms/Jumpsuit/outlawsuit.rsi
   - type: Clothing
-    sprite: _bean\Clothing\Uniforms\Jumpsuit\outlawsuit.rsi
+    sprite: _bean/Clothing/Uniforms/Jumpsuit/outlawsuit.rsi
 
 - type: entity
   id: ClothingBeltAssaultOutlawFilled

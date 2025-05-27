@@ -5,7 +5,7 @@
   description: The signature weapon of Nanotrasen's maids. Functions as a mop when unactivated, and a scythe when activated.
   components: # i bet you're wondering, 'so thats why you moved everything to its own directory' Yes. Yes it fucking is. Maybe Light Yagami was right.
   - type: Sprite # ME WHEN I HAVE TO REFORMAT THE THING THREE TIMES!!!!!!!!!!!!!!!!!!
-    sprite: _bean\Objects\Weapons\Melee\mopscythe.rsi # if someone forks this + the maid role. i'm so sorry. i fucking hated making this yaml file i actually started kira laughing at the end of it
+    sprite: _bean/Objects/Weapons/Melee/mopscythe.rsi # if someone forks this + the maid role. i'm so sorry. i fucking hated making this yaml file i actually started kira laughing at the end of it
     layers:
     - state: mopscythe
       map: [ "base" ]
@@ -75,7 +75,7 @@
      path: /Audio/Weapons/eblademiss.ogg
      params:
       variation: 0.125
-    sprite: _bean\Objects\Weapons\Melee\mopscythe.rsi # i will become the new god of this world and when i do im killing the bastard who invented yaml
+    sprite: _bean/Objects/Weapons/Melee/mopscythe.rsi # i will become the new god of this world and when i do im killing the bastard who invented yaml
   - type: Reflect
     reflectProb: 1
     otherTypeReflectProb: 0.4

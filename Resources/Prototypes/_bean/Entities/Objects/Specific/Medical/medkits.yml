@@ -5,7 +5,7 @@
   id: MedkitOutlaw
   components:
   - type: Sprite
-    sprite: _bean\Objects\Specific\Medical\firstaidkits.rsi
+    sprite: _bean/Objects/Specific/Medical/firstaidkits.rsi
     state: outlawkit
   - type: Item
     heldPrefix: outlawkit
@@ -17,7 +17,7 @@
   id: MedkitIPC
   components:
   - type: Sprite
-    sprite: _bean\Objects\Specific\Medical\firstaidkits.rsi
+    sprite: _bean/Objects/Specific/Medical/firstaidkits.rsi
     state: ipckit
   - type: Item
     heldPrefix: ipckit

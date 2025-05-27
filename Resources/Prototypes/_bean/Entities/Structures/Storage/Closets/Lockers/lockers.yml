@@ -6,7 +6,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _bean\Structures\Storage\closet.rsi
+    sprite: _bean/Structures/Storage/closet.rsi
   - type: EntityStorageVisuals
     stateBaseClosed: outlaw
     stateDoorOpen: generic_open
@@ -21,7 +21,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _bean\Structures\Storage\closet.rsi
+    sprite: _bean/Structures/Storage/closet.rsi
   - type: EntityStorageVisuals
     stateBaseClosed: maid
     stateDoorOpen: generic_open
@@ -36,7 +36,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _bean\Structures\Storage\closet.rsi
+    sprite: _bean/Structures/Storage/closet.rsi
   - type: EntityStorageVisuals
     stateBaseClosed: secure
     stateDoorOpen: secure_open
@@ -49,7 +49,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _bean\Structures\Storage\closet.rsi
+    sprite: _bean/Structures/Storage/closet.rsi
   - type: EntityStorageVisuals
     stateBaseClosed: eng_plasma
     stateDoorOpen: generic_open
@@ -64,7 +64,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _bean\Structures\Storage\closet.rsi
+    sprite: _bean/Structures/Storage/closet.rsi
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: EntityStorageVisuals
@@ -80,7 +80,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _bean\Structures\Storage\wall_locker.rsi
+    sprite: _bean/Structures/Storage/wall_locker.rsi
   - type: EntityStorageVisuals
     stateBaseClosed: generic
     stateDoorOpen: generic_open

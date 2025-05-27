@@ -5,7 +5,7 @@
   description: A box of two EMP Grenades. One to piss off an IPC, and one to piss off Security.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: outlawbox
       - state: empgrenade

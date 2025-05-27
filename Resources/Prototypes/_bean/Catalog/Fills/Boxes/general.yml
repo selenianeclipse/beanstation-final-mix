@@ -6,7 +6,7 @@
   description: A box filled with nutribrick rations.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box
       - state: rations
@@ -22,7 +22,7 @@
   description: A box filled with water jugs.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box
       - state: waterjug
@@ -38,7 +38,7 @@
   description: A box filled with wrapped brownies. For morale boost.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box
       - state: brownies
@@ -61,7 +61,7 @@
     - id: SprayBottleSpaceCleaner
       amount: 4
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box
       - state: spraybottle

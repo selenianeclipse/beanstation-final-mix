@@ -13,7 +13,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    sprite: _bean/Objects/Weapons/Guns/councilammo.rsi
     layers:
     - state: cyanide
       map: ["enum.GunVisualLayers.Base"]
@@ -39,7 +39,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    sprite: _bean/Objects/Weapons/Guns/councilammo.rsi
     layers:
     - state: tranquil
       map: ["enum.GunVisualLayers.Base"]
@@ -65,7 +65,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    sprite: _bean/Objects/Weapons/Guns/councilammo.rsi
     layers:
     - state: pacify
       map: ["enum.GunVisualLayers.Base"]
@@ -91,7 +91,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    sprite: _bean/Objects/Weapons/Guns/councilammo.rsi
     layers:
     - state: heal
       map: ["enum.GunVisualLayers.Base"]
@@ -117,7 +117,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _bean\Objects\Weapons\Guns\councilammo.rsi
+    sprite: _bean/Objects/Weapons/Guns/councilammo.rsi
     layers:
     - state: practice
       map: ["enum.GunVisualLayers.Base"]
@@ -358,7 +358,7 @@
   description: A set of bullets for the Council's members. Comes with 1 magnum each of Practice, Tranquilizer, Heal, Pacify and Cyanide type bullets.
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: councilammobox
   - type: StorageFill

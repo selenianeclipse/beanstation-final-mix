@@ -6,7 +6,7 @@
   - type: SpawnPoint
     job_id: Outlaw
   - type: Sprite
-    sprite: _bean\Markers\jobs.rsi
+    sprite: _bean/Markers/jobs.rsi
     layers:
       - state: green
       - state: outlaw
@@ -19,7 +19,7 @@
   - type: SpawnPoint
     job_id: Maid
   - type: Sprite
-    sprite: _bean\Markers\jobs.rsi
+    sprite: _bean/Markers/jobs.rsi
     layers:
       - state: green
       - state: maid
@@ -32,7 +32,7 @@
   - type: SpawnPoint
     job_id: Councilor
   - type: Sprite
-    sprite: _bean\Markers\jobs.rsi
+    sprite: _bean/Markers/jobs.rsi
     layers:
       - state: green
       - state: councilor

@@ -6,7 +6,7 @@
   description: A box filled with muzzles and blindfolds. Get your head out of the gutter!
   components:
   - type: Sprite
-    sprite: _bean\Objects\Storage\boxes.rsi
+    sprite: _bean/Objects/Storage/boxes.rsi
     layers:
       - state: box_security
       - state: secrestraints

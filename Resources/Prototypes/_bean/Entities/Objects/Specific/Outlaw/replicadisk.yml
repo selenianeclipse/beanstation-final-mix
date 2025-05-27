@@ -6,7 +6,7 @@
   components:
   - type: NukeDisk
   - type: Sprite
-    sprite: _bean\Objects\Misc\replicanukedisk.rsi
+    sprite: _bean/Objects/Misc/replicanukedisk.rsi
     state: icon
   - type: StaticPrice
     price: 5 # no bitchasses gonna hijack the system here
