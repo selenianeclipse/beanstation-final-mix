@@ -27,6 +27,7 @@
 
   defaultModules:
   - BorgModuleTool
+  - BorgModuleOpenHands
 
   radioChannels:
   - Science
@@ -62,6 +63,7 @@
   - BorgModuleConstruction
   - BorgModuleRCD
   - BorgModuleCable
+  - BorgModuleOpenHands
 
   radioChannels:
   - Engineering
@@ -98,6 +100,7 @@
   - BorgModuleGrapplingGun
   - BorgModuleAppraisal
   - BorgModulePKA # Lavaland
+  - BorgModuleOpenHands
 
   radioChannels:
   - Supply
@@ -136,6 +139,7 @@
   defaultModules:
   - BorgModuleLightReplacer
   - BorgModuleCleaning
+  - BorgModuleOpenHands
 
   radioChannels:
   - Science
@@ -171,6 +175,7 @@
   defaultModules:
   - BorgModuleTreatment
   - BorgModuleLollipop # Goobstation
+  - BorgModuleOpenHands
 
   radioChannels:
   - Science
@@ -225,6 +230,7 @@
   - BorgModuleService
   - BorgModuleClowning
   - BorgModuleLollipop # Goobstation
+  - BorgModuleOpenHands
 
   radioChannels:
   - Science

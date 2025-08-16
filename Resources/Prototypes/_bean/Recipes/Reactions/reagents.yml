@@ -60,7 +60,7 @@
   time: 10
   group: Medicinal
   solids:
-    LeavesErythroxylumCoca: 3
+    LeavesErythroxylumCoca: 1
 
 - type: reaction
   id: CocaineBase

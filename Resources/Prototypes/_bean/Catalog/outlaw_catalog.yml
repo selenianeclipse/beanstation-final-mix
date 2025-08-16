@@ -192,9 +192,9 @@
   id: OutlawCocaPlant
   name: outlaw-cocaineplant-name
   description: outlaw-cocaineplant-desc
-  productEntity: LeavesErythroxylumCoca
+  productEntity: CocaSeeds
   cost:
-    Telecrystal: 20
+    Telecrystal: 10
   categories:
   - OutlawResources
 
@@ -202,7 +202,7 @@
   id: OutlawOhioWeed
   name: outlaw-ohioweed-name
   description: outlaw-ohioweed-desc
-  productEntity: LeavesOhioWeed
+  productEntity: OhioWeedSeeds
   cost:
     Telecrystal: 10
   categories:

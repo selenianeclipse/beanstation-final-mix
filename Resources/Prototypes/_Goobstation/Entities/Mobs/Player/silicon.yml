@@ -64,6 +64,7 @@
       - BorgModuleTool
       - BorgModuleFireExtinguisher
       - BorgModuleGPS
+      - BorgModuleOpenHands
   - type: ItemSlots
     slots:
       cell_slot:

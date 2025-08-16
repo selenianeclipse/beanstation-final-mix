@@ -1,0 +1,23 @@
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfStripedXeno
+  name: striped xenosexual scarf
+  description: For humans who don't fuck with other humans.
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Neck/xenoscarf.rsi
+  - type: Clothing
+    sprite: _bean/Clothing/Neck/xenoscarf.rsi
+
+- type: entity
+  parent: ClothingNeckPinBase
+  id: ClothingNeckXenoPin
+  name: xenosexual pin
+  description: Monsterfuckers have gone too far.
+  components:
+  - type: Sprite
+    sprite: _bean/Clothing/Neck/xenopin.rsi
+    state: xeno
+  - type: Clothing
+    sprite: _bean/Clothing/Neck/xenopin.rsi
+    equippedPrefix: xeno

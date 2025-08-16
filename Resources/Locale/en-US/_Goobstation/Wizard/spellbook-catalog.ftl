@@ -185,3 +185,7 @@ spellbook-smite-name = Smite
 spellbook-smite-desc =
     This spell charges your hand with an unholy energy that can be used to cause a touched victim to violently explode.
     Requires wizard's robe and hat to cast.
+
+spellbook-vessel-name = Wizardry Vessel
+spellbook-vessel-desc =
+    A bluespace pin that can function as either a robe or a hat, being equippable to both slots, while still providing the same protection basic robes would.

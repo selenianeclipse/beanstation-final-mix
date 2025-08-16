@@ -23,6 +23,9 @@
             "name":"gps-module"
         },
         {
+            "name":"hands-module"
+        },
+        {
             "name":"taser-module"
         },
         {

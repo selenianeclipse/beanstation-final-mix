@@ -85,6 +85,7 @@
         - BorgModuleAdvancedSurgery
         - BorgModuleAdvancedTreatment
         - BorgModuleDefibrillator
+        - BorgModuleOpenHands
   - type: ItemSlots
     slots:
       cell_slot:

@@ -39,7 +39,7 @@
   description: spellbook-polymorph-rod-desc
   productAction: ActionPolymorphWizardRod
   cost:
-    WizCoin: 2 # Goob edit
+    WizCoin: 8 # fuck you
   categories:
   - SpellbookOffensive
   conditions:
@@ -171,6 +171,16 @@
   categories:
   - SpellbookEquipment
 
+- type: listing
+  id: SpellbookWizardryVessel
+  name: spellbook-vessel-name
+  description: spellbook-vessel-desc
+  productEntity: ClothingWizardRobeInvisible  # Goob edit
+  cost:
+    WizCoin: 1 # Goob edit
+  categories:
+  - SpellbookEquipment
+
 # Goob edit
 #- type: listing
 #  id: SpellbookWandPolymorphCarp
@@ -185,15 +195,15 @@
 #  - !type:ListingLimitedStockCondition
 #    stock: 1
 
-- type: listing
-  id: SpellbookWandLocker
-  name: spellbook-wand-locker-name
-  description: spellbook-wand-locker-description
-  productEntity: WeaponWandLocker
-  cost:
-    WizCoin: 2 # Goob edit
-  categories:
-  - SpellbookEquipment
+#- type: listing
+#  id: SpellbookWandLocker
+#  name: spellbook-wand-locker-name
+#  description: spellbook-wand-locker-description
+#  productEntity: WeaponWandLocker
+#  cost:
+#    WizCoin: 2 # Goob edit
+#  categories:
+#  - SpellbookEquipment
 
 - type: listing
   id: SpellbookHammerMjollnir

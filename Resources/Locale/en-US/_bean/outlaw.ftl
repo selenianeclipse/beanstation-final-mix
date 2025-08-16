@@ -14,7 +14,7 @@ outlaw-medkitipc-name = Treatment Kit [IPC]
 outlaw-medkitipc-desc = Damaged? No problem! This kit comes with a high-capacity power cell, meson glasses, a welder and a bundle of LV cables. Welding mask sold separately!
 
 outlaw-medkitevil-name = 'Treatment' Kit [Lethal]
-outlaw-medkitevil-desc = Threatened? No problem! This kit comes with a bottle of lead, a bottle of razorium, two syringes and an anti-poison autoinjector!
+outlaw-medkitevil-desc = Threatened? No problem! This kit comes with a bottle of lead, a bottle of razorium, two syringes and an anti-poison autoinjector, incase you poison yourself like an idiot!
 
 outlaw-gloves-name = Outlaw's Gloves
 outlaw-gloves-desc = A pair of nifty gloves. Nothing special, really.
@@ -34,8 +34,8 @@ outlaw-mindcontrol-desc = Using 'borrowed' tech straight from the Syndicate, tur
 reagent-name-omnispoke = Omnispoke
 reagent-desc-omnispoke = A chemical that seems to give you every single accent imaginable while also inflicting some damage to your vocal cords.
 
-outlaw-ohioweed-name = Ohio Weed [TEMPORARY, SEEDS BUGGED]
-outlaw-ohioweed-desc = A variant of cannabis from Ohio. It has the odd property of giving you a ton of different accents thanks to a chemical called Omnispoke.
+outlaw-ohioweed-name = Ohio Weed Seeds
+outlaw-ohioweed-desc = A variant of cannabis from the ancient state of Ohio. It has the odd property of giving you a ton of different accents thanks to a chemical called Omnispoke.
 
 outlaw-maiduniform-name = Maid Uniform
 outlaw-maiduniform-desc = A historically inaccurate maid uniform for all of your maid-y purposes! Force the Head of Security to wear it, or wear it yourself, you weirdo!
@@ -241,7 +241,7 @@ outlaw-vestine-desc = A useless chemical on it's own, when in combination with o
 outlaw-ammoniatedmercury-name = Ammoniated Mercury Vial
 outlaw-ammoniatedmercury-desc = A chemical that is hard to use properly, but if handled with care, it can flush out even the most difficult of poisons from the bloodstream.
 
-outlaw-cocaineplant-name = Coca Leaves [TEMPORARY, SEEDS BUGGED]
+outlaw-cocaineplant-name = Coca Seeds
 outlaw-cocaineplant-desc = Originating from Earth, this has all sorts of traditional uses, such as-.. ah, whatever. You just want to make cocaine. Bastard.
 
 outlaw-nukedisk-name = Replica Nuclear Authentication Device

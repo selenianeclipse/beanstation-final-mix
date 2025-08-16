@@ -14,59 +14,59 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Offensive
-- type: listing
-  id: SpellbookMimeMalaise
-  productUpgradeId: SpellbookMimeMalaiseUpgrade
-  name: spellbook-mime-malaise-name
-  description: spellbook-mime-malaise-desc
-  productAction: ActionMimeMalaise
-  cost:
-    WizCoin: 1
-  categories:
-  - SpellbookOffensive
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  - !type:BuyBeforeCondition
-    blacklist:
-    - SpellbookFullRandom
-    - SpellbookSemiRandom
+#- type: listing
+#  id: SpellbookMimeMalaise
+#  productUpgradeId: SpellbookMimeMalaiseUpgrade
+#  name: spellbook-mime-malaise-name
+#  description: spellbook-mime-malaise-desc
+#  productAction: ActionMimeMalaise
+#  cost:
+#    WizCoin: 1
+#  categories:
+#  - SpellbookOffensive
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  - !type:BuyBeforeCondition
+#    blacklist:
+#    - SpellbookFullRandom
+#    - SpellbookSemiRandom
 
-- type: listing
-  id: SpellbookBananaTouch
-  productUpgradeId: SpellbookBananaTouchUpgrade
-  name: spellbook-banana-touch-name
-  description: spellbook-banana-touch-desc
-  productAction: ActionBananaTouch
-  cost:
-    WizCoin: 1
-  categories:
-  - SpellbookOffensive
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  - !type:BuyBeforeCondition
-    blacklist:
-    - SpellbookFullRandom
-    - SpellbookSemiRandom
+#- type: listing
+#  id: SpellbookBananaTouch
+#  productUpgradeId: SpellbookBananaTouchUpgrade
+#  name: spellbook-banana-touch-name
+#  description: spellbook-banana-touch-desc
+#  productAction: ActionBananaTouch
+#  cost:
+#    WizCoin: 1
+#  categories:
+#  - SpellbookOffensive
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  - !type:BuyBeforeCondition
+#    blacklist:
+#    - SpellbookFullRandom
+#    - SpellbookSemiRandom
 
-- type: listing
-  id: SpellbookCluwneCurse
-  productUpgradeId: SpellbookCluwneCurseUpgrade
-  name: spellbook-cluwne-curse-name
-  description: spellbook-cluwne-curse-desc
-  productAction: ActionCluwneCurse
-  cost:
-    WizCoin: 2
-  categories:
-  - SpellbookOffensive
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  - !type:BuyBeforeCondition
-    blacklist:
-    - SpellbookFullRandom
-    - SpellbookSemiRandom
+#- type: listing
+#  id: SpellbookCluwneCurse
+#  productUpgradeId: SpellbookCluwneCurseUpgrade
+#  name: spellbook-cluwne-curse-name
+#  description: spellbook-cluwne-curse-desc
+#  productAction: ActionCluwneCurse
+#  cost:
+#    WizCoin: 2
+#  categories:
+#  - SpellbookOffensive
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  - !type:BuyBeforeCondition
+#    blacklist:
+#    - SpellbookFullRandom
+#    - SpellbookSemiRandom
 
 - type: listing
   id: SpellbookCorpseExplosion
@@ -231,23 +231,23 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
 
-- type: listing
-  id: SpellbookBarnyardCurse
-  productUpgradeId: SpellbookBarnyardCurseUpgrade
-  name: spellbook-barnyard-name
-  description: spellbook-barnyard-desc
-  productAction: ActionBarnyardCurse
-  cost:
-    WizCoin: 2
-  categories:
-  - SpellbookOffensive
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  - !type:BuyBeforeCondition
-    blacklist:
-    - SpellbookFullRandom
-    - SpellbookSemiRandom
+#- type: listing
+#  id: SpellbookBarnyardCurse
+#  productUpgradeId: SpellbookBarnyardCurseUpgrade
+#  name: spellbook-barnyard-name
+#  description: spellbook-barnyard-desc
+#  productAction: ActionBarnyardCurse
+#  cost:
+#    WizCoin: 2
+#  categories:
+#  - SpellbookOffensive
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  - !type:BuyBeforeCondition
+#    blacklist:
+#    - SpellbookFullRandom
+#    - SpellbookSemiRandom
 
 - type: listing
   id: SpellbookScreamForMe
@@ -321,23 +321,23 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
 
-- type: listing
-  id: SpellbookSmite
-  productUpgradeId: SpellbookSmiteUpgrade
-  name: spellbook-smite-name
-  description: spellbook-smite-desc
-  productAction: ActionSmite
-  cost:
-    WizCoin: 2
-  categories:
-  - SpellbookOffensive
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  - !type:BuyBeforeCondition
-    blacklist:
-    - SpellbookFullRandom
-    - SpellbookSemiRandom
+#- type: listing
+#  id: SpellbookSmite
+#  productUpgradeId: SpellbookSmiteUpgrade
+#  name: spellbook-smite-name
+#  description: spellbook-smite-desc
+#  productAction: ActionSmite
+#  cost:
+#    WizCoin: 2
+#  categories:
+#  - SpellbookOffensive
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  - !type:BuyBeforeCondition
+#    blacklist:
+#    - SpellbookFullRandom
+#    - SpellbookSemiRandom
 
 # Defensive
 - type: listing
@@ -731,15 +731,15 @@
   categories:
   - SpellbookEquipment
 
-- type: listing
-  id: SpellBookStaffAnimate
-  name: spellbook-staff-animate-name
-  description: spellbook-staff-animate-desc
-  productEntity: AnimationStaff
-  cost:
-    WizCoin: 1
-  categories:
-  - SpellbookEquipment
+#- type: listing
+#  id: SpellBookStaffAnimate
+#  name: spellbook-staff-animate-name
+#  description: spellbook-staff-animate-desc
+#  productEntity: AnimationStaff
+#  cost:
+#    WizCoin: 1
+#  categories:
+#  - SpellbookEquipment
 
 - type: listing
   id: SpellbookStaffChange

@@ -28,6 +28,7 @@
   - BorgModuleFireExtinguisherAlt
   - BorgModuleCombat
   - BorgModuleStun
+  - BorgModuleOpenHands
 
   radioChannels:
   - Science
@@ -168,7 +169,43 @@
     - HypoBorgStandard
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: extinguisher-module }
+
+- type: entity
+  id: BorgModuleOpenHands
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: open hands cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-hands
+  - type: DroppableBorgModule
+    moduleId: OpenHands
+    items:
+    - id: GenericBorgItem
+      whitelist:
+        components:
+        - Item
+    - id: GenericBorgItem
+      whitelist:
+        components:
+        - Item
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: hands-module }
 # tools
+- type: entity
+  name: item
+  parent: BaseItem
+  id: GenericBorgItem
+  description: Non-canon placeholder item because they won't let me make default items null.
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Misc/borggeneric.rsi
+    state: borg
+  - type: Item
+    size: Tiny
+  - type: DeleteOnDropAttempt
+
 - type: entity
   id: FireExtinguisherBorg
   name: fire extinguisher borg

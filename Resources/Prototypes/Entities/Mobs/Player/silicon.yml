@@ -626,6 +626,7 @@
         - BorgModuleL6C
         - BorgModuleOperative
         - BorgModuleEsword
+        - BorgModuleOpenHands
   - type: ItemSlots
     slots:
       cell_slot:
@@ -659,6 +660,7 @@
         - BorgModuleSyndicateWeapon
         - BorgModuleTool
         - BorgModuleOperative
+        - BorgModuleOpenHands
   - type: ItemSlots
     slots:
       cell_slot:
@@ -707,6 +709,7 @@
         - BorgModuleTool
         - BorgModuleFireExtinguisher
         - BorgModuleGPS
+        - BorgModuleOpenHands
   - type: ItemSlots
     slots:
       cell_slot:

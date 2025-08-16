@@ -1,0 +1,33 @@
+- type: entity
+  parent: GasTankRoundBase
+  id: WaterVaporTank
+  name: water vapor tank
+  description: A standard cylindrical gas tank for water vapor. It can hold 5 L of gas.
+  components:
+  - type: Sprite
+    sprite: _bean/Objects/Misc/watertank.rsi
+  - type: Item
+    sprite: _bean/Objects/Misc/watertank.rsi
+  - type: Clothing
+    sprite: _bean/Objects/Misc/watertank.rsi
+
+# whoever designed this system, if you laugh you go to hell
+
+- type: entity
+  id: WaterVaporTankFilled
+  parent: WaterVaporTank
+  suffix: Filled
+  components:
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      # Idfk im not doing math
+      volume: 5
+      moles:
+        - 0 # oxygen
+        - 0 # nitrogen
+        - 0 # CO2
+        - 0 # plasma
+        - 0 # tritium
+        - 2.051379050 # water vapor
+      temperature: 293.15

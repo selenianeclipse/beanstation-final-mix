@@ -26,7 +26,7 @@ generic-reagent-effect-uncontrolled = You feel like you can do anything.
 generic-reagent-effect-bloodcough = You coughed up blood.
 
 reagent-name-cocainebase = cocaine base
-reagent-desc-cocainebase = An unfinished chemical concoction. Add a little bit of acetone and ammonia, and you've got something. Probably. Not advised to drink.
+reagent-desc-cocainebase = An unfinished chemical concoction. Add a little bit of acetone and ammonia, and you've got something. Not advised to drink.
 
 reagent-name-thrivia = thrivia
 reagent-desc-thrivia = A super potent, hard to lab-synthesize growth and restoration chemical for plants. Boils at room temperature. Highly dangerous to non-plants. Basically Diona superfood.
@@ -44,3 +44,5 @@ reagent-desc-dexmethylphenidate = A stimulant typically prescribed to treat cond
 
 seeds-coca-name = coca
 seeds-coca-display-name = coca plant
+seeds-ohioweed-name = ohio weed
+seeds-ohioweed-display-name = ohio weed plant

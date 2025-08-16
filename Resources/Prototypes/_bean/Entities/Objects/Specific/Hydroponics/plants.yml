@@ -1,38 +1,38 @@
-#- type: entity
-#  parent: SeedBase
-#  name: packet of coca seeds
-#  description: "You probably got these illegally."
-#  id: CocaSeeds
-#  components:
-#    - type: Seed
-#      seedId: erythroxylumCoca
-#    - type: Sprite
-#      sprite: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
-# i cannot be bothered to fix this shit dawg. i have 1.5 weeks to finish this update at the time of writing and i cannot be wasting my time on buggy ass seeds
-#- type: seed
-#  id: erythroxylumCoca
-#  name: seeds-coca-name
-#  noun: seeds-noun-seeds
-#  displayName: seeds-coca-display-name
-#  plantRsi: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
-#  packetPrototype: CocaSeeds
-#  productPrototypes:
-#    - LeavesErythroxylumCoca
-#  lifespan: 50
-#  maturation: 6
-#  production: 6
-#  yield: 2
-#  idealLight: 9
-#  waterConsumption: 0.60
-#  chemicals:
-#    Vitamin:
-#      Min: 1
-#      Max: 4
-#      PotencyDivisor: 25
-#    Nutriment:
-#      Min: 1
-#      Max: 2
-#      PotencyDivisor: 50
+- type: entity
+  parent: SeedBase
+  name: packet of coca seeds
+  description: "You probably got these illegally."
+  id: CocaSeeds
+  components:
+    - type: Seed
+      seedId: erythroxylumCoca
+    - type: Sprite
+      sprite: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
+
+- type: seed
+  id: erythroxylumCoca
+  name: seeds-coca-name
+  noun: seeds-noun-seeds
+  displayName: seeds-coca-display-name
+  plantRsi: _bean/Objects/Specific/Hydroponics/erythroxylumcoca.rsi
+  packetPrototype: CocaSeeds
+  productPrototypes:
+    - LeavesErythroxylumCoca
+  harvestRepeat: Repeat
+  lifespan: 75
+  maturation: 5
+  production: 3
+  yield: 3
+  potency: 20
+  growthStages: 5
+  waterConsumption: 0.9
+  idealLight: 9
+  idealHeat: 298
+  chemicals:
+    Vitamin:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
 
 - type: entity
   name: coca leaves
@@ -59,7 +59,52 @@
     state: dried
   - type: Extractable
     grindableSolutionName: powder
-    juiceSolution:
-      reagents:
-      - ReagentId: PowderedCoca
-        Quantity: 3
+  - type: SolutionContainerManager
+    solutions:
+      powder:
+        reagents:
+        - ReagentId: PowderedCoca
+          Quantity: 4
+        canReact: false
+
+# ohio
+
+- type: entity
+  parent: SeedBase
+  name: packet of ohio weed seeds
+  description: "Skibidi ohio rizz bet nah i'd win ahhh skull emoji"
+  id: OhioWeedSeeds
+  components:
+    - type: Seed
+      seedId: ohioWeed
+    - type: Sprite
+      sprite: _bean/Objects/Specific/Hydroponics/ohioweed.rsi
+
+- type: seed
+  id: ohioWeed
+  name: seeds-ohioweed-name
+  noun: seeds-noun-seeds
+  displayName: seeds-ohioweed-display-name
+  plantRsi: _bean/Objects/Specific/Hydroponics/ohioweed.rsi
+  packetPrototype: OhioWeedSeeds
+  productPrototypes:
+    - LeavesOhioWeed
+  harvestRepeat: Repeat
+  lifespan: 75
+  maturation: 8
+  production: 12
+  yield: 2
+  potency: 20
+  growthStages: 3
+  waterConsumption: 0.40
+  idealLight: 9
+  idealHeat: 298
+  chemicals:
+    THC:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Omnispoke:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
